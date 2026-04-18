@@ -15,16 +15,12 @@ venv/
 env/
 .env
 
-# Data (large files, scraped data)
-data/raw/
-data/processed/*.parquet
+# Data — keep all scraped data in git
 data/processed/models/
-data/labels/
 
 # Keep processed CSVs and results
 !data/processed/results_table.csv
 !data/processed/shap_importance.csv
-!data/labels/.gitkeep
 
 # Logs
 pipeline.log
