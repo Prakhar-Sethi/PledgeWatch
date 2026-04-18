@@ -170,8 +170,8 @@ def plot_model_comparison(results_df: pd.DataFrame, out_path: Path):
         (axes[1], "auc_pr", "auc_pr_ci_lo", "auc_pr_ci_hi", "AUC-PR", "#4CAF50"),
     ]:
         vals = results_df[metric].values
-        lo = results_df[ci_lo].fillna(vals).values if ci_lo in results_df else vals
-        hi = results_df[ci_hi].fillna(vals).values if ci_hi in results_df else vals
+        lo = results_df[ci_lo].fillna(pd.Series(vals, index=results_df.index)).values if ci_lo in results_df else vals
+        hi = results_df[ci_hi].fillna(pd.Series(vals, index=results_df.index)).values if ci_hi in results_df else vals
         yerr_lo = vals - lo
         yerr_hi = hi - vals
         yerr = np.array([yerr_lo, yerr_hi])
