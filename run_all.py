@@ -106,6 +106,8 @@ def fill_paper_placeholders(results_df, dataset_df):
         if not m4_row.empty and not m5_row.empty:
             delta_pr = float(m4_row.iloc[0]["auc_pr"]) - float(m5_row.iloc[0]["auc_pr"])
             replacements["TONE_DELTA_AUC_PR"] = f"{delta_pr:+.3f}"
+            delta_roc_tone = float(m4_row.iloc[0]["auc_roc"]) - float(m5_row.iloc[0]["auc_roc"])
+            replacements["TONE_DELTA_AUC_ROC"] = f"{delta_roc_tone:+.3f}"
         if not m2_row.empty and not m1_row.empty:
             delta_roc = float(m2_row.iloc[0]["auc_roc"]) - float(m1_row.iloc[0]["auc_roc"])
             replacements["M2_DELTA_AUC_ROC"] = f"{delta_roc:+.3f}"
