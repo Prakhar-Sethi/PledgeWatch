@@ -9,7 +9,6 @@ import sys
 import json
 import time
 import logging
-import anthropic
 import numpy as np
 import pandas as pd
 from pathlib import Path
@@ -50,21 +49,23 @@ def truncate_to_words(text: str, max_words: int) -> str:
     return " ".join(words[:max_words])
 
 
-def call_claude_tone(client: anthropic.Anthropic, text: str) -> dict:
-    """Call Claude API and parse JSON response. Retry once on parse failure."""
+def call_claude_tone(client, text: str) -> dict:
+    """Call Claude via OpenAI-compatible API (OpenRouter) and parse JSON response."""
     truncated = truncate_to_words(text, MAX_TRANSCRIPT_WORDS)
 
-    messages = [{"role": "user", "content": truncated}]
+    messages = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": truncated},
+    ]
 
     for attempt in range(2):
         try:
-            response = client.messages.create(
+            response = client.chat.completions.create(
                 model=CLAUDE_MODEL,
                 max_tokens=1024,
-                system=SYSTEM_PROMPT,
                 messages=messages,
             )
-            raw = response.content[0].text.strip()
+            raw = response.choices[0].message.content.strip()
 
             # Strip markdown code fences if present
             if raw.startswith("```"):
@@ -104,13 +105,17 @@ def load_transcript(path: Path) -> dict:
 def run_phase_2c():
     logger.info("=== PHASE 2C: Claude Tone Features ===")
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    api_key = os.environ.get("OPENROUTER_API_KEY", "") or os.environ.get("ANTHROPIC_API_KEY", "")
     if not api_key:
-        logger.error("ANTHROPIC_API_KEY not set in environment. Cannot run tone extraction.")
-        update_progress("FAILED", "Phase 2C: Claude Tone Features", "ANTHROPIC_API_KEY missing")
+        logger.error("Neither OPENROUTER_API_KEY nor ANTHROPIC_API_KEY set. Cannot run tone extraction.")
+        update_progress("FAILED", "Phase 2C: Claude Tone Features", "API key missing")
         return pd.DataFrame()
 
-    client = anthropic.Anthropic(api_key=api_key)
+    from openai import OpenAI
+    client = OpenAI(
+        api_key=api_key,
+        base_url="https://openrouter.ai/api/v1",
+    )
 
     transcript_files = list(TRANSCRIPTS_DIR.glob("*.json"))
     logger.info(f"Found {len(transcript_files)} transcript files")

@@ -11,6 +11,6 @@ model:
   random_seed: 42
 
 claude:
-  model: 'claude-sonnet-4-20250514'
+  model: 'anthropic/claude-sonnet-4-5'
   max_transcript_words: 6000
   tone_cache_dir: 'data/raw/transcripts/tone_cache'

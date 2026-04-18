@@ -11,3 +11,8 @@ ASSUMPTIONS LOG - Promoter Pledging Distress Warning System
 [2026-04-18] A8: LaTeX paper uses IEEEtran document class targeting IEEE 8-9 pages. All numbers filled from actual results files.
 [2026-04-18] A9: Train/val/test split is temporal: train <= 2020Q4, val = 2021Q1-2022Q4, test >= 2023Q1.
 [2026-04-18] A10: Bootstrap CI uses 1000 iterations with random_state=42 for reproducibility.
+[2026-04-18] Universe fetch from NSE API failed; using hardcoded Midcap150+Smallcap250 snapshot (~380 companies)
+[2026-04-18] NSE index API returned 0; using hardcoded snapshot
+[2026-04-18] A11: BSE API (api.bseindia.com/BseIndiaAPI/api/ShareHoldingPat/w) returns HTML not JSON — broken. NSE shareholding-patterns endpoint returns 404. Fixed by using NSE corporate-share-holdings-master API (returns promoter %) + parallel XBRL download from nsearchives.nseindia.com for pledge %. XBRL field: PledgedOrEncumberedSharesHeldAsPercentageOfTotalNumberOfShares with ShareholdingOfPromoterAndPromoterGroupI context.
+[2026-04-18] Transcript coverage only 0.0%; continuing with available data per project rules.
+[2026-04-18] Transcript coverage only 0.0%; continuing with available data per project rules.

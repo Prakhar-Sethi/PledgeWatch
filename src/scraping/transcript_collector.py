@@ -100,76 +100,69 @@ def extract_text_from_pdf(pdf_bytes: bytes) -> str:
 
 
 def download_pdf(url: str, session: requests.Session) -> bytes:
-    try:
-        r = session.get(url, timeout=30, stream=True)
-        if r.status_code == 200:
-            return r.content
-    except Exception as e:
-        logger.debug(f"PDF download failed {url}: {e}")
+    """Try AttachHis first, fallback to AttachLive."""
+    urls_to_try = [url]
+    if "AttachHis" in url:
+        urls_to_try.append(url.replace("AttachHis", "AttachLive"))
+    elif "AttachLive" in url:
+        urls_to_try.append(url.replace("AttachLive", "AttachHis"))
+
+    for u in urls_to_try:
+        try:
+            r = session.get(u, timeout=30)
+            if r.status_code == 200 and len(r.content) > 5000:
+                return r.content
+        except Exception as e:
+            logger.debug(f"PDF download failed {u}: {e}")
     return b""
 
 
-def scrape_screener_concalls(symbol: str, session: requests.Session) -> list[dict]:
-    """Scrape Screener.in concalls page for transcript PDFs."""
+def scrape_bse_transcripts(symbol: str, bse_code: str, session: requests.Session) -> list[dict]:
+    """Fetch transcript PDFs from BSE announcements API using scrip code.
+    Paginates year-by-year (API returns max 50 items). Tries AttachHis then AttachLive for PDFs.
+    Coverage: 2022+ (SEBI mandate for transcript filing started ~2022).
+    """
     results = []
-    url = f"https://www.screener.in/company/{symbol}/concalls/"
-    try:
-        r = session.get(url, timeout=15)
-        if r.status_code != 200:
-            return results
-        from bs4 import BeautifulSoup
-        soup = BeautifulSoup(r.text, "lxml")
-        links = soup.find_all("a", href=True)
-        for link in links:
-            href = link["href"]
-            text = link.get_text().strip().lower()
-            if ("transcript" in text or "concall" in text or ".pdf" in href.lower()):
-                full_url = href if href.startswith("http") else f"https://www.screener.in{href}"
-                # Try to extract quarter from link text or URL
-                quarter = _extract_quarter_from_text(link.get_text() + " " + href)
-                results.append({"url": full_url, "quarter": quarter, "source": "screener"})
-    except Exception as e:
-        logger.debug(f"Screener concalls failed for {symbol}: {e}")
-    return results
-
-
-def scrape_bse_transcripts(symbol: str, isin: str, session: requests.Session) -> list[dict]:
-    """Scrape BSE announcements API for transcript PDFs."""
-    results = []
-    if not isin:
+    if not bse_code:
         return results
 
     url = "https://api.bseindia.com/BseIndiaAPI/api/AnnSubCategoryGetData/w"
-    params = {
-        "strCat": "Company Update",
-        "strPrevDate": "20150101",
-        "strScrip": "",
-        "strSearch": "P",
-        "strToDate": "20241231",
-        "strType": "C",
-        "subcategory": "Transcript",
-    }
-    # Try with ISIN-based search
-    for search_term in ["Transcript", "Earnings Call", "Concall"]:
-        params["subcategory"] = search_term
+    seen_pdfs: set = set()
+
+    for year in range(2015, 2025):
+        params = {
+            "strCat": "-1",
+            "strPrevDate": f"{year}0101",
+            "strScrip": bse_code,
+            "strSearch": "P",
+            "strToDate": f"{year}1231",
+            "strType": "C",
+            "subcategory": "-1",
+        }
         try:
             r = session.get(url, params=params, timeout=15)
-            if r.status_code == 200:
-                data = r.json()
-                announcements = data.get("Table", data if isinstance(data, list) else [])
-                for ann in announcements:
-                    sc_name = str(ann.get("SLONGNAME", "")).lower()
-                    if symbol.lower() in sc_name or isin in str(ann.get("ISIN", "")):
-                        pdf_name = ann.get("ATTACHMENTNAME", "")
-                        if pdf_name:
-                            pdf_url = f"https://www.bseindia.com/xml-data/corpfiling/AttachLive/{pdf_name}"
-                            quarter = _extract_quarter_from_text(
-                                str(ann.get("ANNOUNCEMENTDATE", "")) + " " + str(ann.get("HEADLINE", ""))
-                            )
-                            results.append({"url": pdf_url, "quarter": quarter, "source": "bse"})
-            time.sleep(0.5)
+            if r.status_code != 200:
+                time.sleep(0.3)
+                continue
+            items = r.json().get("Table", [])
+            for ann in items:
+                sub = str(ann.get("NEWSSUB", "")).lower()
+                if "transcript" not in sub and "earnings call" not in sub and "concall" not in sub:
+                    continue
+                pdf_name = ann.get("ATTACHMENTNAME", "")
+                if not pdf_name or pdf_name in seen_pdfs:
+                    continue
+                seen_pdfs.add(pdf_name)
+                # AttachHis for older; AttachLive for recent — try both in download
+                pdf_url = f"https://www.bseindia.com/xml-data/corpfiling/AttachHis/{pdf_name}"
+                quarter = _extract_quarter_from_text(
+                    str(ann.get("DT_TM", "")) + " " + str(ann.get("NEWSSUB", ""))
+                )
+                results.append({"url": pdf_url, "quarter": quarter, "source": "bse", "pdf_name": pdf_name})
+            time.sleep(0.3)
         except Exception as e:
-            logger.debug(f"BSE transcript API failed for {symbol}: {e}")
+            logger.debug(f"BSE transcript API {symbol} {year}: {e}")
+
     return results
 
 
@@ -225,39 +218,64 @@ def run_phase_1c(universe_df: pd.DataFrame = None):
             logger.error("No universe.csv. Run Phase 1A first.")
             return
 
+    # BSE session (needs bseindia.com cookies for API to return JSON)
     session = requests.Session()
-    session.headers.update(HEADERS)
-    session.headers["Referer"] = "https://www.screener.in/"
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "Referer": "https://www.bseindia.com/",
+    })
+    session.get("https://www.bseindia.com", timeout=10)
+    time.sleep(1.5)
 
-    # Load BSE code/ISIN mapping
-    isin_map = {}
-    for f in (PROCESSED_DIR.parent / "raw" / "bse_pledging").glob("*.csv"):
+    # Build BSE scrip code map via NSE quote API
+    bse_code_map: dict = {}
+    bse_code_cache = PROCESSED_DIR / "bse_code_map.json"
+    if bse_code_cache.exists():
+        import json as _json
+        bse_code_map = _json.loads(bse_code_cache.read_text())
+        logger.info(f"Loaded BSE code map: {len(bse_code_map)} entries")
+    else:
+        # Build BSE scrip code map in ONE call via BSE's full equity list
+        bse_session = requests.Session()
+        bse_session.headers.update({
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "Accept": "application/json",
+            "Referer": "https://www.bseindia.com/",
+        })
+        bse_session.get("https://www.bseindia.com", timeout=10)
+        time.sleep(1.5)
         try:
-            df = pd.read_csv(f)
-            if "isin" in df.columns and "nse_symbol" in df.columns:
-                sym = df["nse_symbol"].iloc[0]
-                isin = df["isin"].dropna().iloc[0] if not df["isin"].dropna().empty else ""
-                isin_map[sym] = isin
-        except Exception:
-            pass
+            r = bse_session.get(
+                "https://api.bseindia.com/BseIndiaAPI/api/listofscripdata/w"
+                "?Group=&Scripcode=&industry=&segment=Equity&status=Active",
+                timeout=20
+            )
+            if r.status_code == 200:
+                for item in r.json():
+                    nse_sym = str(item.get("scrip_id", "")).strip()
+                    bse_code_val = str(item.get("SCRIP_CD", "")).strip()
+                    if nse_sym and bse_code_val:
+                        bse_code_map[nse_sym] = bse_code_val
+        except Exception as e:
+            logger.warning(f"BSE list API failed: {e}")
+        import json as _json
+        bse_code_cache.write_text(_json.dumps(bse_code_map))
+        logger.info(f"Built BSE code map: {len(bse_code_map)} entries")
 
     collected = 0
     total_links = 0
 
     for _, row in universe_df.iterrows():
         symbol = row["nse_symbol"]
-        isin = isin_map.get(symbol, "")
+        bse_code = bse_code_map.get(symbol, "")
 
         # Check existing transcripts
         existing = list(TRANSCRIPTS_DIR.glob(f"{symbol}_*.json"))
 
-        # Collect PDF links
-        links = scrape_screener_concalls(symbol, session)
-        time.sleep(1)
-
-        if not links:
-            links = scrape_bse_transcripts(symbol, isin, session)
-            time.sleep(1)
+        # Collect PDF links via BSE announcements API
+        links = scrape_bse_transcripts(symbol, bse_code, session)
+        time.sleep(0.5)
 
         total_links += len(links)
 
