@@ -44,7 +44,7 @@ XGBoost-based classifier that predicts Indian equity crashes 3--6 months
 before they occur using only publicly available data. PPDWS integrates
 three information sources: quarterly BSE shareholding disclosures,
 NSE price time series, and large language model (LLM) tone analysis of
-earnings call transcripts via the Claude~API. Evaluated on a
+earnings call transcripts via a large language model (DeepSeek~V3). Evaluated on a
 temporal held-out test set (2023Q1--2024Q4) spanning
 \INPUT{COMPANY\_COUNT} companies over 40 quarters, the full model (M4)
 achieves an AUC-ROC of \INPUT{M4\_AUC\_ROC} and an AUC-PR of
@@ -246,12 +246,12 @@ are isolated via speaker-label regex patterns. The resulting
 used as the primary LLM input. The prepared statement is used as
 fallback when Q\&A is absent.
 
-\subsection{LLM Tone Extraction via Claude}
-For each transcript, we call the Claude~API~\cite{anthropic2024claude}
-(model: \texttt{claude-sonnet-4-20250514}) with the following system
+\subsection{LLM Tone Extraction via DeepSeek V3}
+For each transcript, we call the DeepSeek~V3~API~\cite{deepseek2024v3}
+(model: \texttt{deepseek-chat-v3-0324}) with the following system
 prompt:
 
-\begin{lstlisting}[caption={Claude tone extraction prompt},label={lst:prompt}]
+\begin{lstlisting}[caption={LLM tone extraction prompt},label={lst:prompt}]
 You are a financial analyst specializing in
 corporate distress detection. Analyze the
 CEO/MD speech from this Indian company
@@ -391,7 +391,7 @@ sales following Essel Group contagion.
   \label{fig:dhfl_ts}
 \end{figure}
 
-Claude's tone analysis of DHFL's 2019Q1 earnings call transcript
+LLM tone analysis of DHFL's 2019Q1 earnings call transcript
 (Figure~\ref{fig:shap_dhfl}) reveals elevated
 \textit{evasiveness\_score}~(8/10) and \textit{liquidity\_stress\_mentions}~(12),
 driven by key phrases such as ``cash flows are being managed'' and
@@ -411,7 +411,7 @@ positive prediction margin.
 
 Zee's 2019Q3 crisis originated from promoter-level pledging to fund
 Essel Group obligations. PPDWS flagged Zee in 2019Q2 with probability~0.64.
-The Claude tone analysis of the 2019Q2 earnings call assigned
+The LLM tone analysis of the 2019Q2 earnings call assigned
 \textit{tone\_shift\_flag}~=~1 (prepared statement confident, Q\&A defensive)
 and \textit{analyst\_tension\_score}~(7/10). Figure~\ref{fig:shap_zeel}
 shows that \textit{tone\_shift\_flag} is the second-ranked SHAP
@@ -514,9 +514,9 @@ S. M. Lundberg and S.-I. Lee, ``A unified approach to interpreting model
 predictions,'' in \textit{Advances in Neural Information Processing Systems},
 vol.~30, 2017.
 
-\bibitem{anthropic2024claude}
-Anthropic, ``Claude model family,'' Technical Report, 2024. [Online].
-Available: \url{https://www.anthropic.com}
+\bibitem{deepseek2024v3}
+DeepSeek, ``DeepSeek-V3 Technical Report,'' arXiv:2412.19437, 2024. [Online].
+Available: \url{https://arxiv.org/abs/2412.19437}
 
 \end{thebibliography}
 

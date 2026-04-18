@@ -1,6 +1,6 @@
 """
-Phase 2C: Claude Tone Feature Extractor
-Calls Claude API to extract distress tone features from earnings call transcripts.
+Phase 2C: LLM Tone Feature Extractor
+Calls DeepSeek V3 API to extract distress tone features from earnings call transcripts.
 Caches all results to avoid redundant API calls.
 """
 
@@ -50,8 +50,8 @@ def truncate_to_words(text: str, max_words: int) -> str:
     return " ".join(words[:max_words])
 
 
-def call_claude_tone(client, text: str) -> dict:
-    """Call Claude via OpenAI-compatible API (aicredits.in) and parse JSON response."""
+def call_llm_tone(client, text: str) -> dict:
+    """Call DeepSeek V3 via OpenAI-compatible API and parse JSON response."""
     truncated = truncate_to_words(text, MAX_TRANSCRIPT_WORDS)
 
     messages = [
@@ -93,11 +93,11 @@ def call_claude_tone(client, text: str) -> dict:
                 messages.append({"role": "user", "content": "Your response was not valid JSON. Return ONLY the JSON object, no markdown, no explanation."})
             else:
                 safe = raw[:200].encode("ascii", "replace").decode("ascii")
-                logger.error(f"Claude JSON parse failed twice: {safe}")
+                logger.error(f"LLM JSON parse failed twice: {safe}")
                 return {}
         except Exception as e:
             safe_e = str(e).encode("ascii", "replace").decode("ascii")
-            logger.error(f"Claude API error: {safe_e}")
+            logger.error(f"LLM API error: {safe_e}")
             err = str(e).lower()
             if "rate_limit" in err:
                 time.sleep(60)
@@ -131,14 +131,14 @@ def _save_partial(rows: list, processed_dir: Path):
 
 
 def run_phase_2c():
-    logger.info("=== PHASE 2C: Claude Tone Features ===")
+    logger.info("=== PHASE 2C: LLM Tone Features ===")
 
     api_key = (os.environ.get("AICREDITS_API_KEY", "") or
                os.environ.get("OPENROUTER_API_KEY", "") or
                os.environ.get("ANTHROPIC_API_KEY", ""))
     if not api_key:
         logger.error("No API key found. Set AICREDITS_API_KEY env var.")
-        update_progress("FAILED", "Phase 2C: Claude Tone Features", "API key missing")
+        update_progress("FAILED", "Phase 2C: LLM Tone Features", "API key missing")
         return pd.DataFrame()
 
     from openai import OpenAI
@@ -178,12 +178,12 @@ def run_phase_2c():
                 continue
 
             try:
-                tone_data = call_claude_tone(client, text)
+                tone_data = call_llm_tone(client, text)
             except RuntimeError as e:
                 if "CREDITS_EXHAUSTED" in str(e):
                     logger.error(f"Credits exhausted after {api_calls} API calls. Saving partial results ({len(rows)} rows) and stopping.")
                     _save_partial(rows, PROCESSED_DIR)
-                    update_progress("FAILED", "Phase 2C: Claude Tone Features",
+                    update_progress("FAILED", "Phase 2C: LLM Tone Features",
                                     f"Credits exhausted after {api_calls} calls; {len(rows)} cached; top up and re-run")
                     return pd.DataFrame(rows) if rows else pd.DataFrame()
                 raise
@@ -223,7 +223,7 @@ def run_phase_2c():
 
     note = (f"Tone features for {len(df_tone)} transcripts; "
             f"{api_calls} API calls, {cache_hits} cache hits")
-    update_progress("DONE", "Phase 2C: Claude Tone Features", note)
+    update_progress("DONE", "Phase 2C: LLM Tone Features", note)
     logger.info(f"Phase 2C complete. {note}")
     return df_tone
 
