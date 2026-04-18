@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 3,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "investments in augmenting the RM basis likely to continue",
+    "profitability should come back as the productivity builds up",
+    "we feel that the consistent growth of our account will continue to happen",
+    "we do not have any plans for further buyback",
+    "we were very clearly focusing on the quality aspects"
+  ],
+  "symbol": "MOTILALOFS",
+  "quarter": "2022Q4"
+}

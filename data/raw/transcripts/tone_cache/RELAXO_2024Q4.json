@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 5,
+  "debt_mention_count": 0,
+  "reassurance_score": 7,
+  "analyst_tension_score": 8,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "subdued demand",
+    "poor footfalls",
+    "competitive intensity",
+    "price increase",
+    "general trade"
+  ],
+  "symbol": "RELAXO",
+  "quarter": "2024Q4"
+}

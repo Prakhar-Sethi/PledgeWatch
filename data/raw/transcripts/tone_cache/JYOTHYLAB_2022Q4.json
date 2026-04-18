@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "double-digit growth",
+    "sequential improvement in margins",
+    "working capital days have marginally increased",
+    "inflationary pressures",
+    "high raw material prices"
+  ],
+  "symbol": "JYOTHYLAB",
+  "quarter": "2022Q4"
+}

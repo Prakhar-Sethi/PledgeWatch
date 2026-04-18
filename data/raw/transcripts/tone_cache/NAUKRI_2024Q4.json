@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 2,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "healthy cash balance",
+    "double-digit growth",
+    "operating margin expanded",
+    "cash generated from operations",
+    "growth opportunities"
+  ],
+  "symbol": "NAUKRI",
+  "quarter": "2024Q4"
+}

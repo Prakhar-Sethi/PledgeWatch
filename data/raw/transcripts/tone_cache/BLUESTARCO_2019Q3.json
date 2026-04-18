@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 6,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 7,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we do not want our balance sheet to come under stress",
+    "ongoing liquidity pressures and stress which a number of industry sectors are facing",
+    "we will be amongst few companies which have turned completely debt free",
+    "borrowings have got paid off as on June 2019 and we are in a cash positive position",
+    "we decided to have our balance sheet strength take precedence over P&L"
+  ],
+  "symbol": "BLUESTARCO",
+  "quarter": "2019Q3"
+}

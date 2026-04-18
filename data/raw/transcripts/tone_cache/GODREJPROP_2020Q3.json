@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "strong visibility on further project additions",
+    "ample liquidity for any interesting opportunities",
+    "operating cash flows were significantly negative",
+    "delivered our highest ever market share",
+    "significant opportunities for consolidation and market share gains"
+  ],
+  "symbol": "GODREJPROP",
+  "quarter": "2020Q3"
+}

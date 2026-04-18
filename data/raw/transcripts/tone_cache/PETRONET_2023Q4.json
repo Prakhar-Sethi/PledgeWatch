@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 7,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "project financials are very very good",
+    "above the hurdle rate",
+    "all aspects have been thoroughly analyzed",
+    "definitely deploying your generation of revenue in a good project",
+    "dil maange more"
+  ],
+  "symbol": "PETRONET",
+  "quarter": "2023Q4"
+}

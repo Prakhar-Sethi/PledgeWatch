@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "tax dispute favorable outcome expected",
+    "expecting by December 15 it will open up",
+    "not impacted by Iran sanctions",
+    "domestic sales will increase minimum by 40%",
+    "dependency on the bank is not good"
+  ],
+  "symbol": "KRBL",
+  "quarter": "2019Q4"
+}

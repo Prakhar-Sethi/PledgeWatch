@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 2,
+  "reassurance_score": 7,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "We are revising this growth guidance for the year to 12% on an organic basis",
+    "We crossed two significant milestones during the quarter",
+    "We believe these three engines of growth will take us forward to our future goals",
+    "Our EBITDA margin at 24.4% has been well above our guided range",
+    "We continue to demonstrate good cash flow conversion"
+  ],
+  "symbol": "HAPPSTMNDS",
+  "quarter": "2023Q4"
+}

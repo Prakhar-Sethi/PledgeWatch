@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 9,
+  "debt_mention_count": 5,
+  "reassurance_score": 7,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "working capital days remain good at 6 days",
+    "debt was slightly higher by INR400 million QoQ basis",
+    "EBITDA growth in absolute terms for the quarter was up 58% YoY",
+    "INR950 crores is our gross debt and INR650 crores is our FDR",
+    "my target is in five figures"
+  ],
+  "symbol": "APLAPOLLO",
+  "quarter": "2023Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 6,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "We are planning not to take any debt. We'll see as the things progress.",
+    "overall is around INR1,400 crores in pending land payments",
+    "things are not fully within our control",
+    "I would not like to spell out everything. But we are confident, we'll come out with a winning strategy.",
+    "it depends upon the land closure...it will take time as and when land closure happens"
+  ],
+  "symbol": "BRIGADE",
+  "quarter": "2023Q3"
+}

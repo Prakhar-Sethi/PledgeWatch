@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 8,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "successfully completed our maiden public issue of NCDs",
+    "improved profitability in the next few quarters",
+    "challenging due to the delayed monsoon",
+    "temporary phase, and we are sure, we'll come out of it",
+    "focus on Tier 3 and Tier 4"
+  ],
+  "symbol": "INDOSTAR",
+  "quarter": "2024Q4"
+}

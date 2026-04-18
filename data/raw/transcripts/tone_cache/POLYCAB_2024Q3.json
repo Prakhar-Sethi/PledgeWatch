@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score\u0442\u0435\u043b": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "transitory in nature",
+    "working capital cycle",
+    "margin profile",
+    "gradually improve",
+    "operating leverage"
+  ],
+  "symbol": "POLYCAB",
+  "quarter": "2024Q3"
+}

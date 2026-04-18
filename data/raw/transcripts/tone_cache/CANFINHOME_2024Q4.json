@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 8,
+  "reassurance_score": 5,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we are going a little slow because of the same issues of registration and there are some incidents regarding demolitions",
+    "102 crores approximately increase in our SMA-1 plus SMA-2 which is what we need to work on",
+    "slight change in this guideline where we are not able to keep an advance around that is giving us a slight flexibility that we had, has gone",
+    "our endeavor would be to repay some of our high-cost bank borrowings",
+    "15% to 17% is what we would aim in terms of the AUM growth"
+  ],
+  "symbol": "CANFINHOME",
+  "quarter": "2024Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 4,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "strong growth numbers",
+    "maintain excess liquidity",
+    "highest ever profit",
+    "strong capital adequacy",
+    "trend downwards from here"
+  ],
+  "symbol": "IDFCFIRSTB",
+  "quarter": "2022Q4"
+}

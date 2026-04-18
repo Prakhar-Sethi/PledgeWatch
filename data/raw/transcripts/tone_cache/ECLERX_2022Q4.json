@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "growth has been broad-based",
+    "conversion rates have definitely slowed",
+    "demand for India continues to be pretty strong",
+    "utilization should improve",
+    "clients under financial stress hard to say"
+  ],
+  "symbol": "ECLERX",
+  "quarter": "2022Q4"
+}

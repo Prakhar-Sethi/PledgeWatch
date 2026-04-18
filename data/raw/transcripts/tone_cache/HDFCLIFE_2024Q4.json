@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "range-bound",
+    "outcome",
+    "VNB growth",
+    "unit-linked",
+    "surrender regulations"
+  ],
+  "symbol": "HDFCLIFE",
+  "quarter": "2024Q4"
+}

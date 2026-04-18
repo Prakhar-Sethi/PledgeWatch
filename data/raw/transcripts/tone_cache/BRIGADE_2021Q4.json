@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 14,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "LRD potential in the company and definitely we will use that for the growth capital in future",
+    "ECLGS lines have been taken for hospitality",
+    "stake sale unless we may try to sell it distress which we do not want to",
+    "interest cost is going to be substantial that will also have its negative side in tough times",
+    "57% is LRD debt and capex is about 30%"
+  ],
+  "symbol": "BRIGADE",
+  "quarter": "2021Q4"
+}

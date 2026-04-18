@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "demand will pick up",
+    "maintain the margin in the range of 13% to 14%",
+    "gradually, we are getting the result",
+    "initiatives we have taken",
+    "premium trend will continue"
+  ],
+  "symbol": "KANSAINER",
+  "quarter": "2024Q4"
+}

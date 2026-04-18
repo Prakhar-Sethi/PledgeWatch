@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 2,
+  "reassurance_score": 7,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "highest ever quarterly revenue",
+    "maintained our growth trajectory",
+    "net cash has gone up",
+    "focus on premiumization agenda",
+    "healthy cash position"
+  ],
+  "symbol": "GULFOILLUB",
+  "quarter": "2024Q3"
+}

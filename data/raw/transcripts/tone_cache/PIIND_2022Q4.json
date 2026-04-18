@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 7,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "constantly able to handle this growth",
+    "well-balanced equation that we have internally",
+    "capacity planning and asset utilization all are integrated-processes",
+    "conservative guidance given volatility",
+    "order books are growing as the business size is growing"
+  ],
+  "symbol": "PIIND",
+  "quarter": "2022Q4"
+}

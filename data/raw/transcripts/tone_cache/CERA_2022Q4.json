@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "no debt raising or equity dilution is planned or required",
+    "cash and cash equivalents stood at INR 573 crore",
+    "funded entirely from annual operating cash flow",
+    "volume growth is not the way to look at the Company",
+    "positive cash flow for Q2 FY23 has been INR 50 crore"
+  ],
+  "symbol": "CERA",
+  "quarter": "2022Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 7,
+  "confidence_score": 5,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 6,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "inventory is a thing that can slip by a month here or there",
+    "not close to any possibility but we will consider all the conditions",
+    "the worst is over",
+    "trending down",
+    "correcting the cost of acquisition"
+  ],
+  "symbol": "MHRIL",
+  "quarter": "2024Q4"
+}

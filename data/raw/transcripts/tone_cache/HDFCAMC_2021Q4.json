@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "material growth over these three years",
+    "successfully built a top of the line digital infrastructure",
+    "improved performance during the quarter",
+    "long-term endeavor is to nudge people to change their old age habits",
+    "strong believer in active fund management"
+  ],
+  "symbol": "HDFCAMC",
+  "quarter": "2021Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "funding cost is going to rise",
+    "base normalization will happen",
+    "we are confident that it (NIM) will be more or less",
+    "nothing has yet impacted the quality to that extent",
+    "we are confident of plowing back most of it over a period of time"
+  ],
+  "symbol": "SBICARD",
+  "quarter": "2022Q4"
+}

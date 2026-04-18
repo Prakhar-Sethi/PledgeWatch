@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "50:50, like 5,000 in RTM and 5,000 crores as TBCB projects",
+    "Debt: Equity is now 58:42",
+    "we expect this to liquidate soon",
+    "this is a very small amount",
+    "there are opportunities in the next few years"
+  ],
+  "symbol": "POWERGRID",
+  "quarter": "2023Q4"
+}

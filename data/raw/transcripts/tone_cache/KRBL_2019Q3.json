@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 8,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "awaiting the orders",
+    "debt will be zero",
+    "ED case not sustainable",
+    "awaiting the order",
+    "submissions are complete"
+  ],
+  "symbol": "KRBL",
+  "quarter": "2019Q3"
+}

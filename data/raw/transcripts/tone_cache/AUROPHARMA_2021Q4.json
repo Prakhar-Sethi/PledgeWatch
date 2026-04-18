@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 5,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "we want to see one more quarter to be on a safer side",
+    "price erosion and shelf stock adjustments are both in orals and ARV side",
+    "pledging de-pledging is happening very quickly and market is not liking",
+    "we started focusing on optimizing end to end inventory which has resulted in reduced capacity utilization",
+    "we are not looking for any large ticket acquisition"
+  ],
+  "symbol": "AUROPHARMA",
+  "quarter": "2021Q4"
+}

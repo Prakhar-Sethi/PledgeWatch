@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 6,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "order book of approximately Rs.9,400 crores",
+    "improvement in margins is primarily on account of two factors",
+    "current dues is about Rs.250 crores",
+    "fiber price in my opinion has bottomed out",
+    "margins what you have in the current quarter, we believe these should be the sustainable margins"
+  ],
+  "symbol": "HFCL",
+  "quarter": "2019Q4"
+}

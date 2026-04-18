@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "quarter three will not look like this at all",
+    "as and when we commission Maizapur, we have to inform the exchange",
+    "it is too early to comment today",
+    "trust us with that",
+    "we will revisit the topic"
+  ],
+  "symbol": "BALRAMCHIN",
+  "quarter": "2022Q4"
+}

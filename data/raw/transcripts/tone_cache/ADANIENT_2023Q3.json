@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "each stage it is cash flow positive",
+    "we don't want to give overall our target about INR 11,000 crore CapEx",
+    "we'll update the numbers towards as part of our annual results",
+    "financial closure of coal-to-PVC will be in this financial year",
+    "it all depends on whatever requirement comes"
+  ],
+  "symbol": "ADANIENT",
+  "quarter": "2023Q3"
+}

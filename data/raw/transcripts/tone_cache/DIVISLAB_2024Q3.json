@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "we don't speak about products because we are bound by confidentiality",
+    "we are confident it has to stabilize at some point",
+    "we are seeing a lot of opportunities coming our way",
+    "we are making sure that the customer is not affected",
+    "we are also very confident in that particular segment"
+  ],
+  "symbol": "DIVISLAB",
+  "quarter": "2024Q3"
+}

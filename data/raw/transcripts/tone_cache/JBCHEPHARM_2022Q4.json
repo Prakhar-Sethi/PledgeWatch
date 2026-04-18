@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "maintain our EBITDA margins between 24 to 26%",
+    "strong cash flow momentum continues",
+    "order book is healthy",
+    "we are cautious and continue to monitor",
+    "cost of therapy will come down"
+  ],
+  "symbol": "JBCHEPHARM",
+  "quarter": "2022Q4"
+}

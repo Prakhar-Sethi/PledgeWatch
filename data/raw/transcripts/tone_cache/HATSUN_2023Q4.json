@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 5,
+  "reassurance_score": 8,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "margins will be sustained and maintained",
+    "debt will come to less than 1000 crores",
+    "commodities will not be sold in this quarter",
+    "volume growth is expected",
+    "better profitability in the coming quarter"
+  ],
+  "symbol": "HATSUN",
+  "quarter": "2023Q4"
+}

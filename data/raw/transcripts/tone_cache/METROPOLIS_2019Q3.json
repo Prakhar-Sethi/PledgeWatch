@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 8,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "growth in retail and wellness segments",
+    "focus on asset-light expansion",
+    "profitability expected in Lab on Lease model",
+    "industry growth outpacing peers",
+    "no significant price increase in B2C segment"
+  ],
+  "symbol": "METROPOLIS",
+  "quarter": "2019Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 5,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "We are comfortable with what we're paying right now",
+    "Our cost should moderate from here",
+    "We don't expect Q3, Q4, any of them to be very much",
+    "Our general assessment is that unsecured is one dimension",
+    "We are not under stress to increase at all"
+  ],
+  "symbol": "IDFCFIRSTB",
+  "quarter": "2022Q3"
+}

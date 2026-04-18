@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 4,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we continue to have adequate liquidity and undrawn credit lines",
+    "we actually don't share guidance",
+    "debt numbers remain more or less in the same range",
+    "we'll get back to you on these numbers",
+    "not sure because of approvals"
+  ],
+  "symbol": "BRIGADE",
+  "quarter": "2024Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "we are in the money",
+    "growth guidance raised to 25%",
+    "NPA numbers go up",
+    "credit cost around 1%",
+    "accommodate the customers"
+  ],
+  "symbol": "MUTHOOTFIN",
+  "quarter": "2024Q4"
+}

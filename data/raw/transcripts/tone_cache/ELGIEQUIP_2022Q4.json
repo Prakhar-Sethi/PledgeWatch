@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 4,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "debt has increased by Rs.65 Crores",
+    "fixed costs coming back to normal levels",
+    "cash flow should start improving",
+    "significant increase in inventory",
+    "caution on Q3 outlook"
+  ],
+  "symbol": "ELGIEQUIP",
+  "quarter": "2022Q4"
+}

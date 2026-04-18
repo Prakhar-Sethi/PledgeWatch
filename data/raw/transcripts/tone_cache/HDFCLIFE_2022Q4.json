@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance poisoning_reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_\u00edas_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "delay \ub4a4\ub97c \ub3cc\uc544\ubcf4\uace0 \ud53c\ud560 \uc218 \uc788\uc744 \ub54c \ud55c\ub2e4.",
+    "deliberate evasiveness: The company tries to disguise issues.",
+    "channel conflicts management",
+    "risk_selection_strategies_for_protection_business",
+    "Bima_Sugam_as_a_game_changer_market_dynamics."
+  ],
+  "symbol": "HDFCLIFE",
+  "quarter": "2022Q4"
+}

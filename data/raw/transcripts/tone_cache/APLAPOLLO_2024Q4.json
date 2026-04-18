@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 8,
+  "debt_mention_count": 2,
+  "reassurance_score": 7,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "we don't have any excuse other than to perform",
+    "slight built up in the debt but as operating cash flows normalize it shall come down sharply",
+    "profitability was low so operating cash flow was very very low",
+    "first time in our own history that in a quarter when steel prices crashed by 7500 per ton",
+    "we were stuck with the volumes we could not do the volume if we wanted to"
+  ],
+  "symbol": "APLAPOLLO",
+  "quarter": "2024Q4"
+}

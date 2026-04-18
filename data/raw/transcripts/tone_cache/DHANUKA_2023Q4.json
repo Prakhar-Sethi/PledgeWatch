@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "prices are optimizing month-on-month",
+    "tricky balance as to which product inventory to keep",
+    "uncertainty continues for a while",
+    "we are absolutely confident of standing our ground",
+    "gross margin upgrade of 200 bps is looking sure"
+  ],
+  "symbol": "DHANUKA",
+  "quarter": "2023Q4"
+}

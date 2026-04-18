@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "over Rs. 200 crore of cash in the bank provides us with a significant cushion in all situations",
+    "we will wait for those things to pan out",
+    "too many moving parts in the external environment",
+    "amidst tight liquidity conditions in the real estate industry",
+    "this was a wish list more than any kind of guidance"
+  ],
+  "symbol": "CERA",
+  "quarter": "2019Q4"
+}

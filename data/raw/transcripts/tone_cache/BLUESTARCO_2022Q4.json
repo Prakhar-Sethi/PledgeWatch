@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 5,
+  "reassurance_score": 4,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "debt levels can be expected to increase by Rs.100 to Rs 150 crores going forward",
+    "net borrowing is around Rs.392 crores",
+    "inventory levels are also slightly higher because of the supply chain disruptions",
+    "we will try to maintain a very healthy debt-to-equity ratio",
+    "we will be coming out with announcements in around six months' time on that"
+  ],
+  "symbol": "BLUESTARCO",
+  "quarter": "2022Q4"
+}

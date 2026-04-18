@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 1,
+  "reassurance_score": 4,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "balance sheet continues to be debt free with a cash balance of approximately 275 crores",
+    "CAPEX commitment continues to be strong with over 100 crores annually which shall be funded through internal accruals",
+    "gross margins remain resilient at 68% despite key raw material prices increasing by over 60%",
+    "Q3 and Q4 should be better than H1",
+    "we maintain 1 year of PAT as cash on books"
+  ],
+  "symbol": "CLEAN",
+  "quarter": "2021Q4"
+}

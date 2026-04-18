@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 5,
+  "reassurance_score": 6,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "Outlook is quite good",
+    "Zero debt company",
+    "Things will improve",
+    "Revenue target of Rs. 5,000 crore",
+    "No risk in exports"
+  ],
+  "symbol": "KRBL",
+  "quarter": "2020Q2"
+}

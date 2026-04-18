@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 4,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 7,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "our focus remains sharply on projects where our execution can be balanced with the operating cash flows",
+    "we had to resort to increased borrowings in the short duration",
+    "consciously moderating the progress based on visibility of operating cash flows",
+    "reduction in borrowings during the quarter of around close to Rs 85-90 cr",
+    "this is a high level guidance at this point in time, it is not a projection"
+  ],
+  "symbol": "BLUESTARCO",
+  "quarter": "2020Q4"
+}

@@ -27,6 +27,7 @@ TONE_FIELDS = [
 SYSTEM_PROMPT = (
     "You are a financial analyst specializing in corporate distress detection. "
     "Analyze the CEO/MD speech from this Indian company earnings call. "
+    "IMPORTANT: Respond ONLY in English. Do not use any other language regardless of the input language. "
     "Return ONLY a valid JSON object with no other text, no markdown, no explanation. "
     "Return exactly these fields: "
     "evasiveness_score (0-10, how often CEO deflects or avoids direct answers), "
@@ -50,7 +51,7 @@ def truncate_to_words(text: str, max_words: int) -> str:
 
 
 def call_claude_tone(client, text: str) -> dict:
-    """Call Claude via OpenAI-compatible API (OpenRouter) and parse JSON response."""
+    """Call Claude via OpenAI-compatible API (aicredits.in) and parse JSON response."""
     truncated = truncate_to_words(text, MAX_TRANSCRIPT_WORDS)
 
     messages = [
@@ -75,6 +76,14 @@ def call_claude_tone(client, text: str) -> dict:
             raw = raw.strip()
 
             parsed = json.loads(raw)
+            # Remap non-English keys to expected TONE_FIELDS by position
+            keys = list(parsed.keys())
+            if keys and keys[0] not in TONE_FIELDS:
+                remapped = {}
+                for i, field in enumerate(TONE_FIELDS):
+                    if i < len(keys):
+                        remapped[field] = parsed[keys[i]]
+                parsed = remapped
             return parsed
 
         except json.JSONDecodeError:
@@ -83,12 +92,17 @@ def call_claude_tone(client, text: str) -> dict:
                 messages.append({"role": "assistant", "content": raw})
                 messages.append({"role": "user", "content": "Your response was not valid JSON. Return ONLY the JSON object, no markdown, no explanation."})
             else:
-                logger.error(f"Claude JSON parse failed twice: {raw[:200]}")
+                safe = raw[:200].encode("ascii", "replace").decode("ascii")
+                logger.error(f"Claude JSON parse failed twice: {safe}")
                 return {}
         except Exception as e:
-            logger.error(f"Claude API error: {e}")
-            if "rate_limit" in str(e).lower():
+            safe_e = str(e).encode("ascii", "replace").decode("ascii")
+            logger.error(f"Claude API error: {safe_e}")
+            err = str(e).lower()
+            if "rate_limit" in err:
                 time.sleep(60)
+            if any(k in err for k in ["insufficient_credits", "credit", "quota", "payment", "balance", "402", "insufficient"]):
+                raise RuntimeError(f"CREDITS_EXHAUSTED: {e}")
             return {}
 
     return {}
@@ -102,19 +116,35 @@ def load_transcript(path: Path) -> dict:
         return {}
 
 
+def _save_partial(rows: list, processed_dir: Path):
+    """Save whatever tone rows we have so far as parquet (partial results)."""
+    if not rows:
+        return
+    df = pd.DataFrame(rows)
+    numeric_cols = [f for f in TONE_FIELDS if f != "key_phrases"]
+    for col in numeric_cols:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce").fillna(-1)
+    out = processed_dir / "tone_features.parquet"
+    df.to_parquet(out, index=False)
+    logger.info(f"Partial tone features saved: {len(df)} rows → {out}")
+
+
 def run_phase_2c():
     logger.info("=== PHASE 2C: Claude Tone Features ===")
 
-    api_key = os.environ.get("OPENROUTER_API_KEY", "") or os.environ.get("ANTHROPIC_API_KEY", "")
+    api_key = (os.environ.get("AICREDITS_API_KEY", "") or
+               os.environ.get("OPENROUTER_API_KEY", "") or
+               os.environ.get("ANTHROPIC_API_KEY", ""))
     if not api_key:
-        logger.error("Neither OPENROUTER_API_KEY nor ANTHROPIC_API_KEY set. Cannot run tone extraction.")
+        logger.error("No API key found. Set AICREDITS_API_KEY env var.")
         update_progress("FAILED", "Phase 2C: Claude Tone Features", "API key missing")
         return pd.DataFrame()
 
     from openai import OpenAI
     client = OpenAI(
         api_key=api_key,
-        base_url="https://openrouter.ai/api/v1",
+        base_url="https://api.aicredits.in/v1",
     )
 
     transcript_files = list(TRANSCRIPTS_DIR.glob("*.json"))
@@ -147,7 +177,16 @@ def run_phase_2c():
             if len(text.strip()) < 200:
                 continue
 
-            tone_data = call_claude_tone(client, text)
+            try:
+                tone_data = call_claude_tone(client, text)
+            except RuntimeError as e:
+                if "CREDITS_EXHAUSTED" in str(e):
+                    logger.error(f"Credits exhausted after {api_calls} API calls. Saving partial results ({len(rows)} rows) and stopping.")
+                    _save_partial(rows, PROCESSED_DIR)
+                    update_progress("FAILED", "Phase 2C: Claude Tone Features",
+                                    f"Credits exhausted after {api_calls} calls; {len(rows)} cached; top up and re-run")
+                    return pd.DataFrame(rows) if rows else pd.DataFrame()
+                raise
             api_calls += 1
 
             if tone_data:

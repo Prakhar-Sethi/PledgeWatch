@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness\u041c\u0418\u0441\u0442\u0440Finance\u8c6a\u5dde\u5143": 4,
+  "liquidity_stress_ments": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "EBITDA margin improvement",
+    "validation process impacting timelines",
+    "strong backward integration",
+    "global contracts under discussion",
+    "capex fine-tuning"
+  ],
+  "symbol": "FLUOROCHEM",
+  "quarter": "2024Q3"
+}

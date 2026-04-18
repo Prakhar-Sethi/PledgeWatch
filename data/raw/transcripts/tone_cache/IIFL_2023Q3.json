@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 5,
+  "reassurance_score": 6,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "liquidity positions; we stand very healthy there",
+    "cash and cash equivalent including committed undrawn credit lines from banks and financial institutions stands around 6,510 crores",
+    "we stand at a healthy capital adequacy of around 51.2% in the HFC business",
+    "our gross NPA at the aggregate level stands at around 1.8% and our net NPA is around 1.1%",
+    "we have seen a very relative muted growth increase on our cost of borrowings"
+  ],
+  "symbol": "IIFL",
+  "quarter": "2023Q3"
+}

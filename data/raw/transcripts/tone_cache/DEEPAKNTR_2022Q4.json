@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 4,
+  "debt_mention_count": 2,
+  "reassurance_score": 7,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 8,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 7,
+  "key_phrases": [
+    "submission of earnings conference call",
+    "financial-result",
+    "held on November 10, 2022",
+    "available on the website",
+    "take the same on your record"
+  ],
+  "symbol": "DEEPAKNTR",
+  "quarter": "2022Q4"
+}

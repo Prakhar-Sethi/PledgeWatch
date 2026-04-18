@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 9,
+  "debt_mention_count": 1,
+  "reassurance_score": 7,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "industry leading sequential growth in revenues of 6.9%",
+    "revising our revenue guidance for FY2023 and growth targets",
+    "continued momentum on digital",
+    "cash generation continues to be strong",
+    "sustainable, medium to long-term EBITDA margins of 22% to 24%"
+  ],
+  "symbol": "HAPPSTMNDS",
+  "quarter": "2022Q3"
+}

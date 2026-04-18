@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we do not want to give guidance on margins",
+    "we are not constrained by cash or budgets",
+    "we would not like to comment on these things right now",
+    "too early to speculate",
+    "we will get back to you on that"
+  ],
+  "symbol": "BOSCHLTD",
+  "quarter": "2024Q3"
+}

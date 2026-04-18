@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 7,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 8,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "we never give any future guidance",
+    "more of the same thing",
+    "consumption trends and the consumption patterns have to undergo a change",
+    "we are not disappointed with any of those things",
+    "it's too early to comment on that"
+  ],
+  "symbol": "DEVYANI",
+  "quarter": "2024Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 1,
+  "reassurance_score": 6,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we should not fall in any debt trap, we just want to walk very safely",
+    "it is okay if my numbers go up and down for a year, I am not worried about it",
+    "right now we are not in a good position but we are getting very good signal from the market",
+    "April and May there is no doubt too much pressure is there because market is totally in the destocking mode",
+    "we are closer to it, right now we are going through a painful time but we are hopeful that future is very bright"
+  ],
+  "symbol": "APLAPOLLO",
+  "quarter": "2022Q2"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 7,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 8,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "government tenders not called due to pandemic",
+    "significant drop in revenue share from new products",
+    "sales returns almost doubled compared to last year",
+    "waiting for government approval on new technology",
+    "EBITDA percentages are lower across crops"
+  ],
+  "symbol": "KSCL",
+  "quarter": "2021Q4"
+}

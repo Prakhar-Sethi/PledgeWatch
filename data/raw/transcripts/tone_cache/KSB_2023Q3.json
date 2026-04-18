@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "despite more working capital with the growth in the business",
+    "completion part, \u0432\u0441\u0435 \u0435\u0449\u0435 Challenges",
+    "export is looking up",
+    "gross margins \u043c\u0435\u0441\u044f\u0446\u0435\u0432 stability give confidence",
+    "nuclear revenue expectations next year"
+  ],
+  "symbol": "KSB",
+  "quarter": "2023Q3"
+}

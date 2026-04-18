@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 6,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "cash equivalent today also we are sitting on 1,600 crores so there's enough money",
+    "net debt will not go up, it should come down",
+    "1,000 to 1,200 crores of LRD which can be done",
+    "we refrain from giving a forward-looking guidance but we are aiming at 20% to 25% growth",
+    "it has not affected our business one inch"
+  ],
+  "symbol": "BRIGADE",
+  "quarter": "2022Q3"
+}

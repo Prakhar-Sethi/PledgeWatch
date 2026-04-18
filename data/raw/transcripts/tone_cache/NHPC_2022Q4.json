@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "installments being received",
+    "no issue of under recovery",
+    "balance amount will be liquidated",
+    "well within the O&M charges",
+    "no alarming situation on account of number of employees"
+  ],
+  "symbol": "NHPC",
+  "quarter": "2022Q4"
+}

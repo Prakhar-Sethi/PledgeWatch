@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 4,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "working with the customer to create a robust payment plan",
+    "some transactions related to customers where we deferred the recognition of revenue",
+    "currently working with them on creating a robust time bound plan to unwind the past dues",
+    "the order book remains quite strong in the near term",
+    "our dividend policy is linked to our free cash flow generation"
+  ],
+  "symbol": "INDUSTOWER",
+  "quarter": "2023Q4"
+}

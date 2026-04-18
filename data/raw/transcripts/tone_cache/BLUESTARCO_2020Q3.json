@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 6,
+  "debt_mention_count": 6,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 7,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "We raised Rs 350 cr during the quarter through issuance of non-convertible debentures to fund working capital and to build sufficient liquidity",
+    "net borrowings increased to Rs 428.53 cr as on June 30, 2020 compared to a net cash balance of Rs 0.74 cr as on June 30, 2019",
+    "we have been through a compressed liquidity cycle and therefore we wanted to adequately mitigate financing and refinancing risk",
+    "we will start applying our operating cash flows to reduce the level of our gross borrowings so that by the end of the year, we reach to a level of net borrowings anywhere in the range of Rs.350 crores to Rs.400 crores",
+    "In the projects business, we would be more focused on cash realization than market share"
+  ],
+  "symbol": "BLUESTARCO",
+  "quarter": "2020Q3"
+}

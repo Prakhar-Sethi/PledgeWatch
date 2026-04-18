@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "maintain EBITDA margin in the range of 30% to 32%",
+    "debt reduction is going as we thought of",
+    "slightly oversupply situation",
+    "price correction will help us to capture 200,000 tonnes",
+    "forex cover on the export is approximately around 40%"
+  ],
+  "symbol": "GHCL",
+  "quarter": "2019Q4"
+}

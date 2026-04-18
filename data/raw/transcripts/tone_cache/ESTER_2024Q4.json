@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 3,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 2,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "improved operating & financial metrices",
+    "liquidity position at consolidated level remains strong",
+    "we have confidence in the growth potential and value creation",
+    "demand supply has closed quite a bit",
+    "we expect margins to remain stable"
+  ],
+  "symbol": "ESTER",
+  "quarter": "2024Q4"
+}

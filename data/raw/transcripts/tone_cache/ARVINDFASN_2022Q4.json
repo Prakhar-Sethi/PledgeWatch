@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 3,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "Earnings Call Transcript Q2 FY-23",
+    "Quarter ended 30th September 2022",
+    "conference call arranged by the company with analysts and investors",
+    "post announcement of Financial Results",
+    "Regulation 30 of the SEBI Listing Obligations"
+  ],
+  "symbol": "ARVINDFASN",
+  "quarter": "2022Q4"
+}

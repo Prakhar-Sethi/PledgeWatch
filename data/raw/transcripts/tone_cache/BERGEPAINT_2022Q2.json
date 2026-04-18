@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 3,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "Investor Presentation on financial results",
+    "quarter and year ended on 31st March, 2022",
+    "SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+    "transcript of Investor Presentation",
+    "bergerpaints.com/investors/transcripts-of-earnings-call"
+  ],
+  "symbol": "BERGEPAINT",
+  "quarter": "2022Q2"
+}

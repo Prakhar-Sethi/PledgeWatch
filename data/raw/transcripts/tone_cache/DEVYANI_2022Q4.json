@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "operationally, we are absolutely in good shape",
+    "too early to kind of give you the exact read",
+    "we are not changing the guidance",
+    "it's a little kind of a mixed read",
+    "margins will come back"
+  ],
+  "symbol": "DEVYANI",
+  "quarter": "2022Q4"
+}

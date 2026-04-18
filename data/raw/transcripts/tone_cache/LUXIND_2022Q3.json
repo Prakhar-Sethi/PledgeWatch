@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 8,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "raw material prices have already started to come down",
+    "expecting better margins in the near future",
+    "wait for some more time",
+    "mixed bag result",
+    "working capital is always an issue"
+  ],
+  "symbol": "LUXIND",
+  "quarter": "2022Q3"
+}

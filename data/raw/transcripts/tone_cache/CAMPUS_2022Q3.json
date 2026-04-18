@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "unfortunately we cannot give you any forward-looking statements",
+    "operating cash flow is about INR 83 crores of generation compared to EBITDA of INR 62 crores",
+    "we have booked EVA for the next six months securing supplies at specific price",
+    "receivable days have improved from 40 days to 35 days of sales outstanding",
+    "despite all the inflationary pressure we have managed to improve our YoY ASP by 3%"
+  ],
+  "symbol": "CAMPUS",
+  "quarter": "2022Q3"
+}

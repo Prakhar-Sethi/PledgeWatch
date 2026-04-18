@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 8,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "Q2 is going to be",
+    "demand in this quarter is going to remain weak",
+    "I have never in my 40-year career in this industry, ever given any guidance on price",
+    "Q2 and Q3 may not be very good",
+    "cash is real, rest all is myth"
+  ],
+  "symbol": "SHREECEM",
+  "quarter": "2024Q3"
+}

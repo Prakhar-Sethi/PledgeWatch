@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 5,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "continued softness in export markets",
+    "initiated internal actions to curtail spending",
+    "slowdown in Indian economy impacting demand",
+    "capacity utilization between 50% to 60%",
+    "focus on overhead cost reduction"
+  ],
+  "symbol": "CUMMINSIND",
+  "quarter": "2019Q4"
+}

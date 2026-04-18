@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 3,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions\uff05": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "investor services",
+    "financial results",
+    "analysts/investors meet",
+    "conference call",
+    "company's website"
+  ],
+  "symbol": "OIL",
+  "quarter": "2021Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "gross debt-to-equity ratio now at 0.46x and 0.24x on a net basis",
+    "cash on books of almost Rs. 2,000 crore put us in an enviable position",
+    "we are feeling some pain in our European and Swedish operations, we are downsizing these operations",
+    "EV vertical to be EBITDA break-even in the next two to three quarters",
+    "you can take that on offline because when you are talking about a difference of 10%"
+  ],
+  "symbol": "BHARATFORG",
+  "quarter": "2024Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 6,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 5,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "we have been continuously reducing the debt and especially in the last two quarters",
+    "you will not see an increase in net debt",
+    "we have not done any additional factoring",
+    "our overall working capital ratio has come down to 32% from 35%",
+    "this year is not a right comparison at all"
+  ],
+  "symbol": "AUROPHARMA",
+  "quarter": "2020Q3"
+}

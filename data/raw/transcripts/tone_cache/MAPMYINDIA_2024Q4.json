@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "building business for a long-term",
+    "we are not in a position to give you clarity",
+    "we are pretty comfortable today with achieving our FY '27-'28 goals",
+    "we are trying to do everything that will help us in FY '27-'28 and beyond",
+    "we are going on a right track"
+  ],
+  "symbol": "MAPMYINDIA",
+  "quarter": "2024Q4"
+}

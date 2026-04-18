@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 7,
+  "confidence_score": 5,
+  "debt_mention_count": 4,
+  "reassurance_score": 8,
+  "analyst_tension_score": 6,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 7,
+  "key_phrases": [
+    "stopped from lending",
+    "regulatory action will not impact us",
+    "sufficient liquidity to meet the obligations",
+    "industry see a greater degree of the need of collection",
+    "fully geared up"
+  ],
+  "symbol": "MANAPPURAM",
+  "quarter": "2024Q4"
+}

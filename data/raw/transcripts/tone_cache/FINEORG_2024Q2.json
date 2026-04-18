@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "raw material prices are quite stable",
+    "all our plants are running at optimal capacity",
+    "cash flows are increasing",
+    "we have kept this cash because we are waiting for this plot to be allotted",
+    "we will need to borrow more money"
+  ],
+  "symbol": "FINEORG",
+  "quarter": "2024Q2"
+}

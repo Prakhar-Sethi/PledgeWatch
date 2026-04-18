@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 6,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "regulatory enablement was done",
+    "we have not as yet applied",
+    "competition teaches us",
+    "happy to have a problem",
+    "we will definitely give those details"
+  ],
+  "symbol": "MCX",
+  "quarter": "2023Q4"
+}

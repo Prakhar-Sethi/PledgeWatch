@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "net debt has gone up basically for the new debt which we have taken Rs. 400 crore in first quarter",
+    "working capital increase because of volumes",
+    "aluminum business will take about 2 quarters to get cleaned up",
+    "50%-55% utilization in European aluminum forging business",
+    "not in my hands and I think we will just have to wait and watch"
+  ],
+  "symbol": "BHARATFORG",
+  "quarter": "2022Q4"
+}

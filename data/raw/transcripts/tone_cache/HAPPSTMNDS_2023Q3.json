@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 9,
+  "debt_mention_count": 1,
+  "reassurance_score": 7,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key\u03b5\u03af phrases": [
+    "industry-leading performance",
+    "25% growth guidance",
+    "$1 billion in revenues by FY2031",
+    "strong profitability numbers",
+    "cash balance of \u20b9 809 Crores"
+  ],
+  "symbol": "HAPPSTMNDS",
+  "quarter": "2023Q3"
+}

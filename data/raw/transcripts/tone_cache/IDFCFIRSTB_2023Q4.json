@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 8,
+  "debt_mention_count": 3,
+  "reassurance_score": 7,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "strong growth in the digital loan segment",
+    "collection efficiency has been strong at about 99.5%",
+    "NIMs will be quite stable",
+    "continuously identifying pockets",
+    "very comfortable with our strategy"
+  ],
+  "symbol": "IDFCFIRSTB",
+  "quarter": "2023Q4"
+}

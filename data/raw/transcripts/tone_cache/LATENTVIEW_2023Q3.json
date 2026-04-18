@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "optimistic cautiously at this time",
+    "there is still some uncertainty",
+    "we are expecting that we will be back on the 25% kind of a trajectory",
+    "the sluggishness and the uncertainty continues to be there",
+    "the current quarter has the full-blown cost of the investment"
+  ],
+  "symbol": "LATENTVIEW",
+  "quarter": "2023Q3"
+}

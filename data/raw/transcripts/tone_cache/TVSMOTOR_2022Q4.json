@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 8,
+  "debt_mention_count": 3,
+  "reassurance_score": 7,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "grow ahead of the industry",
+    "investments for the future",
+    "commodity is definitely softening",
+    "extremely happy on the demand side",
+    "ramp up to 25,000 per month"
+  ],
+  "symbol": "TVSMOTOR",
+  "quarter": "2022Q4"
+}

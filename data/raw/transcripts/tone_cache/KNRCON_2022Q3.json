@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 5,
+  "debt_mention_count": 4,
+  "reassurance_score": 3,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "outstanding is piling up and the payments are not realizing",
+    "state government is struggling to get out of that loan situation",
+    "little bit slowing down",
+    "we have lost season the recent complete rains",
+    "working capital interest and everything is charged to that"
+  ],
+  "symbol": "KNRCON",
+  "quarter": "2022Q3"
+}

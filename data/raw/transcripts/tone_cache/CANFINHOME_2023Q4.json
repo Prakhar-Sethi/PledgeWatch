@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 6,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "it is purely a one-off incident in one of the branches at Ambala and it is not found in any of the other branches",
+    "total provision which has been made during the current quarter tune up to INR 72 crores",
+    "restructured book the NPA has been there about 14% which has moved into NPA",
+    "we would at least be crossing INR10,000 crores in terms of disbursement during the entire year",
+    "gearing beyond 8 would not be prudent or would not be very comfortable even from the rating agencies"
+  ],
+  "symbol": "CANFINHOME",
+  "quarter": "2023Q4"
+}

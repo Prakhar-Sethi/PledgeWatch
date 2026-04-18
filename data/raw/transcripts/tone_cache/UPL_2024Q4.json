@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 3,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "unaudited standalone and consolidated financial results",
+    "quarter and half year ended",
+    "Regulation 30 read with Regulation 46",
+    "SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015",
+    "transcript of Earnings Conference Call"
+  ],
+  "symbol": "UPL",
+  "quarter": "2024Q4"
+}

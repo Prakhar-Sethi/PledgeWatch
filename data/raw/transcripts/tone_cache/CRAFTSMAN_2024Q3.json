@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 6,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "work in progress as of now",
+    "strategic decimeter steps\u7565\u6709\u51b3\u65ad\u6027",
+    "most of its history EBIT positive",
+    "still an MoU. It is not a definite agreement",
+    "not able comment on that"
+  ],
+  "symbol": "CRAFTSMAN",
+  "quarter": "2024Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 4,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "demand growth is extremely positive",
+    "We have enough liquidity to write through this downturn",
+    "The performance of the specialty polymers business has also been affected",
+    "We are at the bottom, we can't go any further",
+    "We maintain an optimistic and confident stance"
+  ],
+  "symbol": "ESTER",
+  "quarter": "2023Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 5,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "expect net debt to go to about 1:1",
+    "operating cash flows as these projects get launched",
+    "reasonably regular BD outflows",
+    "strong operating cash flow generation",
+    "expect to see gearing go to 1:1"
+  ],
+  "symbol": "GODREJPROP",
+  "quarter": "2020Q4"
+}

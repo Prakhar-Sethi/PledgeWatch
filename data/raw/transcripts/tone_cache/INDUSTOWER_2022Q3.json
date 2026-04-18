@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 8,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "receivable situation has been under stress",
+    "provision for doubtful debts increased",
+    "customer proposed a payment plan",
+    "long-term revenue visibility secured",
+    "engaged with customer to improve receivables"
+  ],
+  "symbol": "INDUSTOWER",
+  "quarter": "2022Q3"
+}

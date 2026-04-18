@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 6,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "fingers crossed",
+    "it is a challenging project no doubt",
+    "we are still analyzing the various perspective of tax rates",
+    "it is too premature to disclose valuations",
+    "incremental equity requirement of around Rs. 200 crores"
+  ],
+  "symbol": "BRIGADE",
+  "quarter": "2019Q4"
+}

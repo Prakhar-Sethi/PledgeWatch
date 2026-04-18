@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 6,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "borrowings should come down below INR30,000 level",
+    "prices of coal has come down substantially",
+    "lower realization from the railway",
+    "high inventory",
+    "expecting that this positive sentiment will remain"
+  ],
+  "symbol": "SAIL",
+  "quarter": "2024Q2"
+}

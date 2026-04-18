@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "core business growth both on the Rx and Gx side is close to an over 11%",
+    "sustainable range at least for the next quarter going forward",
+    "Q4 is always a reverse seasonality quarter for us",
+    "three of our businesses are running ahead of their internal estimates",
+    "we are not providing too much color on the US pipeline right now"
+  ],
+  "symbol": "CIPLA",
+  "quarter": "2023Q4"
+}

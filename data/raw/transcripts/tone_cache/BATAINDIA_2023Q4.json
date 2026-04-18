@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we were at basically in no single digits negative for the quarter",
+    "we will have to wait and see how the entire follow-through happens",
+    "we don't give forward-looking forecast",
+    "consciously tightened up our purse strings, both in terms of outstanding as so credit periods, as well as in terms of discounts",
+    "these are all the various levers that we'll work on, which should show us, basically impact in that form"
+  ],
+  "symbol": "BATAINDIA",
+  "quarter": "2023Q4"
+}

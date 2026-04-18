@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 9,
+  "debt_mention_count": 0,
+  "reassurance_score": 7,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "fair amount of optimism and a lot of confidence",
+    "stellar performance across various business lines",
+    "growth both in terms of top line as well as cost optimization",
+    "significant amount of resilience to the earnings of this company",
+    "continue to maintain not just impressive win rate and ratio solutions"
+  ],
+  "symbol": "KFINTECH",
+  "quarter": "2023Q4"
+}

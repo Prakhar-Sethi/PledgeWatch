@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "spill over to next financial year",
+    "destocking phenomenon",
+    "approval process still taking time",
+    "holding on to our plan",
+    "\u5f00\u53d1\u7684\u9636\u6bb5\u6027\u8fdb\u5c55"
+  ],
+  "symbol": "FLUOROCHEM",
+  "quarter": "2023Q3"
+}

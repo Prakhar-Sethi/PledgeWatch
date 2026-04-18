@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 6,
+  "debt_mention_count": 2,
+  "reassurance_score": 4,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "reduce CAPEX set our assets more, that is it. We are not doing it we are not going to raise money or anything",
+    "lot of companies worldwide are going to be in deep financial problem might even go bankrupt",
+    "strengthen the balance sheet keep focusing on cash generation, reduce inventory, reduce working capital",
+    "very difficult to really say anything... very poor visibility on anything",
+    "Indian domestic market is pretty much at the lowest figure that we have seen in a long time. It is almost 50% down from last year"
+  ],
+  "symbol": "BHARATFORG",
+  "quarter": "2019Q4"
+}

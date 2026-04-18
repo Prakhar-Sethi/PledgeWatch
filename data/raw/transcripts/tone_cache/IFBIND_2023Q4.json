@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "cost savings",
+    "sales effectiveness",
+    "market share loss",
+    "margin improvement",
+    "operating margin target"
+  ],
+  "symbol": "IFBIND",
+  "quarter": "2023Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "consistent performance around increasing deal wins",
+    "investments for long-term sustainable growth",
+    "softness in the auto sector",
+    "disciplined approach to large deals",
+    "telecom clients carrying heavy debt loads"
+  ],
+  "symbol": "TECHM",
+  "quarter": "2024Q4"
+}

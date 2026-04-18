@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 4,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we have a dividend policy which is being debated and finalized",
+    "DSOs improved from 71 in the last year to 56 in the latest quarter",
+    "cost of debt reduced to 10.63%",
+    "escalation clauses cover around 55% of contracts",
+    "the number remain stagnant the size of these projects are significantly bigger"
+  ],
+  "symbol": "AWHCL",
+  "quarter": "2021Q3"
+}

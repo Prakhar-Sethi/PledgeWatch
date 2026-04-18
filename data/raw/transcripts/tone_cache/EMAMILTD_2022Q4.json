@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we are very confident",
+    "margins should be in the pre-COVID levels around 27%",
+    "input cost pressure has eased off quite a bit",
+    "we are committed to invest behind our brands",
+    "we are very optimistic"
+  ],
+  "symbol": "EMAMILTD",
+  "quarter": "2022Q4"
+}

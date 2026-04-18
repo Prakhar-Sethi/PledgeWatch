@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 5,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "large part of the money which we get as dividend can be utilized for that",
+    "India debt is very minimal for us, it's as low as maybe one time, one year's EBITDA",
+    "we don't want to give guidance, but the trend which goes on is very clear",
+    "our tax bracket goes up to about 15%, which actually had a significant impact in the valuation",
+    "I cannot give you any percentage or amount"
+  ],
+  "symbol": "ASTERDM",
+  "quarter": "2023Q4"
+}

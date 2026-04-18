@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "we are looking at this from a very long-term perspective",
+    "margin probably is to me a step-2",
+    "wait till the closing happens, then we will try and share with you",
+    "We are a debt-free company",
+    "we will have to do a bit of work on that and come back"
+  ],
+  "symbol": "LALPATHLAB",
+  "quarter": "2021Q4"
+}

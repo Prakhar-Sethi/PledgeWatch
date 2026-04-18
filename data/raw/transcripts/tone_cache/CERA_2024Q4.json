@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "high single-digit growth kind of a situation",
+    "cash and cash equivalents stood at Rs. 659 crore, marking a decrease of Rs. 92 crore",
+    "net working capital days increased from 60 days to 72 days",
+    "sanitaryware revenue decreased by 6% and tiles by 11%",
+    "we should be back in that range of 16% to 17% in the coming H2"
+  ],
+  "symbol": "CERA",
+  "quarter": "2024Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "we do not require huge cash flow to maintain our business expansion",
+    "primarily this was for the working capital requirement",
+    "leverage bank borrowing for the funding book",
+    "it is a competitive data, that is why we do not really disclose this data",
+    "that we will see as per our business growth, it is after a few quarters that we will take a final call"
+  ],
+  "symbol": "ANGELONE",
+  "quarter": "2020Q4"
+}

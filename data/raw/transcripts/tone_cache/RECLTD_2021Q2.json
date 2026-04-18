@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "competitive advantage",
+    "dividend policy",
+    "provisioning coverage",
+    "growth opportunities",
+    "NIMs compression"
+  ],
+  "symbol": "RECLTD",
+  "quarter": "2021Q2"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 3,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "Strong liability management has enabled spreads of 5.7%",
+    "Asset quality is at pre-covid levels",
+    "We have remained conservative and continue to carry provision overlay",
+    "Demand continues to be strong in the affordable housing sector",
+    "We are looking at about 130 by the end of the year"
+  ],
+  "symbol": "HOMEFIRST",
+  "quarter": "2023Q3"
+}

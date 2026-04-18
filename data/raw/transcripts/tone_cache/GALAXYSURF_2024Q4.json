@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "demand challenges",
+    "supply chain challenges",
+    "raw material prices",
+    "EBITDA per tonne guidance",
+    "geopolitical situation"
+  ],
+  "symbol": "GALAXYSURF",
+  "quarter": "2024Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 7,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "We should expect a pretty strong year",
+    "We remain pretty confident on delivering that",
+    "Hopefully we can have some good growth as well",
+    "We do want to make sure we have the right deals",
+    "Given the approval requirements of some of these projects"
+  ],
+  "symbol": "GODREJPROP",
+  "quarter": "2021Q3"
+}

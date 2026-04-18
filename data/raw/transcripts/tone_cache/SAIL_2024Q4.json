@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 3,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "borrowings at the end of Q2 financial year '25 stood at INR35,596 crores",
+    "the boost from the various measures being taken by government on infrastructure spending augurs well for steel demand",
+    "the company registered an EBITDA of INR5,593 crores, PBT of INR1,127 crores and PAT of INR844 crores",
+    "With the concerns of rising borrowings, we are happy to share that the borrowing stands at a similar level as compared to Q1 financial year '25",
+    "Going forward, the boost from the various measures being taken by government on infrastructure spending augurs well for steel demand in the country"
+  ],
+  "symbol": "SAIL",
+  "quarter": "2024Q4"
+}

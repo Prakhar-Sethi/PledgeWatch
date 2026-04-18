@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 4,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "fiber optic cable market has been very depressed worldwide",
+    "debt equity ratio is likely to remain in this range of 0.25 to 0.30",
+    "current capacity utilization is about 45%",
+    "growth will come back into the market and the Company also",
+    "except Fiber Optic Cable market, which is the market situation worldwide"
+  ],
+  "symbol": "HFCL",
+  "quarter": "2024Q4"
+}

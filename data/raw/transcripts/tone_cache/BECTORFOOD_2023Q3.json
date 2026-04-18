@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "our endeavor should be to stay in the range around 15% EBITDA and keep it consistent over the next few quarters",
+    "mid to high-teens kind of growth in the coming quarter",
+    "we should have a revenue reachability of around 2,400 crores approximately",
+    "we have been already since the past last quarter, developed an outsourcing partner and we have been outsourcing some of our production",
+    "you can never predict a commodity"
+  ],
+  "symbol": "BECTORFOOD",
+  "quarter": "2023Q3"
+}

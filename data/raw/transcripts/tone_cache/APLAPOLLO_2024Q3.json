@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 3,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "short-term pain and long-term gain",
+    "we will remain near net debt 0 position throughout FY25",
+    "Q2 should remain under pressure",
+    "minor inventory write-downs also in quarter 2",
+    "working capital for Q1 is at 3 days slight increase in net debt"
+  ],
+  "symbol": "APLAPOLLO",
+  "quarter": "2024Q3"
+}

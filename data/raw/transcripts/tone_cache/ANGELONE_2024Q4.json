@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 3,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "pleased to invite you to the earnings call",
+    "quarter and nine months ended December 31, 2024",
+    "unaudited standalone and consolidated financial results",
+    "Trading Window will remain closed",
+    "discuss the financial results"
+  ],
+  "symbol": "ANGELONE",
+  "quarter": "2024Q4"
+}

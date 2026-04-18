@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "Results are not comparable quarter-on-quarter basis as fourth quarter is historically best quarter",
+    "we lost a lot in the month of April, but from May onwards we have started gearing up",
+    "we have the strongest financials in the industry so we are the ones who will be affected the least",
+    "capacity addition has been deferred which is hindering our growth",
+    "markets are looking tight and we are trying our best"
+  ],
+  "symbol": "CENTURYPLY",
+  "quarter": "2023Q3"
+}

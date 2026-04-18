@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 8,
+  "debt_mention_count": 2,
+  "reassurance_score": 7,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "overall unsecured loan scenario prevailing",
+    "credit costs remain elevated",
+    "actions taken to control delinquencies",
+    "increasing revolve rates",
+    "scrubbing bureau data for credit hunger"
+  ],
+  "symbol": "SBICARD",
+  "quarter": "2023Q4"
+}

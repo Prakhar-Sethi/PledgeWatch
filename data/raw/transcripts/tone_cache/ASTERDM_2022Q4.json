@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "we don't usually give any guidance on the margins",
+    "consolidated net debt as at 30th September 2022 stands at Rs. 2,045 crores compared to Rs. 1,806 crores",
+    "PAT (Post NCI) is at Rs. 46 crores as compared to Rs. 107 Crores in Q2 FY 22",
+    "investment bankers have got expression of interest and that's being assessed",
+    "we have had struggled like all the players"
+  ],
+  "symbol": "ASTERDM",
+  "quarter": "2022Q4"
+}

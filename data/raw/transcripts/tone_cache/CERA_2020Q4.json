@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "debt-free company with cash position of Rs.362 crore",
+    "we will wait for those trends to actually take place before taking a view",
+    "there is no M&A activity or massive increase in capex",
+    "ongoing situation - not yet resolved on capacity utilization",
+    "category leader in lowest working capital, highest cash position"
+  ],
+  "symbol": "CERA",
+  "quarter": "2020Q4"
+}

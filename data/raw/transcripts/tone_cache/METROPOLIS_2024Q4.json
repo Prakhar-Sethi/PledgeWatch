@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "synergies that will come out of bringing these two businesses together",
+    "margin of core up to the MHL margin over this period of time",
+    "be certainly leveraged to be able to overall aid the common sort of combined P&L of the business",
+    "started which were focusing on single specialty diagnostics",
+    "we have also created a steering committee at teams between Metropolis and core diagnostic team"
+  ],
+  "symbol": "METROPOLIS",
+  "quarter": "2024Q4"
+}

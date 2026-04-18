@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 5,
+  "reassurance_score": 7,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we are trending very well as far as the collection is concerned",
+    "we don't see a moderation",
+    "the regulators are pro-housing",
+    "we have very little overlap with the MFI sector",
+    "the expansion and employee base increase are on par with that"
+  ],
+  "symbol": "HOMEFIRST",
+  "quarter": "2024Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 6,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "debt to EBITDA ratio reduced from 1.3 to 1.1",
+    "internal accruals are funding the expansion",
+    "not currently considering raising funds through the equity market",
+    "Rs.1000 to Rs.1100 Crores on these projects over next three years",
+    "combination of internal cash flows and accruals and also potentially finance through debt only for the smaller portion"
+  ],
+  "symbol": "ASTERDM",
+  "quarter": "2024Q3"
+}

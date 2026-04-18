@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 8,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "Just got better opportunity, nothing else",
+    "we never give out such forecasts",
+    "we will not be able to give any targets",
+    "it will take some more time probably",
+    "we are hopeful that this volatility continues"
+  ],
+  "symbol": "MCX",
+  "quarter": "2019Q4"
+}

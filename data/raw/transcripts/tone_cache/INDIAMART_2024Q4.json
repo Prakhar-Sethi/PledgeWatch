@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 7,
+  "guidance_vagueness_score": 8,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "collections growth slowed to 5%",
+    "churn remains stubborn",
+    "execution challenges in pockets",
+    "sales execution issues",
+    "structural problem"
+  ],
+  "symbol": "INDIAMART",
+  "quarter": "2024Q4"
+}
