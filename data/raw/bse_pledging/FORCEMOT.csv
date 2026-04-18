@@ -1,0 +1,10 @@
+nse_symbol,quarter,promoter_holding_pct,pledged_shares,pledge_pct_promoter,pledge_pct_total,isin
+FORCEMOT,2024Q1,61.63,0.0,0.0,0.0,
+FORCEMOT,2024Q2,61.63,0.0,0.0,0.0,
+FORCEMOT,2024Q3,61.63,0.0,0.0,0.0,
+FORCEMOT,2024Q4,61.63,0.0,0.0,0.0,
+FORCEMOT,2025Q1,61.63,,,,
+FORCEMOT,2025Q2,61.63,,,,
+FORCEMOT,2025Q3,61.63,,,,
+FORCEMOT,2025Q4,61.63,0.0,0.0,0.0,
+FORCEMOT,2026Q4,61.63,,,,

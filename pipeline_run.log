@@ -1,0 +1,1371 @@
+2026-04-18 16:15:49,310 INFO ============================================================
+2026-04-18 16:15:49,310 INFO PROMOTER PLEDGING DISTRESS WARNING SYSTEM — PIPELINE START
+2026-04-18 16:15:49,310 INFO Timestamp: 2026-04-18T16:15:49.310968
+2026-04-18 16:15:49,311 INFO ============================================================
+2026-04-18 16:15:49,311 INFO Already completed steps: {'Phase 0: Project Scaffold'}
+2026-04-18 16:15:50,300 INFO 
+============================================================
+2026-04-18 16:15:50,300 INFO RUNNING: Phase 1A: BSE Pledging Scraper
+2026-04-18 16:15:50,300 INFO ============================================================
+2026-04-18 16:15:50,300 INFO === PHASE 1A: Pledging Scraper (NSE XBRL) ===
+2026-04-18 16:15:52,098 INFO Got 0 from NIFTY MIDCAP 150
+2026-04-18 16:15:53,325 INFO Got 0 from NIFTY SMALLCAP 250
+2026-04-18 16:15:54,332 INFO Using hardcoded universe: 262 companies
+2026-04-18 16:15:54,340 INFO Universe saved: 262 companies
+2026-04-18 16:15:57,070 INFO [1/262] DHFL: 25 quarters, 7 with pledging
+2026-04-18 16:15:59,096 INFO [2/262] ZEEL: 44 quarters, 28 with pledging
+2026-04-18 16:16:00,895 INFO [3/262] RCOM: 44 quarters, 9 with pledging
+2026-04-18 16:16:02,779 INFO [4/262] YESBANK: 44 quarters, 8 with pledging
+2026-04-18 16:16:04,908 INFO [5/262] JETAIRWAYS: 43 quarters, 7 with pledging
+2026-04-18 16:16:05,909 WARNING ILFSENGG: no records from master API
+2026-04-18 16:16:05,910 WARNING [6/262] ILFSENGG: no data
+2026-04-18 16:16:08,034 INFO [7/262] ADANIENT: 45 quarters, 27 with pledging
+2026-04-18 16:16:10,248 INFO [8/262] ADANIPORTS: 44 quarters, 26 with pledging
+2026-04-18 16:16:12,018 INFO [9/262] ADANIGREEN: 31 quarters, 24 with pledging
+2026-04-18 16:16:12,925 WARNING ADANITRANS: no records from master API
+2026-04-18 16:16:12,925 WARNING [10/262] ADANITRANS: no data
+2026-04-18 16:16:15,397 INFO [11/262] ZEEMEDIA: 44 quarters, 20 with pledging
+2026-04-18 16:16:17,321 INFO [12/262] RELCAPITAL: 40 quarters, 27 with pledging
+2026-04-18 16:16:19,186 INFO [13/262] FRETAIL: 23 quarters, 17 with pledging
+2026-04-18 16:16:21,198 INFO [14/262] AUROPHARMA: 45 quarters, 28 with pledging
+2026-04-18 16:16:23,578 INFO [15/262] BALKRISIND: 44 quarters, 0 with pledging
+2026-04-18 16:16:25,913 INFO [16/262] BATAINDIA: 44 quarters, 0 with pledging
+2026-04-18 16:16:27,943 INFO [17/262] BERGEPAINT: 45 quarters, 0 with pledging
+2026-04-18 16:16:29,864 INFO [18/262] BHARATFORG: 45 quarters, 10 with pledging
+2026-04-18 16:16:31,873 INFO [19/262] BPCL: 44 quarters, 0 with pledging
+2026-04-18 16:16:33,780 INFO [20/262] CANBK: 45 quarters, 0 with pledging
+2026-04-18 16:16:35,689 INFO [21/262] CHOLAFIN: 44 quarters, 4 with pledging
+2026-04-18 16:16:37,273 INFO [22/262] CIPLA: 44 quarters, 0 with pledging
+2026-04-18 16:16:43,372 INFO [23/262] COFORGE: 44 quarters, 0 with pledging
+2026-04-18 16:16:46,018 INFO [24/262] COLPAL: 45 quarters, 0 with pledging
+2026-04-18 16:16:48,550 INFO [25/262] CROMPTON: 39 quarters, 14 with pledging
+2026-04-18 16:16:51,295 INFO [26/262] CUMMINSIND: 45 quarters, 0 with pledging
+2026-04-18 16:16:53,919 INFO [27/262] DABUR: 45 quarters, 0 with pledging
+2026-04-18 16:16:57,340 INFO [28/262] DALBHARAT: 29 quarters, 1 with pledging
+2026-04-18 16:17:00,116 INFO [29/262] DEEPAKNTR: 45 quarters, 0 with pledging
+2026-04-18 16:17:03,291 INFO [30/262] DELTACORP: 44 quarters, 15 with pledging
+2026-04-18 16:17:10,432 INFO [31/262] DIVISLAB: 45 quarters, 0 with pledging
+2026-04-18 16:17:12,299 INFO [32/262] DMART: 36 quarters, 0 with pledging
+2026-04-18 16:17:23,402 INFO [33/262] EDELWEISS: 45 quarters, 13 with pledging
+2026-04-18 16:17:30,401 INFO [34/262] EMAMILTD: 44 quarters, 28 with pledging
+2026-04-18 16:17:32,325 INFO [35/262] ESCORTS: 44 quarters, 0 with pledging
+2026-04-18 16:17:34,707 INFO [36/262] EXIDEIND: 45 quarters, 0 with pledging
+2026-04-18 16:17:37,014 INFO [37/262] FEDERALBNK: 44 quarters, 0 with pledging
+2026-04-18 16:17:39,130 INFO [38/262] GAIL: 45 quarters, 0 with pledging
+2026-04-18 16:17:41,185 INFO [39/262] GLENMARK: 44 quarters, 0 with pledging
+2026-04-18 16:17:43,257 INFO [40/262] GODREJCP: 44 quarters, 21 with pledging
+2026-04-18 16:17:45,602 INFO [41/262] GODREJPROP: 45 quarters, 0 with pledging
+2026-04-18 16:17:47,740 INFO [42/262] GRANULES: 45 quarters, 24 with pledging
+2026-04-18 16:17:49,725 INFO [43/262] GUJGASLTD: 43 quarters, 0 with pledging
+2026-04-18 16:17:51,933 INFO [44/262] HDFCAMC: 31 quarters, 0 with pledging
+2026-04-18 16:17:53,720 INFO [45/262] HDFCLIFE: 33 quarters, 0 with pledging
+2026-04-18 16:17:55,658 INFO [46/262] HEROMOTOCO: 44 quarters, 0 with pledging
+2026-04-18 16:17:57,803 INFO [47/262] HINDPETRO: 45 quarters, 0 with pledging
+2026-04-18 16:17:59,758 INFO [48/262] HINDUNILVR: 44 quarters, 0 with pledging
+2026-04-18 16:18:01,784 INFO [49/262] HONAUT: 44 quarters, 0 with pledging
+2026-04-18 16:18:02,697 WARNING IBULHSGFIN: no records from master API
+2026-04-18 16:18:02,698 WARNING [50/262] IBULHSGFIN: no data
+2026-04-18 16:18:03,503 INFO Refreshing NSE session at company 50...
+2026-04-18 16:18:06,859 INFO [51/262] ICICIPRULI: 38 quarters, 0 with pledging
+2026-04-18 16:18:09,361 INFO [52/262] IDFCFIRSTB: 41 quarters, 0 with pledging
+2026-04-18 16:18:11,223 INFO [53/262] IGL: 45 quarters, 0 with pledging
+2026-04-18 16:18:13,319 INFO [54/262] INDHOTEL: 44 quarters, 0 with pledging
+2026-04-18 16:18:15,232 INFO [55/262] INDIGO: 41 quarters, 0 with pledging
+2026-04-18 16:18:17,580 INFO [56/262] INDUSTOWER: 44 quarters, 16 with pledging
+2026-04-18 16:18:19,461 INFO [57/262] INOXLEISUR: 32 quarters, 0 with pledging
+2026-04-18 16:18:21,560 INFO [58/262] IOC: 45 quarters, 0 with pledging
+2026-04-18 16:18:24,588 INFO [59/262] IPCALAB: 45 quarters, 0 with pledging
+2026-04-18 16:18:26,129 INFO [60/262] IRCTC: 27 quarters, 0 with pledging
+2026-04-18 16:18:28,066 INFO [61/262] ISEC: 28 quarters, 0 with pledging
+2026-04-18 16:18:30,617 INFO [62/262] ITC: 45 quarters, 0 with pledging
+2026-04-18 16:18:33,401 INFO [63/262] JINDALSTEL: 44 quarters, 28 with pledging
+2026-04-18 16:18:35,435 INFO [64/262] JSWENERGY: 44 quarters, 29 with pledging
+2026-04-18 16:18:37,198 INFO [65/262] JUBLFOOD: 44 quarters, 28 with pledging
+2026-04-18 16:18:38,119 WARNING JUBILANT: no records from master API
+2026-04-18 16:18:38,120 WARNING [66/262] JUBILANT: no data
+2026-04-18 16:18:39,869 INFO [67/262] KANSAINER: 45 quarters, 0 with pledging
+2026-04-18 16:18:41,931 INFO [68/262] KOTAKBANK: 45 quarters, 0 with pledging
+2026-04-18 16:18:43,589 INFO [69/262] LALPATHLAB: 41 quarters, 0 with pledging
+2026-04-18 16:18:45,312 INFO [70/262] LICHSGFIN: 45 quarters, 0 with pledging
+2026-04-18 16:18:47,018 INFO [71/262] LUPIN: 44 quarters, 0 with pledging
+2026-04-18 16:18:48,832 INFO [72/262] MANAPPURAM: 45 quarters, 13 with pledging
+2026-04-18 16:18:50,325 INFO [73/262] METROPOLIS: 28 quarters, 23 with pledging
+2026-04-18 16:18:52,013 INFO [74/262] MFSL: 45 quarters, 27 with pledging
+2026-04-18 16:18:53,506 INFO [75/262] MINDTREE: 31 quarters, 0 with pledging
+2026-04-18 16:18:54,485 WARNING MOTHERSUMI: no records from master API
+2026-04-18 16:18:54,485 WARNING [76/262] MOTHERSUMI: no data
+2026-04-18 16:18:56,319 INFO [77/262] MPHASIS: 44 quarters, 1 with pledging
+2026-04-18 16:18:58,071 INFO [78/262] MRF: 45 quarters, 14 with pledging
+2026-04-18 16:18:59,810 INFO [79/262] MUTHOOTFIN: 44 quarters, 0 with pledging
+2026-04-18 16:19:01,553 INFO [80/262] NAVINFLUOR: 44 quarters, 27 with pledging
+2026-04-18 16:19:03,221 INFO [81/262] NAUKRI: 43 quarters, 0 with pledging
+2026-04-18 16:19:04,986 INFO [82/262] NBCC: 45 quarters, 0 with pledging
+2026-04-18 16:19:06,697 INFO [83/262] NHPC: 44 quarters, 0 with pledging
+2026-04-18 16:19:08,569 INFO [84/262] NLCINDIA: 44 quarters, 0 with pledging
+2026-04-18 16:19:10,523 INFO [85/262] NMDC: 44 quarters, 0 with pledging
+2026-04-18 16:19:12,220 INFO [86/262] OBEROIRLTY: 45 quarters, 0 with pledging
+2026-04-18 16:19:18,001 INFO [87/262] OFSS: 45 quarters, 0 with pledging
+2026-04-18 16:19:22,002 INFO [88/262] OIL: 45 quarters, 0 with pledging
+2026-04-18 16:19:25,146 INFO [89/262] PAGEIND: 45 quarters, 0 with pledging
+2026-04-18 16:19:29,505 INFO [90/262] PEL: 42 quarters, 0 with pledging
+2026-04-18 16:19:32,147 INFO [91/262] PERSISTENT: 45 quarters, 0 with pledging
+2026-04-18 16:19:34,970 INFO [92/262] PETRONET: 45 quarters, 0 with pledging
+2026-04-18 16:19:37,909 INFO [93/262] PFC: 44 quarters, 0 with pledging
+2026-04-18 16:19:40,781 INFO [94/262] PFIZER: 45 quarters, 0 with pledging
+2026-04-18 16:19:44,038 INFO [95/262] PIDILITIND: 45 quarters, 0 with pledging
+2026-04-18 16:19:46,425 INFO [96/262] PIIND: 44 quarters, 0 with pledging
+2026-04-18 16:19:47,954 INFO [97/262] POLYCAB: 27 quarters, 0 with pledging
+2026-04-18 16:19:49,650 INFO [98/262] POWERGRID: 45 quarters, 0 with pledging
+2026-04-18 16:19:51,582 INFO [99/262] PVRINOX: 45 quarters, 13 with pledging
+2026-04-18 16:19:53,298 INFO [100/262] RAMCOCEM: 44 quarters, 27 with pledging
+2026-04-18 16:19:54,103 INFO Refreshing NSE session at company 100...
+2026-04-18 16:19:57,130 INFO [101/262] RBLBANK: 39 quarters, 0 with pledging
+2026-04-18 16:19:58,883 INFO [102/262] RECLTD: 45 quarters, 0 with pledging
+2026-04-18 16:20:00,623 INFO [103/262] REDINGTON: 45 quarters, 0 with pledging
+2026-04-18 16:20:02,672 INFO [104/262] RELAXO: 45 quarters, 0 with pledging
+2026-04-18 16:20:04,468 INFO [105/262] SAIL: 44 quarters, 0 with pledging
+2026-04-18 16:20:05,986 INFO [106/262] SBICARD: 25 quarters, 0 with pledging
+2026-04-18 16:20:07,465 INFO [107/262] SBILIFE: 35 quarters, 0 with pledging
+2026-04-18 16:20:09,354 INFO [108/262] SHREECEM: 45 quarters, 0 with pledging
+2026-04-18 16:20:11,071 INFO [109/262] SIEMENS: 44 quarters, 6 with pledging
+2026-04-18 16:20:12,929 INFO [110/262] SRF: 45 quarters, 0 with pledging
+2026-04-18 16:20:14,557 INFO [111/262] STARHEALTH: 18 quarters, 0 with pledging
+2026-04-18 16:20:16,531 INFO [112/262] SUNDARMFIN: 45 quarters, 0 with pledging
+2026-04-18 16:20:18,490 INFO [113/262] SUNTV: 45 quarters, 11 with pledging
+2026-04-18 16:20:20,422 INFO [114/262] SUPREMEIND: 44 quarters, 0 with pledging
+2026-04-18 16:20:22,471 INFO [115/262] SYNGENE: 43 quarters, 0 with pledging
+2026-04-18 16:20:24,513 INFO [116/262] TATACHEM: 44 quarters, 0 with pledging
+2026-04-18 16:20:26,354 INFO [117/262] TATACOMM: 44 quarters, 24 with pledging
+2026-04-18 16:20:28,347 INFO [118/262] TATAELXSI: 45 quarters, 0 with pledging
+2026-04-18 16:20:29,256 WARNING TATAMOTORS: no records from master API
+2026-04-18 16:20:29,257 WARNING [119/262] TATAMOTORS: no data
+2026-04-18 16:20:31,210 INFO [120/262] TATAPOWER: 44 quarters, 22 with pledging
+2026-04-18 16:20:33,394 INFO [121/262] TATASTEEL: 44 quarters, 24 with pledging
+2026-04-18 16:20:35,265 INFO [122/262] TCS: 44 quarters, 26 with pledging
+2026-04-18 16:20:37,187 INFO [123/262] TECHM: 44 quarters, 0 with pledging
+2026-04-18 16:20:39,780 INFO [124/262] TIINDIA: 33 quarters, 29 with pledging
+2026-04-18 16:20:41,693 INFO [125/262] TITAN: 45 quarters, 0 with pledging
+2026-04-18 16:20:43,513 INFO [126/262] TORNTPHARM: 45 quarters, 3 with pledging
+2026-04-18 16:20:45,204 INFO [127/262] TORNTPOWER: 44 quarters, 4 with pledging
+2026-04-18 16:20:46,803 INFO [128/262] TRENT: 44 quarters, 0 with pledging
+2026-04-18 16:20:48,676 INFO [129/262] TVSMOTOR: 44 quarters, 0 with pledging
+2026-04-18 16:20:50,639 INFO [130/262] UBL: 45 quarters, 28 with pledging
+2026-04-18 16:20:52,441 INFO [131/262] ULTRACEMCO: 44 quarters, 0 with pledging
+2026-04-18 16:20:54,545 INFO [132/262] UNIONBANK: 45 quarters, 0 with pledging
+2026-04-18 16:20:56,436 INFO [133/262] UPL: 45 quarters, 12 with pledging
+2026-04-18 16:20:58,053 INFO [134/262] VOLTAS: 43 quarters, 0 with pledging
+2026-04-18 16:20:59,660 INFO [135/262] WHIRLPOOL: 44 quarters, 0 with pledging
+2026-04-18 16:21:01,644 INFO [136/262] WIPRO: 44 quarters, 0 with pledging
+2026-04-18 16:21:03,409 INFO [137/262] ZYDUSLIFE: 45 quarters, 0 with pledging
+2026-04-18 16:21:05,156 INFO [138/262] APLAPOLLO: 45 quarters, 1 with pledging
+2026-04-18 16:21:06,691 INFO [139/262] ANGELONE: 22 quarters, 0 with pledging
+2026-04-18 16:21:08,059 INFO [140/262] APTUS: 19 quarters, 0 with pledging
+2026-04-18 16:21:09,899 INFO [141/262] ARVINDFASN: 28 quarters, 17 with pledging
+2026-04-18 16:21:11,647 INFO [142/262] ASAHIINDIA: 44 quarters, 28 with pledging
+2026-04-18 16:21:13,317 INFO [143/262] ASHOKLEY: 44 quarters, 27 with pledging
+2026-04-18 16:21:15,125 INFO [144/262] ASTERDM: 32 quarters, 18 with pledging
+2026-04-18 16:21:16,822 INFO [145/262] ATUL: 44 quarters, 28 with pledging
+2026-04-18 16:21:18,407 INFO [146/262] AWHCL: 22 quarters, 11 with pledging
+2026-04-18 16:21:20,311 INFO [147/262] BAJAJFINSV: 44 quarters, 18 with pledging
+2026-04-18 16:21:22,122 INFO [148/262] BAJAJHLDNG: 44 quarters, 0 with pledging
+2026-04-18 16:21:23,859 INFO [149/262] BALRAMCHIN: 45 quarters, 2 with pledging
+2026-04-18 16:21:25,320 INFO [150/262] BECTORFOOD: 22 quarters, 0 with pledging
+2026-04-18 16:21:26,125 INFO Refreshing NSE session at company 150...
+2026-04-18 16:21:29,285 INFO [151/262] BIKAJI: 14 quarters, 0 with pledging
+2026-04-18 16:21:31,531 INFO [152/262] BLUESTARCO: 45 quarters, 0 with pledging
+2026-04-18 16:21:33,270 INFO [153/262] BOSCHLTD: 45 quarters, 0 with pledging
+2026-04-18 16:21:35,251 INFO [154/262] BRIGADE: 45 quarters, 0 with pledging
+2026-04-18 16:21:37,060 INFO [155/262] BSE: 37 quarters, 0 with pledging
+2026-04-18 16:21:38,431 INFO [156/262] CAMPUS: 16 quarters, 0 with pledging
+2026-04-18 16:21:40,175 INFO [157/262] CANFINHOME: 45 quarters, 0 with pledging
+2026-04-18 16:21:42,121 INFO [158/262] CAPLIPOINT: 44 quarters, 0 with pledging
+2026-04-18 16:21:43,885 INFO [159/262] CASTROLIND: 45 quarters, 0 with pledging
+2026-04-18 16:21:45,658 INFO [160/262] CEATLTD: 44 quarters, 0 with pledging
+2026-04-18 16:21:47,437 INFO [161/262] CENTURYPLY: 45 quarters, 1 with pledging
+2026-04-18 16:21:48,396 WARNING CENTURYTEX: no records from master API
+2026-04-18 16:21:48,397 WARNING [162/262] CENTURYTEX: no data
+2026-04-18 16:21:50,094 INFO [163/262] CERA: 45 quarters, 0 with pledging
+2026-04-18 16:21:51,799 INFO [164/262] CHALET: 28 quarters, 23 with pledging
+2026-04-18 16:21:58,473 INFO [165/262] CHAMBLFERT: 44 quarters, 29 with pledging
+2026-04-18 16:21:59,973 INFO [166/262] CLEAN: 20 quarters, 0 with pledging
+2026-04-18 16:22:01,727 INFO [167/262] COCHINSHIP: 35 quarters, 0 with pledging
+2026-04-18 16:22:03,036 INFO [168/262] CONCORDBIO: 11 quarters, 0 with pledging
+2026-04-18 16:22:04,642 INFO [169/262] CRAFTSMAN: 21 quarters, 0 with pledging
+2026-04-18 16:22:06,404 INFO [170/262] CRISIL: 44 quarters, 0 with pledging
+2026-04-18 16:22:08,281 INFO [171/262] DCMSHRIRAM: 44 quarters, 2 with pledging
+2026-04-18 16:22:09,561 INFO [172/262] DELHIVERY: 16 quarters, 0 with pledging
+2026-04-18 16:22:10,950 INFO [173/262] DEVYANI: 18 quarters, 0 with pledging
+2026-04-18 16:22:12,794 INFO [174/262] DHANUKA: 44 quarters, 6 with pledging
+2026-04-18 16:22:14,390 INFO [175/262] DIXON: 34 quarters, 3 with pledging
+2026-04-18 16:22:16,218 INFO [176/262] DREDGECORP: 45 quarters, 0 with pledging
+2026-04-18 16:22:18,234 INFO [177/262] ECLERX: 45 quarters, 0 with pledging
+2026-04-18 16:22:19,964 INFO [178/262] EIHOTEL: 44 quarters, 0 with pledging
+2026-04-18 16:22:21,695 INFO [179/262] ELGIEQUIP: 45 quarters, 12 with pledging
+2026-04-18 16:22:23,092 INFO [180/262] EPIGRAL: 18 quarters, 0 with pledging
+2026-04-18 16:22:24,655 INFO [181/262] EQUITASBNK: 22 quarters, 0 with pledging
+2026-04-18 16:22:26,364 INFO [182/262] ESTER: 45 quarters, 17 with pledging
+2026-04-18 16:22:27,919 INFO [183/262] FINEORG: 31 quarters, 0 with pledging
+2026-04-18 16:22:29,365 INFO [184/262] FLUOROCHEM: 27 quarters, 14 with pledging
+2026-04-18 16:22:30,574 INFO [185/262] FORCEMOT: 9 quarters, 0 with pledging
+2026-04-18 16:22:32,302 INFO [186/262] GALAXYSURF: 33 quarters, 7 with pledging
+2026-04-18 16:22:34,191 INFO [187/262] GARFIBRES: 45 quarters, 0 with pledging
+2026-04-18 16:22:35,130 WARNING GARWARE: no records from master API
+2026-04-18 16:22:35,130 WARNING [188/262] GARWARE: no data
+2026-04-18 16:22:36,802 INFO [189/262] GESHIP: 45 quarters, 0 with pledging
+2026-04-18 16:22:38,644 INFO [190/262] GHCL: 45 quarters, 24 with pledging
+2026-04-18 16:22:40,314 INFO [191/262] GICRE: 33 quarters, 0 with pledging
+2026-04-18 16:22:42,067 INFO [192/262] GILLETTE: 44 quarters, 0 with pledging
+2026-04-18 16:22:43,014 WARNING GLOBALHEALT: no records from master API
+2026-04-18 16:22:43,014 WARNING [193/262] GLOBALHEALT: no data
+2026-04-18 16:22:44,683 INFO [194/262] GNFC: 45 quarters, 0 with pledging
+2026-04-18 16:22:46,556 INFO [195/262] GODFRYPHLP: 45 quarters, 0 with pledging
+2026-04-18 16:22:48,259 INFO [196/262] GPPL: 44 quarters, 0 with pledging
+2026-04-18 16:22:49,916 INFO [197/262] GRAPHITE: 44 quarters, 0 with pledging
+2026-04-18 16:22:51,466 INFO [198/262] GRINDWELL: 45 quarters, 0 with pledging
+2026-04-18 16:22:53,580 INFO [199/262] GTLINFRA: 44 quarters, 29 with pledging
+2026-04-18 16:22:55,567 INFO [200/262] GULFOILLUB: 45 quarters, 0 with pledging
+2026-04-18 16:22:56,373 INFO Refreshing NSE session at company 200...
+2026-04-18 16:22:59,342 INFO [201/262] HAPPSTMNDS: 23 quarters, 9 with pledging
+2026-04-18 16:23:01,047 INFO [202/262] HATSUN: 44 quarters, 12 with pledging
+2026-04-18 16:23:03,728 INFO [203/262] HAVELLS: 45 quarters, 0 with pledging
+2026-04-18 16:23:05,625 INFO [204/262] HEG: 45 quarters, 0 with pledging
+2026-04-18 16:23:07,399 INFO [205/262] HFCL: 43 quarters, 27 with pledging
+2026-04-18 16:23:09,119 INFO [206/262] HIKAL: 44 quarters, 0 with pledging
+2026-04-18 16:23:10,770 INFO [207/262] HINDCOPPER: 45 quarters, 0 with pledging
+2026-04-18 16:23:12,548 INFO [208/262] HINDZINC: 45 quarters, 19 with pledging
+2026-04-18 16:23:14,121 INFO [209/262] HOMEFIRST: 21 quarters, 0 with pledging
+2026-04-18 16:23:15,757 INFO [210/262] HUHTAMAKI: 44 quarters, 0 with pledging
+2026-04-18 16:23:16,684 WARNING IBREALEST: no records from master API
+2026-04-18 16:23:16,684 WARNING [211/262] IBREALEST: no data
+2026-04-18 16:23:18,253 INFO [212/262] IFBIND: 45 quarters, 0 with pledging
+2026-04-18 16:23:19,884 INFO [213/262] IIFL: 44 quarters, 0 with pledging
+2026-04-18 16:23:21,667 INFO [214/262] IMFA: 45 quarters, 0 with pledging
+2026-04-18 16:23:23,155 INFO [215/262] INDIAMART: 27 quarters, 0 with pledging
+2026-04-18 16:23:24,880 INFO [216/262] INDIANB: 45 quarters, 0 with pledging
+2026-04-18 16:23:26,545 INFO [217/262] INDOSTAR: 32 quarters, 0 with pledging
+2026-04-18 16:23:28,162 INFO [218/262] INGERRAND: 45 quarters, 0 with pledging
+2026-04-18 16:23:30,306 INFO [219/262] INTELLECT: 45 quarters, 0 with pledging
+2026-04-18 16:23:31,919 INFO [220/262] IOLCP: 45 quarters, 0 with pledging
+2026-04-18 16:23:32,858 WARNING IIFLWAM: no records from master API
+2026-04-18 16:23:32,858 WARNING [221/262] IIFLWAM: no data
+2026-04-18 16:23:34,748 INFO [222/262] JAYNECOIND: 45 quarters, 2 with pledging
+2026-04-18 16:23:36,390 INFO [223/262] JBCHEPHARM: 45 quarters, 0 with pledging
+2026-04-18 16:23:38,138 INFO [224/262] JKCEMENT: 44 quarters, 0 with pledging
+2026-04-18 16:23:39,802 INFO [225/262] JKLAKSHMI: 45 quarters, 0 with pledging
+2026-04-18 16:23:41,519 INFO [226/262] JKPAPER: 45 quarters, 0 with pledging
+2026-04-18 16:23:42,434 WARNING JMFINANCL: no records from master API
+2026-04-18 16:23:42,435 WARNING [227/262] JMFINANCL: no data
+2026-04-18 16:23:44,119 INFO [228/262] JSWHL: 45 quarters, 25 with pledging
+2026-04-18 16:23:45,767 INFO [229/262] JUSTDIAL: 43 quarters, 28 with pledging
+2026-04-18 16:23:47,351 INFO [230/262] JYOTHYLAB: 44 quarters, 10 with pledging
+2026-04-18 16:23:48,949 INFO [231/262] KAJARIACER: 44 quarters, 0 with pledging
+2026-04-18 16:23:49,885 WARNING KALPATPOWR: no records from master API
+2026-04-18 16:23:49,886 WARNING [232/262] KALPATPOWR: no data
+2026-04-18 16:23:51,230 INFO [233/262] KFINTECH: 13 quarters, 0 with pledging
+2026-04-18 16:23:52,877 INFO [234/262] KIOCL: 39 quarters, 0 with pledging
+2026-04-18 16:23:54,617 INFO [235/262] KIRLOSENG: 44 quarters, 0 with pledging
+2026-04-18 16:23:56,234 INFO [236/262] KNRCON: 45 quarters, 0 with pledging
+2026-04-18 16:23:57,851 INFO [237/262] KOPRAN: 45 quarters, 0 with pledging
+2026-04-18 16:23:59,717 INFO [238/262] KRBL: 45 quarters, 0 with pledging
+2026-04-18 16:24:01,334 INFO [239/262] KSB: 44 quarters, 0 with pledging
+2026-04-18 16:24:03,030 INFO [240/262] KSCL: 45 quarters, 0 with pledging
+2026-04-18 16:24:07,707 INFO [241/262] LATENTVIEW: 18 quarters, 0 with pledging
+2026-04-18 16:24:08,596 WARNING LAXMIMACH: no records from master API
+2026-04-18 16:24:08,596 WARNING [242/262] LAXMIMACH: no data
+2026-04-18 16:24:10,129 INFO [243/262] LEMONTREE: 32 quarters, 18 with pledging
+2026-04-18 16:24:11,775 INFO [244/262] LINDEINDIA: 44 quarters, 0 with pledging
+2026-04-18 16:24:13,459 INFO [245/262] LUXIND: 42 quarters, 0 with pledging
+2026-04-18 16:24:14,460 WARNING MAHINDCIE: no records from master API
+2026-04-18 16:24:14,461 WARNING [246/262] MAHINDCIE: no data
+2026-04-18 16:24:16,055 INFO [247/262] MAHLIFE: 44 quarters, 0 with pledging
+2026-04-18 16:24:17,745 INFO [248/262] MANINFRA: 45 quarters, 0 with pledging
+2026-04-18 16:24:19,112 INFO [249/262] MAPMYINDIA: 18 quarters, 0 with pledging
+2026-04-18 16:24:20,751 INFO [250/262] MARICO: 45 quarters, 10 with pledging
+2026-04-18 16:24:21,556 INFO Refreshing NSE session at company 250...
+2026-04-18 16:24:25,396 INFO [251/262] MARKSANS: 45 quarters, 0 with pledging
+2026-04-18 16:24:27,556 INFO [252/262] MASTEK: 44 quarters, 2 with pledging
+2026-04-18 16:24:29,013 INFO [253/262] MAXHEALTH: 22 quarters, 4 with pledging
+/Users/anishgupta/Desktop/PledgeWatch/src/scraping/bse_scraper.py:305: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  pledged_any = (df["pledge_pct_total"].fillna(0) > 0).sum()
+2026-04-18 16:24:30,313 INFO [254/262] MCX: 14 quarters, 0 with pledging
+2026-04-18 16:24:31,858 INFO [255/262] MEDANTA: 14 quarters, 0 with pledging
+2026-04-18 16:24:33,223 INFO [256/262] METROBRAND: 18 quarters, 0 with pledging
+2026-04-18 16:24:34,912 INFO [257/262] MHRIL: 44 quarters, 0 with pledging
+2026-04-18 16:24:36,720 INFO [258/262] MIDHANI: 31 quarters, 0 with pledging
+2026-04-18 16:24:38,497 INFO [259/262] MMTC: 45 quarters, 0 with pledging
+2026-04-18 16:24:40,061 INFO [260/262] MOIL: 45 quarters, 0 with pledging
+2026-04-18 16:24:41,756 INFO [261/262] MOLDTKPAC: 44 quarters, 28 with pledging
+2026-04-18 16:24:43,502 INFO [262/262] MOTILALOFS: 44 quarters, 1 with pledging
+2026-04-18 16:24:44,310 INFO PROGRESS DONE: Phase 1A: BSE Pledging Scraper | Scraped 247/262 companies via NSE XBRL; 15 failed; first failures: ['ILFSENGG', 'ADANITRANS', 'IBULHSGFIN', 'JUBILANT', 'MOTHERSUMI', 'TATAMOTORS', 'CENTURYTEX', 'GARWARE', 'GLOBALHEALT', 'IBREALEST']
+2026-04-18 16:24:44,310 INFO Phase 1A complete. Scraped 247/262 companies via NSE XBRL; 15 failed; first failures: ['ILFSENGG', 'ADANITRANS', 'IBULHSGFIN', 'JUBILANT', 'MOTHERSUMI', 'TATAMOTORS', 'CENTURYTEX', 'GARWARE', 'GLOBALHEALT', 'IBREALEST']
+2026-04-18 16:24:44,311 INFO 
+============================================================
+2026-04-18 16:24:44,311 INFO RUNNING: Phase 1B: NSE Price Fetcher
+2026-04-18 16:24:44,311 INFO ============================================================
+2026-04-18 16:24:44,311 INFO === PHASE 1B: NSE Price Fetcher ===
+2026-04-18 16:24:46,444 ERROR $DHFL.NS: possibly delisted; no timezone found
+2026-04-18 16:24:46,457 ERROR 
+1 Failed download:
+2026-04-18 16:24:46,464 ERROR ['DHFL.NS']: possibly delisted; no timezone found
+2026-04-18 16:24:48,217 ERROR $DHFL.BO: possibly delisted; no timezone found
+2026-04-18 16:24:48,225 ERROR 
+1 Failed download:
+2026-04-18 16:24:48,225 ERROR ['DHFL.BO']: possibly delisted; no timezone found
+2026-04-18 16:24:48,227 WARNING yfinance failed DHFL, trying nsepython...
+2026-04-18 16:24:48,890 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:24:48,890 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:24:48,890 INFO Total Number of Days: 4017
+2026-04-18 16:24:48,890 INFO Total FOR Loops in the program: 100
+2026-04-18 16:24:48,890 INFO Remainder Loop: 17
+2026-04-18 16:24:48,891 INFO Loop = 0
+2026-04-18 16:24:48,891 INFO ====
+2026-04-18 16:24:48,891 INFO Starting Date: 01-01-2014
+2026-04-18 16:24:48,891 INFO Ending Date: 10-02-2014
+2026-04-18 16:24:48,891 INFO ====
+2026-04-18 16:24:50,335 WARNING All sources failed for DHFL
+2026-04-18 16:24:51,260 INFO Downloaded ZEEL: 2710 days
+2026-04-18 16:24:52,077 INFO Downloaded RCOM: 2710 days
+2026-04-18 16:24:53,242 INFO Downloaded YESBANK: 2710 days
+2026-04-18 16:24:54,028 INFO Downloaded JETAIRWAYS: 2710 days
+2026-04-18 16:24:55,212 ERROR $ILFSENGG.NS: possibly delisted; no timezone found
+2026-04-18 16:24:55,223 ERROR 
+1 Failed download:
+2026-04-18 16:24:55,223 ERROR ['ILFSENGG.NS']: possibly delisted; no timezone found
+2026-04-18 16:24:55,930 ERROR $ILFSENGG.BO: possibly delisted; no timezone found
+2026-04-18 16:24:55,937 ERROR 
+1 Failed download:
+2026-04-18 16:24:55,937 ERROR ['ILFSENGG.BO']: possibly delisted; no timezone found
+2026-04-18 16:24:55,939 WARNING yfinance failed ILFSENGG, trying nsepython...
+2026-04-18 16:24:55,940 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:24:55,940 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:24:55,940 INFO Total Number of Days: 4017
+2026-04-18 16:24:55,940 INFO Total FOR Loops in the program: 100
+2026-04-18 16:24:55,940 INFO Remainder Loop: 17
+2026-04-18 16:24:55,940 INFO Loop = 0
+2026-04-18 16:24:55,942 INFO ====
+2026-04-18 16:24:55,942 INFO Starting Date: 01-01-2014
+2026-04-18 16:24:55,942 INFO Ending Date: 10-02-2014
+2026-04-18 16:24:55,943 INFO ====
+2026-04-18 16:24:57,262 WARNING All sources failed for ILFSENGG
+2026-04-18 16:24:58,277 INFO Downloaded ADANIENT: 2710 days
+2026-04-18 16:24:59,217 INFO Downloaded ADANIPORTS: 2710 days
+2026-04-18 16:24:59,936 INFO Downloaded ADANIGREEN: 1612 days
+2026-04-18 16:25:00,803 ERROR $ADANITRANS.NS: possibly delisted; no timezone found
+2026-04-18 16:25:00,803 ERROR 
+1 Failed download:
+2026-04-18 16:25:00,804 ERROR ['ADANITRANS.NS']: possibly delisted; no timezone found
+2026-04-18 16:25:01,749 ERROR $ADANITRANS.BO: possibly delisted; no timezone found
+2026-04-18 16:25:01,758 ERROR 
+1 Failed download:
+2026-04-18 16:25:01,758 ERROR ['ADANITRANS.BO']: possibly delisted; no timezone found
+2026-04-18 16:25:01,760 WARNING yfinance failed ADANITRANS, trying nsepython...
+2026-04-18 16:25:01,760 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:25:01,760 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:25:01,760 INFO Total Number of Days: 4017
+2026-04-18 16:25:01,760 INFO Total FOR Loops in the program: 100
+2026-04-18 16:25:01,761 INFO Remainder Loop: 17
+2026-04-18 16:25:01,761 INFO Loop = 0
+2026-04-18 16:25:01,761 INFO ====
+2026-04-18 16:25:01,761 INFO Starting Date: 01-01-2014
+2026-04-18 16:25:01,761 INFO Ending Date: 10-02-2014
+2026-04-18 16:25:01,761 INFO ====
+2026-04-18 16:25:03,171 WARNING All sources failed for ADANITRANS
+2026-04-18 16:25:04,050 INFO Downloaded ZEEMEDIA: 2710 days
+2026-04-18 16:25:04,933 INFO Downloaded RELCAPITAL: 2709 days
+2026-04-18 16:25:05,756 INFO Downloaded FRETAIL: 2058 days
+2026-04-18 16:25:06,820 INFO Downloaded AUROPHARMA: 2710 days
+2026-04-18 16:25:07,920 INFO Downloaded BALKRISIND: 2710 days
+2026-04-18 16:25:08,969 INFO Downloaded BATAINDIA: 2710 days
+2026-04-18 16:25:09,814 INFO Downloaded BERGEPAINT: 2710 days
+2026-04-18 16:25:10,827 INFO Downloaded BHARATFORG: 2710 days
+2026-04-18 16:25:11,712 INFO Downloaded BPCL: 2710 days
+2026-04-18 16:25:12,748 INFO Downloaded CANBK: 2710 days
+2026-04-18 16:25:13,797 INFO Downloaded CHOLAFIN: 2710 days
+2026-04-18 16:25:15,112 INFO Downloaded CIPLA: 2710 days
+2026-04-18 16:25:15,992 INFO Downloaded COFORGE: 2710 days
+2026-04-18 16:25:16,930 INFO Downloaded COLPAL: 2710 days
+2026-04-18 16:25:17,741 INFO Downloaded CROMPTON: 2132 days
+2026-04-18 16:25:18,702 INFO Downloaded CUMMINSIND: 2710 days
+2026-04-18 16:25:19,594 INFO Downloaded DABUR: 2710 days
+2026-04-18 16:25:20,456 INFO Downloaded DALBHARAT: 1486 days
+2026-04-18 16:25:21,436 INFO Downloaded DEEPAKNTR: 2710 days
+2026-04-18 16:25:22,637 INFO Downloaded DELTACORP: 2710 days
+2026-04-18 16:25:23,548 INFO Downloaded DIVISLAB: 2710 days
+2026-04-18 16:25:24,612 INFO Downloaded DMART: 1921 days
+2026-04-18 16:25:25,440 INFO Downloaded EDELWEISS: 2710 days
+2026-04-18 16:25:26,388 INFO Downloaded EMAMILTD: 2710 days
+2026-04-18 16:25:27,337 INFO Downloaded ESCORTS: 2710 days
+2026-04-18 16:25:28,253 INFO Downloaded EXIDEIND: 2710 days
+2026-04-18 16:25:29,188 INFO Downloaded FEDERALBNK: 2710 days
+2026-04-18 16:25:30,082 INFO Downloaded GAIL: 2710 days
+2026-04-18 16:25:30,992 INFO Downloaded GLENMARK: 2710 days
+2026-04-18 16:25:31,988 INFO Downloaded GODREJCP: 2710 days
+2026-04-18 16:25:33,037 INFO Downloaded GODREJPROP: 2710 days
+2026-04-18 16:25:34,094 INFO Downloaded GRANULES: 2710 days
+2026-04-18 16:25:34,939 INFO Downloaded GUJGASLTD: 2290 days
+2026-04-18 16:25:35,851 INFO Downloaded HDFCAMC: 1577 days
+2026-04-18 16:25:36,695 INFO Downloaded HDFCLIFE: 1756 days
+2026-04-18 16:25:37,585 INFO Downloaded HEROMOTOCO: 2710 days
+2026-04-18 16:25:38,758 INFO Downloaded HINDPETRO: 2710 days
+2026-04-18 16:25:39,746 INFO Downloaded HINDUNILVR: 2710 days
+2026-04-18 16:25:40,629 INFO Downloaded HONAUT: 2710 days
+2026-04-18 16:25:41,597 ERROR $IBULHSGFIN.NS: possibly delisted; no timezone found
+2026-04-18 16:25:41,608 ERROR 
+1 Failed download:
+2026-04-18 16:25:41,608 ERROR ['IBULHSGFIN.NS']: possibly delisted; no timezone found
+2026-04-18 16:25:42,608 ERROR $IBULHSGFIN.BO: possibly delisted; no timezone found
+2026-04-18 16:25:42,612 ERROR 
+1 Failed download:
+2026-04-18 16:25:42,612 ERROR ['IBULHSGFIN.BO']: possibly delisted; no timezone found
+2026-04-18 16:25:42,614 WARNING yfinance failed IBULHSGFIN, trying nsepython...
+2026-04-18 16:25:42,614 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:25:42,614 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:25:42,614 INFO Total Number of Days: 4017
+2026-04-18 16:25:42,614 INFO Total FOR Loops in the program: 100
+2026-04-18 16:25:42,614 INFO Remainder Loop: 17
+2026-04-18 16:25:42,614 INFO Loop = 0
+2026-04-18 16:25:42,614 INFO ====
+2026-04-18 16:25:42,614 INFO Starting Date: 01-01-2014
+2026-04-18 16:25:42,614 INFO Ending Date: 10-02-2014
+2026-04-18 16:25:42,614 INFO ====
+2026-04-18 16:25:44,348 WARNING All sources failed for IBULHSGFIN
+2026-04-18 16:25:45,334 INFO Downloaded ICICIPRULI: 2037 days
+2026-04-18 16:25:46,383 INFO Downloaded IDFCFIRSTB: 2256 days
+2026-04-18 16:25:47,486 INFO Downloaded IGL: 2710 days
+2026-04-18 16:25:48,524 INFO Downloaded INDHOTEL: 2710 days
+2026-04-18 16:25:49,326 INFO Downloaded INDIGO: 2254 days
+2026-04-18 16:25:50,398 INFO Downloaded INDUSTOWER: 2710 days
+2026-04-18 16:25:51,651 ERROR $INOXLEISUR.NS: possibly delisted; no timezone found
+2026-04-18 16:25:51,652 ERROR 
+1 Failed download:
+2026-04-18 16:25:51,652 ERROR ['INOXLEISUR.NS']: possibly delisted; no timezone found
+2026-04-18 16:25:52,447 ERROR $INOXLEISUR.BO: possibly delisted; no timezone found
+2026-04-18 16:25:52,449 ERROR 
+1 Failed download:
+2026-04-18 16:25:52,449 ERROR ['INOXLEISUR.BO']: possibly delisted; no timezone found
+2026-04-18 16:25:52,451 WARNING yfinance failed INOXLEISUR, trying nsepython...
+2026-04-18 16:25:52,451 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:25:52,451 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:25:52,451 INFO Total Number of Days: 4017
+2026-04-18 16:25:52,451 INFO Total FOR Loops in the program: 100
+2026-04-18 16:25:52,451 INFO Remainder Loop: 17
+2026-04-18 16:25:52,452 INFO Loop = 0
+2026-04-18 16:25:52,452 INFO ====
+2026-04-18 16:25:52,452 INFO Starting Date: 01-01-2014
+2026-04-18 16:25:52,452 INFO Ending Date: 10-02-2014
+2026-04-18 16:25:52,452 INFO ====
+2026-04-18 16:25:53,924 WARNING All sources failed for INOXLEISUR
+2026-04-18 16:25:54,897 INFO Downloaded IOC: 2710 days
+2026-04-18 16:25:55,868 INFO Downloaded IPCALAB: 2710 days
+2026-04-18 16:25:56,617 INFO Downloaded IRCTC: 1291 days
+2026-04-18 16:25:57,662 ERROR $ISEC.NS: possibly delisted; no timezone found
+2026-04-18 16:25:57,666 ERROR 
+1 Failed download:
+2026-04-18 16:25:57,666 ERROR ['ISEC.NS']: possibly delisted; no timezone found
+2026-04-18 16:25:58,466 ERROR $ISEC.BO: possibly delisted; no timezone found
+2026-04-18 16:25:58,473 ERROR 
+1 Failed download:
+2026-04-18 16:25:58,474 ERROR ['ISEC.BO']: possibly delisted; no timezone found
+2026-04-18 16:25:58,475 WARNING yfinance failed ISEC, trying nsepython...
+2026-04-18 16:25:58,476 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:25:58,476 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:25:58,476 INFO Total Number of Days: 4017
+2026-04-18 16:25:58,476 INFO Total FOR Loops in the program: 100
+2026-04-18 16:25:58,476 INFO Remainder Loop: 17
+2026-04-18 16:25:58,476 INFO Loop = 0
+2026-04-18 16:25:58,476 INFO ====
+2026-04-18 16:25:58,476 INFO Starting Date: 01-01-2014
+2026-04-18 16:25:58,476 INFO Ending Date: 10-02-2014
+2026-04-18 16:25:58,476 INFO ====
+2026-04-18 16:25:59,960 WARNING All sources failed for ISEC
+2026-04-18 16:26:00,894 INFO Downloaded ITC: 2710 days
+2026-04-18 16:26:01,890 INFO Downloaded JINDALSTEL: 2710 days
+2026-04-18 16:26:02,816 INFO Downloaded JSWENERGY: 2710 days
+2026-04-18 16:26:03,683 INFO Downloaded JUBLFOOD: 2710 days
+2026-04-18 16:26:04,593 ERROR $JUBILANT.NS: possibly delisted; no timezone found
+2026-04-18 16:26:04,601 ERROR 
+1 Failed download:
+2026-04-18 16:26:04,601 ERROR ['JUBILANT.NS']: possibly delisted; no timezone found
+2026-04-18 16:26:05,349 ERROR $JUBILANT.BO: possibly delisted; no timezone found
+2026-04-18 16:26:05,354 ERROR 
+1 Failed download:
+2026-04-18 16:26:05,354 ERROR ['JUBILANT.BO']: possibly delisted; no timezone found
+2026-04-18 16:26:05,356 WARNING yfinance failed JUBILANT, trying nsepython...
+2026-04-18 16:26:05,356 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:26:05,356 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:26:05,356 INFO Total Number of Days: 4017
+2026-04-18 16:26:05,356 INFO Total FOR Loops in the program: 100
+2026-04-18 16:26:05,356 INFO Remainder Loop: 17
+2026-04-18 16:26:05,357 INFO Loop = 0
+2026-04-18 16:26:05,357 INFO ====
+2026-04-18 16:26:05,357 INFO Starting Date: 01-01-2014
+2026-04-18 16:26:05,357 INFO Ending Date: 10-02-2014
+2026-04-18 16:26:05,357 INFO ====
+2026-04-18 16:26:06,886 WARNING All sources failed for JUBILANT
+2026-04-18 16:26:07,858 INFO Downloaded KANSAINER: 2710 days
+2026-04-18 16:26:08,787 INFO Downloaded KOTAKBANK: 2710 days
+2026-04-18 16:26:09,589 INFO Downloaded LALPATHLAB: 2226 days
+2026-04-18 16:26:10,408 INFO Downloaded LICHSGFIN: 2710 days
+2026-04-18 16:26:11,275 INFO Downloaded LUPIN: 2710 days
+2026-04-18 16:26:12,348 INFO Downloaded MANAPPURAM: 2710 days
+2026-04-18 16:26:13,111 INFO Downloaded METROPOLIS: 1410 days
+2026-04-18 16:26:13,963 INFO Downloaded MFSL: 2710 days
+2026-04-18 16:26:14,982 ERROR $MINDTREE.NS: possibly delisted; no timezone found
+2026-04-18 16:26:14,992 ERROR 
+1 Failed download:
+2026-04-18 16:26:14,992 ERROR ['MINDTREE.NS']: possibly delisted; no timezone found
+2026-04-18 16:26:16,098 ERROR $MINDTREE.BO: possibly delisted; no timezone found
+2026-04-18 16:26:16,102 ERROR 
+1 Failed download:
+2026-04-18 16:26:16,102 ERROR ['MINDTREE.BO']: possibly delisted; no timezone found
+2026-04-18 16:26:16,104 WARNING yfinance failed MINDTREE, trying nsepython...
+2026-04-18 16:26:16,104 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:26:16,104 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:26:16,104 INFO Total Number of Days: 4017
+2026-04-18 16:26:16,104 INFO Total FOR Loops in the program: 100
+2026-04-18 16:26:16,104 INFO Remainder Loop: 17
+2026-04-18 16:26:16,105 INFO Loop = 0
+2026-04-18 16:26:16,105 INFO ====
+2026-04-18 16:26:16,105 INFO Starting Date: 01-01-2014
+2026-04-18 16:26:16,105 INFO Ending Date: 10-02-2014
+2026-04-18 16:26:16,105 INFO ====
+2026-04-18 16:26:17,509 WARNING All sources failed for MINDTREE
+2026-04-18 16:26:18,869 ERROR $MOTHERSUMI.NS: possibly delisted; no timezone found
+2026-04-18 16:26:18,876 ERROR 
+1 Failed download:
+2026-04-18 16:26:18,876 ERROR ['MOTHERSUMI.NS']: possibly delisted; no timezone found
+2026-04-18 16:26:20,007 ERROR $MOTHERSUMI.BO: possibly delisted; no timezone found
+2026-04-18 16:26:20,007 ERROR 
+1 Failed download:
+2026-04-18 16:26:20,008 ERROR ['MOTHERSUMI.BO']: possibly delisted; no timezone found
+2026-04-18 16:26:20,009 WARNING yfinance failed MOTHERSUMI, trying nsepython...
+2026-04-18 16:26:20,009 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:26:20,009 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:26:20,010 INFO Total Number of Days: 4017
+2026-04-18 16:26:20,010 INFO Total FOR Loops in the program: 100
+2026-04-18 16:26:20,010 INFO Remainder Loop: 17
+2026-04-18 16:26:20,010 INFO Loop = 0
+2026-04-18 16:26:20,010 INFO ====
+2026-04-18 16:26:20,010 INFO Starting Date: 01-01-2014
+2026-04-18 16:26:20,010 INFO Ending Date: 10-02-2014
+2026-04-18 16:26:20,010 INFO ====
+2026-04-18 16:26:21,387 WARNING All sources failed for MOTHERSUMI
+2026-04-18 16:26:22,397 INFO Downloaded MPHASIS: 2710 days
+2026-04-18 16:26:23,326 INFO Downloaded MRF: 2710 days
+2026-04-18 16:26:24,330 INFO Downloaded MUTHOOTFIN: 2710 days
+2026-04-18 16:26:25,211 INFO Downloaded NAVINFLUOR: 2710 days
+2026-04-18 16:26:26,142 INFO Downloaded NAUKRI: 2710 days
+2026-04-18 16:26:27,220 INFO Downloaded NBCC: 2710 days
+2026-04-18 16:26:28,086 INFO Downloaded NHPC: 2710 days
+2026-04-18 16:26:28,953 INFO Downloaded NLCINDIA: 2710 days
+2026-04-18 16:26:29,801 INFO Downloaded NMDC: 2710 days
+2026-04-18 16:26:30,619 INFO Downloaded OBEROIRLTY: 2710 days
+2026-04-18 16:26:31,548 INFO Downloaded OFSS: 2710 days
+2026-04-18 16:26:32,518 INFO Downloaded OIL: 2710 days
+2026-04-18 16:26:33,455 INFO Downloaded PAGEIND: 2710 days
+2026-04-18 16:26:34,607 ERROR $PEL.NS: possibly delisted; no timezone found
+2026-04-18 16:26:34,611 ERROR 
+1 Failed download:
+2026-04-18 16:26:34,611 ERROR ['PEL.NS']: possibly delisted; no timezone found
+2026-04-18 16:26:35,303 ERROR $PEL.BO: possibly delisted; no timezone found
+2026-04-18 16:26:35,312 ERROR 
+1 Failed download:
+2026-04-18 16:26:35,312 ERROR ['PEL.BO']: possibly delisted; no timezone found
+2026-04-18 16:26:35,314 WARNING yfinance failed PEL, trying nsepython...
+2026-04-18 16:26:35,314 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:26:35,314 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:26:35,314 INFO Total Number of Days: 4017
+2026-04-18 16:26:35,314 INFO Total FOR Loops in the program: 100
+2026-04-18 16:26:35,314 INFO Remainder Loop: 17
+2026-04-18 16:26:35,315 INFO Loop = 0
+2026-04-18 16:26:35,315 INFO ====
+2026-04-18 16:26:35,315 INFO Starting Date: 01-01-2014
+2026-04-18 16:26:35,315 INFO Ending Date: 10-02-2014
+2026-04-18 16:26:35,315 INFO ====
+2026-04-18 16:26:36,679 WARNING All sources failed for PEL
+2026-04-18 16:26:37,554 INFO Downloaded PERSISTENT: 2710 days
+2026-04-18 16:26:38,715 INFO Downloaded PETRONET: 2710 days
+2026-04-18 16:26:39,899 INFO Downloaded PFC: 2710 days
+2026-04-18 16:26:40,889 INFO Downloaded PFIZER: 2710 days
+2026-04-18 16:26:41,940 INFO Downloaded PIDILITIND: 2710 days
+2026-04-18 16:26:42,858 INFO Downloaded PIIND: 2710 days
+2026-04-18 16:26:43,672 INFO Downloaded POLYCAB: 1409 days
+2026-04-18 16:26:44,678 INFO Downloaded POWERGRID: 2710 days
+2026-04-18 16:26:45,551 INFO Downloaded PVRINOX: 508 days
+2026-04-18 16:26:46,522 INFO Downloaded RAMCOCEM: 2710 days
+2026-04-18 16:26:47,469 INFO Downloaded RBLBANK: 2056 days
+2026-04-18 16:26:48,409 INFO Downloaded RECLTD: 2710 days
+2026-04-18 16:26:49,380 INFO Downloaded REDINGTON: 2710 days
+2026-04-18 16:26:50,411 INFO Downloaded RELAXO: 2710 days
+2026-04-18 16:26:51,447 INFO Downloaded SAIL: 2710 days
+2026-04-18 16:26:52,283 INFO Downloaded SBICARD: 1186 days
+2026-04-18 16:26:53,276 INFO Downloaded SBILIFE: 1788 days
+2026-04-18 16:26:54,336 INFO Downloaded SHREECEM: 2710 days
+2026-04-18 16:26:55,305 INFO Downloaded SIEMENS: 2710 days
+2026-04-18 16:26:56,238 INFO Downloaded SRF: 2710 days
+2026-04-18 16:26:57,665 INFO Downloaded STARHEALTH: 754 days
+2026-04-18 16:26:58,917 INFO Downloaded SUNDARMFIN: 2710 days
+2026-04-18 16:27:00,543 INFO Downloaded SUNTV: 2710 days
+2026-04-18 16:27:01,511 INFO Downloaded SUPREMEIND: 2710 days
+2026-04-18 16:27:03,008 INFO Downloaded SYNGENE: 2315 days
+2026-04-18 16:27:04,106 INFO Downloaded TATACHEM: 2710 days
+2026-04-18 16:27:05,106 INFO Downloaded TATACOMM: 2710 days
+2026-04-18 16:27:05,954 INFO Downloaded TATAELXSI: 2710 days
+2026-04-18 16:27:06,922 ERROR $TATAMOTORS.NS: possibly delisted; no timezone found
+2026-04-18 16:27:06,925 ERROR 
+1 Failed download:
+2026-04-18 16:27:06,925 ERROR ['TATAMOTORS.NS']: possibly delisted; no timezone found
+2026-04-18 16:27:07,586 ERROR $TATAMOTORS.BO: possibly delisted; no timezone found
+2026-04-18 16:27:07,597 ERROR 
+1 Failed download:
+2026-04-18 16:27:07,597 ERROR ['TATAMOTORS.BO']: possibly delisted; no timezone found
+2026-04-18 16:27:07,599 WARNING yfinance failed TATAMOTORS, trying nsepython...
+2026-04-18 16:27:07,599 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:27:07,599 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:27:07,600 INFO Total Number of Days: 4017
+2026-04-18 16:27:07,600 INFO Total FOR Loops in the program: 100
+2026-04-18 16:27:07,600 INFO Remainder Loop: 17
+2026-04-18 16:27:07,600 INFO Loop = 0
+2026-04-18 16:27:07,600 INFO ====
+2026-04-18 16:27:07,600 INFO Starting Date: 01-01-2014
+2026-04-18 16:27:07,600 INFO Ending Date: 10-02-2014
+2026-04-18 16:27:07,600 INFO ====
+2026-04-18 16:27:09,064 WARNING All sources failed for TATAMOTORS
+2026-04-18 16:27:09,980 INFO Downloaded TATAPOWER: 2710 days
+2026-04-18 16:27:10,862 INFO Downloaded TATASTEEL: 2710 days
+2026-04-18 16:27:11,926 INFO Downloaded TCS: 2710 days
+2026-04-18 16:27:12,854 INFO Downloaded TECHM: 2710 days
+2026-04-18 16:27:13,720 INFO Downloaded TIINDIA: 1767 days
+2026-04-18 16:27:14,676 INFO Downloaded TITAN: 2710 days
+2026-04-18 16:27:15,958 INFO Downloaded TORNTPHARM: 2710 days
+2026-04-18 16:27:16,803 INFO Downloaded TORNTPOWER: 2710 days
+2026-04-18 16:27:17,930 INFO Downloaded TRENT: 2710 days
+2026-04-18 16:27:18,819 INFO Downloaded TVSMOTOR: 2710 days
+2026-04-18 16:27:19,770 INFO Downloaded UBL: 2710 days
+2026-04-18 16:27:20,679 INFO Downloaded ULTRACEMCO: 2710 days
+2026-04-18 16:27:21,816 INFO Downloaded UNIONBANK: 2710 days
+2026-04-18 16:27:22,790 INFO Downloaded UPL: 2710 days
+2026-04-18 16:27:23,908 INFO Downloaded VOLTAS: 2710 days
+2026-04-18 16:27:24,765 INFO Downloaded WHIRLPOOL: 2710 days
+2026-04-18 16:27:25,774 INFO Downloaded WIPRO: 2710 days
+2026-04-18 16:27:26,834 INFO Downloaded ZYDUSLIFE: 2710 days
+2026-04-18 16:27:27,827 INFO Downloaded APLAPOLLO: 2710 days
+2026-04-18 16:27:28,691 INFO Downloaded ANGELONE: 1048 days
+2026-04-18 16:27:29,395 INFO Downloaded APTUS: 828 days
+2026-04-18 16:27:30,313 INFO Downloaded ARVINDFASN: 1434 days
+2026-04-18 16:27:31,259 INFO Downloaded ASAHIINDIA: 2710 days
+2026-04-18 16:27:32,176 INFO Downloaded ASHOKLEY: 2710 days
+2026-04-18 16:27:32,956 INFO Downloaded ASTERDM: 1688 days
+2026-04-18 16:27:33,830 INFO Downloaded ATUL: 2710 days
+2026-04-18 16:27:34,521 INFO Downloaded AWHCL: 986 days
+2026-04-18 16:27:35,424 INFO Downloaded BAJAJFINSV: 2710 days
+2026-04-18 16:27:36,307 INFO Downloaded BAJAJHLDNG: 2710 days
+2026-04-18 16:27:37,353 INFO Downloaded BALRAMCHIN: 2710 days
+2026-04-18 16:27:38,059 INFO Downloaded BECTORFOOD: 991 days
+2026-04-18 16:27:38,961 INFO Downloaded BIKAJI: 523 days
+2026-04-18 16:27:39,960 INFO Downloaded BLUESTARCO: 2710 days
+2026-04-18 16:27:41,019 INFO Downloaded BOSCHLTD: 2710 days
+2026-04-18 16:27:42,204 INFO Downloaded BRIGADE: 2710 days
+2026-04-18 16:27:43,102 INFO Downloaded BSE: 1951 days
+2026-04-18 16:27:43,888 INFO Downloaded CAMPUS: 654 days
+2026-04-18 16:27:44,918 INFO Downloaded CANFINHOME: 2710 days
+2026-04-18 16:27:45,780 INFO Downloaded CAPLIPOINT: 2593 days
+2026-04-18 16:27:46,736 INFO Downloaded CASTROLIND: 2710 days
+2026-04-18 16:27:47,692 INFO Downloaded CEATLTD: 2710 days
+2026-04-18 16:27:48,584 INFO Downloaded CENTURYPLY: 2710 days
+2026-04-18 16:27:49,798 ERROR $CENTURYTEX.NS: possibly delisted; no timezone found
+2026-04-18 16:27:49,808 ERROR 
+1 Failed download:
+2026-04-18 16:27:49,808 ERROR ['CENTURYTEX.NS']: possibly delisted; no timezone found
+2026-04-18 16:27:50,620 ERROR $CENTURYTEX.BO: possibly delisted; no timezone found
+2026-04-18 16:27:50,624 ERROR 
+1 Failed download:
+2026-04-18 16:27:50,624 ERROR ['CENTURYTEX.BO']: possibly delisted; no timezone found
+2026-04-18 16:27:50,626 WARNING yfinance failed CENTURYTEX, trying nsepython...
+2026-04-18 16:27:50,626 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:27:50,626 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:27:50,626 INFO Total Number of Days: 4017
+2026-04-18 16:27:50,626 INFO Total FOR Loops in the program: 100
+2026-04-18 16:27:50,626 INFO Remainder Loop: 17
+2026-04-18 16:27:50,626 INFO Loop = 0
+2026-04-18 16:27:50,627 INFO ====
+2026-04-18 16:27:50,627 INFO Starting Date: 01-01-2014
+2026-04-18 16:27:50,627 INFO Ending Date: 10-02-2014
+2026-04-18 16:27:50,627 INFO ====
+2026-04-18 16:27:53,355 WARNING All sources failed for CENTURYTEX
+2026-04-18 16:27:54,274 INFO Downloaded CERA: 2710 days
+2026-04-18 16:27:55,236 INFO Downloaded CHALET: 1453 days
+2026-04-18 16:27:56,331 INFO Downloaded CHAMBLFERT: 2710 days
+2026-04-18 16:27:57,207 INFO Downloaded CLEAN: 852 days
+2026-04-18 16:27:58,035 INFO Downloaded COCHINSHIP: 1822 days
+2026-04-18 16:27:58,703 INFO Downloaded CONCORDBIO: 335 days
+2026-04-18 16:27:59,477 INFO Downloaded CRAFTSMAN: 929 days
+2026-04-18 16:28:00,409 INFO Downloaded CRISIL: 2710 days
+2026-04-18 16:28:01,534 INFO Downloaded DCMSHRIRAM: 2710 days
+2026-04-18 16:28:02,291 INFO Downloaded DELHIVERY: 643 days
+2026-04-18 16:28:03,130 INFO Downloaded DEVYANI: 833 days
+2026-04-18 16:28:04,197 INFO Downloaded DHANUKA: 2710 days
+2026-04-18 16:28:05,008 INFO Downloaded DIXON: 1798 days
+2026-04-18 16:28:05,963 INFO Downloaded DREDGECORP: 2710 days
+2026-04-18 16:28:06,776 INFO Downloaded ECLERX: 2710 days
+2026-04-18 16:28:07,738 INFO Downloaded EIHOTEL: 2710 days
+2026-04-18 16:28:08,700 INFO Downloaded ELGIEQUIP: 2710 days
+2026-04-18 16:28:09,332 INFO Downloaded EPIGRAL: 322 days
+2026-04-18 16:28:10,099 INFO Downloaded EQUITASBNK: 1028 days
+2026-04-18 16:28:10,946 INFO Downloaded ESTER: 2710 days
+2026-04-18 16:28:11,967 INFO Downloaded FINEORG: 1602 days
+2026-04-18 16:28:12,794 INFO Downloaded FLUOROCHEM: 1289 days
+2026-04-18 16:28:13,598 INFO Downloaded FORCEMOT: 1286 days
+2026-04-18 16:28:14,368 INFO Downloaded GALAXYSURF: 1699 days
+2026-04-18 16:28:15,420 INFO Downloaded GARFIBRES: 2710 days
+2026-04-18 16:28:16,356 ERROR $GARWARE.NS: possibly delisted; no timezone found
+2026-04-18 16:28:16,361 ERROR 
+1 Failed download:
+2026-04-18 16:28:16,361 ERROR ['GARWARE.NS']: possibly delisted; no timezone found
+2026-04-18 16:28:17,233 ERROR $GARWARE.BO: possibly delisted; no timezone found
+2026-04-18 16:28:17,237 ERROR 
+1 Failed download:
+2026-04-18 16:28:17,237 ERROR ['GARWARE.BO']: possibly delisted; no timezone found
+2026-04-18 16:28:17,239 WARNING yfinance failed GARWARE, trying nsepython...
+2026-04-18 16:28:17,239 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:28:17,239 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:28:17,239 INFO Total Number of Days: 4017
+2026-04-18 16:28:17,239 INFO Total FOR Loops in the program: 100
+2026-04-18 16:28:17,239 INFO Remainder Loop: 17
+2026-04-18 16:28:17,239 INFO Loop = 0
+2026-04-18 16:28:17,239 INFO ====
+2026-04-18 16:28:17,239 INFO Starting Date: 01-01-2014
+2026-04-18 16:28:17,239 INFO Ending Date: 10-02-2014
+2026-04-18 16:28:17,239 INFO ====
+2026-04-18 16:28:18,540 WARNING All sources failed for GARWARE
+2026-04-18 16:28:19,562 INFO Downloaded GESHIP: 2710 days
+2026-04-18 16:28:20,483 INFO Downloaded GHCL: 2710 days
+2026-04-18 16:28:21,233 INFO Downloaded GICRE: 1773 days
+2026-04-18 16:28:22,275 INFO Downloaded GILLETTE: 2710 days
+2026-04-18 16:28:23,277 ERROR $GLOBALHEALT.NS: possibly delisted; no timezone found
+2026-04-18 16:28:23,281 ERROR 
+1 Failed download:
+2026-04-18 16:28:23,281 ERROR ['GLOBALHEALT.NS']: possibly delisted; no timezone found
+2026-04-18 16:28:24,371 ERROR $GLOBALHEALT.BO: possibly delisted; no timezone found
+2026-04-18 16:28:24,383 ERROR 
+1 Failed download:
+2026-04-18 16:28:24,383 ERROR ['GLOBALHEALT.BO']: possibly delisted; no timezone found
+2026-04-18 16:28:24,385 WARNING yfinance failed GLOBALHEALT, trying nsepython...
+2026-04-18 16:28:24,385 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:28:24,385 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:28:24,385 INFO Total Number of Days: 4017
+2026-04-18 16:28:24,385 INFO Total FOR Loops in the program: 100
+2026-04-18 16:28:24,385 INFO Remainder Loop: 17
+2026-04-18 16:28:24,386 INFO Loop = 0
+2026-04-18 16:28:24,386 INFO ====
+2026-04-18 16:28:24,386 INFO Starting Date: 01-01-2014
+2026-04-18 16:28:24,386 INFO Ending Date: 10-02-2014
+2026-04-18 16:28:24,386 INFO ====
+2026-04-18 16:28:25,747 WARNING All sources failed for GLOBALHEALT
+2026-04-18 16:28:26,630 INFO Downloaded GNFC: 2710 days
+2026-04-18 16:28:27,630 INFO Downloaded GODFRYPHLP: 2710 days
+2026-04-18 16:28:28,489 INFO Downloaded GPPL: 2710 days
+2026-04-18 16:28:29,509 INFO Downloaded GRAPHITE: 2710 days
+2026-04-18 16:28:30,548 INFO Downloaded GRINDWELL: 2710 days
+2026-04-18 16:28:31,344 INFO Downloaded GTLINFRA: 2710 days
+2026-04-18 16:28:32,298 INFO Downloaded GULFOILLUB: 2566 days
+2026-04-18 16:28:33,102 INFO Downloaded HAPPSTMNDS: 1059 days
+2026-04-18 16:28:34,017 INFO Downloaded HATSUN: 2594 days
+2026-04-18 16:28:35,124 INFO Downloaded HAVELLS: 2710 days
+2026-04-18 16:28:36,017 INFO Downloaded HEG: 2710 days
+2026-04-18 16:28:37,665 INFO Downloaded HFCL: 2710 days
+2026-04-18 16:28:38,571 INFO Downloaded HIKAL: 2710 days
+2026-04-18 16:28:39,558 INFO Downloaded HINDCOPPER: 2710 days
+2026-04-18 16:28:40,410 INFO Downloaded HINDZINC: 2710 days
+2026-04-18 16:28:41,276 INFO Downloaded HOMEFIRST: 964 days
+2026-04-18 16:28:42,273 INFO Downloaded HUHTAMAKI: 2710 days
+2026-04-18 16:28:43,500 INFO Downloaded IBREALEST: 2710 days
+2026-04-18 16:28:44,605 INFO Downloaded IFBIND: 2710 days
+2026-04-18 16:28:45,594 INFO Downloaded IIFL: 2710 days
+2026-04-18 16:28:46,504 INFO Downloaded IMFA: 2710 days
+2026-04-18 16:28:47,226 INFO Downloaded INDIAMART: 1357 days
+2026-04-18 16:28:48,240 INFO Downloaded INDIANB: 2710 days
+2026-04-18 16:28:49,001 INFO Downloaded INDOSTAR: 1632 days
+2026-04-18 16:28:50,056 INFO Downloaded INGERRAND: 2710 days
+2026-04-18 16:28:51,240 INFO Downloaded INTELLECT: 2475 days
+2026-04-18 16:28:52,382 INFO Downloaded IOLCP: 2710 days
+2026-04-18 16:28:53,402 ERROR $IIFLWAM.NS: possibly delisted; no timezone found
+2026-04-18 16:28:53,411 ERROR 
+1 Failed download:
+2026-04-18 16:28:53,411 ERROR ['IIFLWAM.NS']: possibly delisted; no timezone found
+2026-04-18 16:28:54,315 ERROR $IIFLWAM.BO: possibly delisted; no timezone found
+2026-04-18 16:28:54,324 ERROR 
+1 Failed download:
+2026-04-18 16:28:54,324 ERROR ['IIFLWAM.BO']: possibly delisted; no timezone found
+2026-04-18 16:28:54,326 WARNING yfinance failed IIFLWAM, trying nsepython...
+2026-04-18 16:28:54,326 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:28:54,326 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:28:54,326 INFO Total Number of Days: 4017
+2026-04-18 16:28:54,326 INFO Total FOR Loops in the program: 100
+2026-04-18 16:28:54,326 INFO Remainder Loop: 17
+2026-04-18 16:28:54,326 INFO Loop = 0
+2026-04-18 16:28:54,327 INFO ====
+2026-04-18 16:28:54,327 INFO Starting Date: 01-01-2014
+2026-04-18 16:28:54,327 INFO Ending Date: 10-02-2014
+2026-04-18 16:28:54,327 INFO ====
+2026-04-18 16:28:56,472 WARNING All sources failed for IIFLWAM
+2026-04-18 16:28:57,250 INFO Downloaded JAYNECOIND: 2710 days
+2026-04-18 16:28:58,123 INFO Downloaded JBCHEPHARM: 2710 days
+2026-04-18 16:28:59,157 INFO Downloaded JKCEMENT: 2710 days
+2026-04-18 16:29:00,060 INFO Downloaded JKLAKSHMI: 2710 days
+2026-04-18 16:29:01,407 INFO Downloaded JKPAPER: 2710 days
+2026-04-18 16:29:02,414 ERROR $JMFINANCL.NS: possibly delisted; no timezone found
+2026-04-18 16:29:02,417 ERROR 
+1 Failed download:
+2026-04-18 16:29:02,417 ERROR ['JMFINANCL.NS']: possibly delisted; no timezone found
+2026-04-18 16:29:03,084 ERROR $JMFINANCL.BO: possibly delisted; no timezone found
+2026-04-18 16:29:03,089 ERROR 
+1 Failed download:
+2026-04-18 16:29:03,089 ERROR ['JMFINANCL.BO']: possibly delisted; no timezone found
+2026-04-18 16:29:03,091 WARNING yfinance failed JMFINANCL, trying nsepython...
+2026-04-18 16:29:03,091 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:29:03,091 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:29:03,091 INFO Total Number of Days: 4017
+2026-04-18 16:29:03,091 INFO Total FOR Loops in the program: 100
+2026-04-18 16:29:03,091 INFO Remainder Loop: 17
+2026-04-18 16:29:03,091 INFO Loop = 0
+2026-04-18 16:29:03,091 INFO ====
+2026-04-18 16:29:03,092 INFO Starting Date: 01-01-2014
+2026-04-18 16:29:03,092 INFO Ending Date: 10-02-2014
+2026-04-18 16:29:03,092 INFO ====
+2026-04-18 16:29:05,033 WARNING All sources failed for JMFINANCL
+2026-04-18 16:29:05,964 INFO Downloaded JSWHL: 2710 days
+2026-04-18 16:29:06,917 INFO Downloaded JUSTDIAL: 2710 days
+2026-04-18 16:29:07,870 INFO Downloaded JYOTHYLAB: 2710 days
+2026-04-18 16:29:08,959 INFO Downloaded KAJARIACER: 2710 days
+2026-04-18 16:29:09,860 ERROR $KALPATPOWR.NS: possibly delisted; no timezone found
+2026-04-18 16:29:09,863 ERROR 
+1 Failed download:
+2026-04-18 16:29:09,863 ERROR ['KALPATPOWR.NS']: possibly delisted; no timezone found
+2026-04-18 16:29:10,545 ERROR $KALPATPOWR.BO: possibly delisted; no timezone found
+2026-04-18 16:29:10,546 ERROR 
+1 Failed download:
+2026-04-18 16:29:10,546 ERROR ['KALPATPOWR.BO']: possibly delisted; no timezone found
+2026-04-18 16:29:10,548 WARNING yfinance failed KALPATPOWR, trying nsepython...
+2026-04-18 16:29:10,548 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:29:10,548 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:29:10,548 INFO Total Number of Days: 4017
+2026-04-18 16:29:10,548 INFO Total FOR Loops in the program: 100
+2026-04-18 16:29:10,548 INFO Remainder Loop: 17
+2026-04-18 16:29:10,548 INFO Loop = 0
+2026-04-18 16:29:10,548 INFO ====
+2026-04-18 16:29:10,548 INFO Starting Date: 01-01-2014
+2026-04-18 16:29:10,549 INFO Ending Date: 10-02-2014
+2026-04-18 16:29:10,549 INFO ====
+2026-04-18 16:29:12,434 WARNING All sources failed for KALPATPOWR
+2026-04-18 16:29:13,508 INFO Downloaded KFINTECH: 492 days
+2026-04-18 16:29:14,264 INFO Downloaded KIOCL: 1997 days
+2026-04-18 16:29:15,097 INFO Downloaded KIRLOSENG: 2710 days
+2026-04-18 16:29:16,305 INFO Downloaded KNRCON: 2710 days
+2026-04-18 16:29:17,164 INFO Downloaded KOPRAN: 2710 days
+2026-04-18 16:29:18,160 INFO Downloaded KRBL: 2710 days
+2026-04-18 16:29:19,289 INFO Downloaded KSB: 2710 days
+2026-04-18 16:29:20,279 INFO Downloaded KSCL: 2710 days
+2026-04-18 16:29:20,981 INFO Downloaded LATENTVIEW: 767 days
+2026-04-18 16:29:22,062 ERROR $LAXMIMACH.NS: possibly delisted; no timezone found
+2026-04-18 16:29:22,065 ERROR 
+1 Failed download:
+2026-04-18 16:29:22,065 ERROR ['LAXMIMACH.NS']: possibly delisted; no timezone found
+2026-04-18 16:29:23,190 ERROR $LAXMIMACH.BO: possibly delisted; no timezone found
+2026-04-18 16:29:23,198 ERROR 
+1 Failed download:
+2026-04-18 16:29:23,198 ERROR ['LAXMIMACH.BO']: possibly delisted; no timezone found
+2026-04-18 16:29:23,200 WARNING yfinance failed LAXMIMACH, trying nsepython...
+2026-04-18 16:29:23,200 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:29:23,200 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:29:23,201 INFO Total Number of Days: 4017
+2026-04-18 16:29:23,201 INFO Total FOR Loops in the program: 100
+2026-04-18 16:29:23,201 INFO Remainder Loop: 17
+2026-04-18 16:29:23,201 INFO Loop = 0
+2026-04-18 16:29:23,201 INFO ====
+2026-04-18 16:29:23,201 INFO Starting Date: 01-01-2014
+2026-04-18 16:29:23,201 INFO Ending Date: 10-02-2014
+2026-04-18 16:29:23,201 INFO ====
+2026-04-18 16:29:25,059 WARNING All sources failed for LAXMIMACH
+2026-04-18 16:29:25,810 INFO Downloaded LEMONTREE: 1661 days
+2026-04-18 16:29:26,767 INFO Downloaded LINDEINDIA: 2710 days
+2026-04-18 16:29:28,682 INFO Downloaded LUXIND: 2242 days
+2026-04-18 16:29:29,579 ERROR $MAHINDCIE.NS: possibly delisted; no timezone found
+2026-04-18 16:29:29,588 ERROR 
+1 Failed download:
+2026-04-18 16:29:29,588 ERROR ['MAHINDCIE.NS']: possibly delisted; no timezone found
+2026-04-18 16:29:30,326 ERROR $MAHINDCIE.BO: possibly delisted; no timezone found
+2026-04-18 16:29:30,329 ERROR 
+1 Failed download:
+2026-04-18 16:29:30,329 ERROR ['MAHINDCIE.BO']: possibly delisted; no timezone found
+2026-04-18 16:29:30,331 WARNING yfinance failed MAHINDCIE, trying nsepython...
+2026-04-18 16:29:30,331 INFO Starting Date: 2014-01-01 00:00:00
+2026-04-18 16:29:30,331 INFO Ending Date: 2024-12-31 00:00:00
+2026-04-18 16:29:30,331 INFO Total Number of Days: 4017
+2026-04-18 16:29:30,331 INFO Total FOR Loops in the program: 100
+2026-04-18 16:29:30,331 INFO Remainder Loop: 17
+2026-04-18 16:29:30,332 INFO Loop = 0
+2026-04-18 16:29:30,332 INFO ====
+2026-04-18 16:29:30,332 INFO Starting Date: 01-01-2014
+2026-04-18 16:29:30,332 INFO Ending Date: 10-02-2014
+2026-04-18 16:29:30,332 INFO ====
+2026-04-18 16:29:31,629 WARNING All sources failed for MAHINDCIE
+2026-04-18 16:29:33,139 INFO Downloaded MAHLIFE: 2710 days
+2026-04-18 16:29:34,482 INFO Downloaded MANINFRA: 2710 days
+2026-04-18 16:29:35,288 INFO Downloaded MAPMYINDIA: 747 days
+2026-04-18 16:29:36,295 INFO Downloaded MARICO: 2710 days
+2026-04-18 16:29:37,440 INFO Downloaded MARKSANS: 2710 days
+2026-04-18 16:29:38,337 INFO Downloaded MASTEK: 2710 days
+2026-04-18 16:29:39,065 INFO Downloaded MAXHEALTH: 1078 days
+2026-04-18 16:29:39,898 INFO Downloaded MCX: 2710 days
+2026-04-18 16:29:40,602 INFO Downloaded MEDANTA: 521 days
+2026-04-18 16:29:41,293 INFO Downloaded METROBRAND: 746 days
+2026-04-18 16:29:42,083 INFO Downloaded MHRIL: 2710 days
+2026-04-18 16:29:42,856 INFO Downloaded MIDHANI: 1664 days
+2026-04-18 16:29:43,770 INFO Downloaded MMTC: 2710 days
+2026-04-18 16:29:44,609 INFO Downloaded MOIL: 2710 days
+2026-04-18 16:29:45,552 INFO Downloaded MOLDTKPAC: 2431 days
+2026-04-18 16:29:46,572 INFO Downloaded MOTILALOFS: 2710 days
+2026-04-18 16:29:46,879 INFO PROGRESS DONE: Phase 1B: NSE Price Fetcher | Downloaded prices for 243/262 companies; 19 failed
+2026-04-18 16:29:46,879 INFO Phase 1B complete. Downloaded prices for 243/262 companies; 19 failed
+2026-04-18 16:29:46,879 INFO 
+============================================================
+2026-04-18 16:29:46,879 INFO RUNNING: Phase 1C: Transcript Collector
+2026-04-18 16:29:46,879 INFO ============================================================
+2026-04-18 16:29:46,879 INFO === PHASE 1C: Transcript Collector ===
+2026-04-18 16:38:47,001 INFO PROGRESS DONE: Phase 1C: Transcript Collector | Collected 0 transcripts for 262 companies (0.0% coverage); 0 links found
+2026-04-18 16:38:47,002 INFO Phase 1C complete. Collected 0 transcripts for 262 companies (0.0% coverage); 0 links found
+2026-04-18 16:38:47,004 INFO 
+============================================================
+2026-04-18 16:38:47,004 INFO RUNNING: Phase 1D: Crash Event Labels
+2026-04-18 16:38:47,004 INFO ============================================================
+2026-04-18 16:38:47,004 INFO === PHASE 1D: Crash Event Labels ===
+2026-04-18 16:39:40,313 INFO Initial positive count: 1707 with threshold=30%
+2026-04-18 16:39:40,316 INFO Verifying 1707 crash events via news...
+2026-04-18 16:41:19,605 INFO PROGRESS DONE: Phase 1D: Crash Event Labels | Labeled 10480 company-quarters; crash=1: 1707, crash=0: 8773; threshold=30%; 0 news-verified
+2026-04-18 16:41:19,606 INFO Phase 1D complete. Labeled 10480 company-quarters; crash=1: 1707, crash=0: 8773; threshold=30%; 0 news-verified
+2026-04-18 16:41:20,292 INFO 
+============================================================
+2026-04-18 16:41:20,292 INFO RUNNING: Phase 2A: Pledge Features
+2026-04-18 16:41:20,292 INFO ============================================================
+2026-04-18 16:41:20,292 INFO === PHASE 2A: Pledge Features ===
+2026-04-18 16:41:20,483 INFO Loaded 9885 pledging records for 247 companies
+2026-04-18 16:41:20,783 INFO PROGRESS DONE: Phase 2A: Pledge Features | Computed pledge features for 247 companies, 9885 rows
+2026-04-18 16:41:20,783 INFO Phase 2A complete. Computed pledge features for 247 companies, 9885 rows
+2026-04-18 16:41:20,783 INFO 
+============================================================
+2026-04-18 16:41:20,783 INFO RUNNING: Phase 2B: Financial Features
+2026-04-18 16:41:20,783 INFO ============================================================
+2026-04-18 16:41:20,783 INFO === PHASE 2B: Financial Features ===
+2026-04-18 16:45:54,427 INFO PROGRESS DONE: Phase 2B: Financial Features | Financial features for 247 companies, 9885 rows
+2026-04-18 16:45:54,428 INFO Phase 2B complete. Financial features for 247 companies, 9885 rows
+2026-04-18 16:45:54,431 INFO 
+============================================================
+2026-04-18 16:45:54,432 INFO RUNNING: Phase 2C: Claude Tone Features
+2026-04-18 16:45:54,432 INFO ============================================================
+2026-04-18 16:45:54,432 INFO === PHASE 2C: Claude Tone Features ===
+2026-04-18 16:45:54,432 ERROR ANTHROPIC_API_KEY not set in environment. Cannot run tone extraction.
+2026-04-18 16:45:54,432 INFO PROGRESS FAILED: Phase 2C: Claude Tone Features | ANTHROPIC_API_KEY missing
+2026-04-18 16:45:54,432 INFO 
+============================================================
+2026-04-18 16:45:54,432 INFO RUNNING: Phase 2D: Assemble Dataset
+2026-04-18 16:45:54,432 INFO ============================================================
+2026-04-18 16:45:54,433 INFO === PHASE 2D: Assemble Master Dataset ===
+2026-04-18 16:45:54,439 WARNING Missing: tone_features.parquet
+2026-04-18 16:45:54,578 INFO 
+==================================================
+DATASET STATISTICS
+Total rows: 9,885
+Companies: 247
+Positive (crash=1): 1648 (16.7%)
+Negative (crash=0): 8237 (83.3%)
+Train positives: 1139
+Val positives: 400
+Test positives: 109
+Tone coverage: 0/9885 (0.0%)
+==================================================
+2026-04-18 16:45:54,579 INFO PROGRESS DONE: Phase 2D: Assemble Dataset | Master dataset: 9885 rows, 1648 positives, 0 with tone features
+2026-04-18 16:45:54,579 INFO Phase 2D complete. Master dataset: 9885 rows, 1648 positives, 0 with tone features
+2026-04-18 16:45:56,742 INFO 
+============================================================
+2026-04-18 16:45:56,742 INFO RUNNING: Phase 3A: Train Models
+2026-04-18 16:45:56,743 INFO ============================================================
+2026-04-18 16:45:56,743 INFO === PHASE 3A: Model Training ===
+2026-04-18 16:45:56,748 INFO Dataset: 9885 rows, crash rate=16.672%
+2026-04-18 16:45:56,751 INFO Training M1_pledge_only...
+/Users/anishgupta/.pyenv/versions/3.10.12/lib/python3.10/site-packages/xgboost/callback.py:385: UserWarning: [16:45:56] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  self.starting_round = model.num_boosted_rounds()
+2026-04-18 16:45:57,047 INFO M1_pledge_only: best_iteration=102, scale_pos_weight=3.4, features=10
+2026-04-18 16:45:57,050 INFO Saved M1_pledge_only to /Users/anishgupta/Desktop/PledgeWatch/data/processed/models/M1_pledge_only.pkl
+2026-04-18 16:45:57,050 INFO Training M2_pledge_price_fin...
+/Users/anishgupta/.pyenv/versions/3.10.12/lib/python3.10/site-packages/xgboost/callback.py:385: UserWarning: [16:45:57] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  self.starting_round = model.num_boosted_rounds()
+2026-04-18 16:45:57,215 INFO M2_pledge_price_fin: best_iteration=32, scale_pos_weight=3.4, features=21
+2026-04-18 16:45:57,216 INFO Saved M2_pledge_price_fin to /Users/anishgupta/Desktop/PledgeWatch/data/processed/models/M2_pledge_price_fin.pkl
+2026-04-18 16:45:57,216 INFO Training M3_tone_only...
+2026-04-18 16:45:57,216 WARNING M3_tone_only: insufficient training data, skipping.
+2026-04-18 16:45:57,216 INFO Training M4_full...
+2026-04-18 16:45:57,216 WARNING M4_full: insufficient training data, skipping.
+2026-04-18 16:45:57,216 INFO Training M5_baseline_no_tone...
+2026-04-18 16:45:57,216 WARNING M5_baseline_no_tone: insufficient training data, skipping.
+2026-04-18 16:45:57,217 INFO PROGRESS DONE: Phase 3A: Train Models | Trained 2/5 models: ['M1_pledge_only', 'M2_pledge_price_fin']
+2026-04-18 16:45:57,217 INFO Phase 3A complete. Trained 2/5 models: ['M1_pledge_only', 'M2_pledge_price_fin']
+2026-04-18 16:45:57,217 INFO 
+============================================================
+2026-04-18 16:45:57,217 INFO RUNNING: Phase 3B: Evaluate Models
+2026-04-18 16:45:57,217 INFO ============================================================
+2026-04-18 16:45:57,218 INFO === PHASE 3B: Model Evaluation ===
+2026-04-18 16:45:59,635 INFO M1_pledge_only: AUC-ROC=0.5184, AUC-PR=0.0862
+2026-04-18 16:46:02,068 INFO M2_pledge_price_fin: AUC-ROC=0.6664, AUC-PR=0.0843
+2026-04-18 16:46:02,075 INFO PROGRESS DONE: Phase 3B: Evaluate Models | Evaluated 2 models; best AUC-ROC=0.6664
+2026-04-18 16:46:02,075 INFO Phase 3B complete. Evaluated 2 models; best AUC-ROC=0.6664
+2026-04-18 16:46:02,075 INFO 
+============================================================
+2026-04-18 16:46:02,076 INFO RUNNING: Phase 3C: SHAP Analysis
+2026-04-18 16:46:02,076 INFO ============================================================
+2026-04-18 16:46:02,076 INFO === PHASE 3C: SHAP Analysis ===
+2026-04-18 16:46:02,081 WARNING M4_full not found, trying M2...
+2026-04-18 16:46:02,084 INFO Computing SHAP values for 3028 test instances...
+2026-04-18 16:46:02,092 ERROR FAILED: Phase 3C: SHAP Analysis
+Traceback (most recent call last):
+  File "/Users/anishgupta/Desktop/PledgeWatch/run_all.py", line 42, in run_step
+    result = func(*args, **kwargs)
+  File "/Users/anishgupta/Desktop/PledgeWatch/src/modeling/shap_analysis.py", line 230, in run_phase_3c
+    explainer = shap.TreeExplainer(model)
+  File "/Users/anishgupta/.pyenv/versions/3.10.12/lib/python3.10/site-packages/shap/explainers/_tree.py", line 278, in __init__
+    self.model = TreeEnsemble(model, self.data, self.data_missing, model_output)
+  File "/Users/anishgupta/.pyenv/versions/3.10.12/lib/python3.10/site-packages/shap/explainers/_tree.py", line 1261, in __init__
+    self._set_xgboost_model_attributes(
+  File "/Users/anishgupta/.pyenv/versions/3.10.12/lib/python3.10/site-packages/shap/explainers/_tree.py", line 1506, in _set_xgboost_model_attributes
+    loader = XGBTreeModelLoader(self.original_model)
+  File "/Users/anishgupta/.pyenv/versions/3.10.12/lib/python3.10/site-packages/shap/explainers/_tree.py", line 2104, in __init__
+    self.base_score = float(learner_model_param["base_score"])
+ValueError: could not convert string to float: '[5E-1]'
+
+2026-04-18 16:46:02,093 INFO PROGRESS FAILED: Phase 3C: SHAP Analysis | could not convert string to float: '[5E-1]'
+2026-04-18 16:46:02,093 INFO Filling paper placeholders with actual results...
+2026-04-18 16:46:02,097 INFO Filled 21 placeholders in main.tex
+2026-04-18 16:46:02,097 INFO PROGRESS DONE: Phase 4A: LaTeX Paper | Placeholders filled from actual results
+2026-04-18 16:46:02,098 INFO PROGRESS DONE: Phase 5: Full Pipeline Orchestration | 11/12 phases done
+
+==================================================
+DATASET STATISTICS
+Total rows: 9,885
+Companies: 247
+Positive (crash=1): 1648 (16.7%)
+Negative (crash=0): 8237 (83.3%)
+Train positives: 1139
+Val positives: 400
+Test positives: 109
+Tone coverage: 0/9885 (0.0%)
+==================================================
+
+================================================================================
+MODEL EVALUATION RESULTS
+================================================================================
+              model  test_samples  test_positives  auc_roc  auc_roc_ci_lo  auc_roc_ci_hi  auc_pr  auc_pr_ci_lo  auc_pr_ci_hi  precision_top10pct  recall_at_50pct_precision  f1_default_threshold  precision_default  recall_default
+     M1_pledge_only          3028             109   0.5184         0.4582         0.5784  0.0862        0.0492        0.1423              0.0795                     0.0367                0.0819             0.0476          0.2936
+M2_pledge_price_fin          3028             109   0.6664         0.6127         0.7136  0.0843        0.0594        0.1328              0.0993                     0.0000                0.0960             0.0537          0.4495
+================================================================================
+
+============================================================
+PIPELINE COMPLETE — SUMMARY
+============================================================
+  ✓ Phase 1A: DONE
+  ✓ Phase 1B: DONE
+  ✓ Phase 1C: DONE
+  ✓ Phase 1D: DONE
+  ✓ Phase 2A: DONE
+  ✓ Phase 2B: DONE
+  ✓ Phase 2C: DONE
+  ✓ Phase 2D: DONE
+  ✓ Phase 3A: DONE
+  ✓ Phase 3B: DONE
+  ✗ Phase 3C: FAILED
+  ✓ Phase 4A: DONE
+
+11/12 phases completed successfully.
+
+Key outputs:
+  Dataset:  data/processed/master_dataset.parquet
+  Results:  data/processed/results_table.csv
+  SHAP:     data/processed/shap_importance.csv
+  Paper:    paper/main.tex
+  Figures:  paper/figures/
+============================================================
+2026-04-18 16:46:59,900 INFO ============================================================
+2026-04-18 16:46:59,901 INFO PROMOTER PLEDGING DISTRESS WARNING SYSTEM — PIPELINE START
+2026-04-18 16:46:59,901 INFO Timestamp: 2026-04-18T16:46:59.901309
+2026-04-18 16:46:59,901 INFO ============================================================
+2026-04-18 16:46:59,901 INFO Already completed steps: {'Phase 1A: BSE Pledging Scraper', 'Phase 1D: Crash Event Labels', 'Phase 2A: Pledge Features', 'Phase 2D: Assemble Dataset', 'Phase 2B: Financial Features', 'Phase 0: Project Scaffold', 'Phase 1B: NSE Price Fetcher', 'Phase 1C: Transcript Collector'}
+2026-04-18 16:47:01,078 INFO SKIP (already done): Phase 1A: BSE Pledging Scraper
+2026-04-18 16:47:01,078 INFO SKIP (already done): Phase 1B: NSE Price Fetcher
+2026-04-18 16:47:01,078 INFO SKIP (already done): Phase 1C: Transcript Collector
+2026-04-18 16:47:01,078 INFO SKIP (already done): Phase 1D: Crash Event Labels
+2026-04-18 16:47:01,686 INFO SKIP (already done): Phase 2A: Pledge Features
+2026-04-18 16:47:01,686 INFO SKIP (already done): Phase 2B: Financial Features
+2026-04-18 16:47:01,686 INFO 
+============================================================
+2026-04-18 16:47:01,687 INFO RUNNING: Phase 2C: Claude Tone Features
+2026-04-18 16:47:01,687 INFO ============================================================
+2026-04-18 16:47:01,687 INFO === PHASE 2C: Claude Tone Features ===
+2026-04-18 16:47:01,687 ERROR ANTHROPIC_API_KEY not set in environment. Cannot run tone extraction.
+2026-04-18 16:47:01,687 INFO PROGRESS FAILED: Phase 2C: Claude Tone Features | ANTHROPIC_API_KEY missing
+2026-04-18 16:47:01,688 INFO SKIP (already done): Phase 2D: Assemble Dataset
+2026-04-18 16:47:04,319 INFO 
+============================================================
+2026-04-18 16:47:04,319 INFO RUNNING: Phase 3A: Train Models
+2026-04-18 16:47:04,319 INFO ============================================================
+2026-04-18 16:47:04,319 INFO === PHASE 3A: Model Training ===
+2026-04-18 16:47:04,442 INFO Dataset: 9885 rows, crash rate=16.672%
+2026-04-18 16:47:04,448 INFO Training M1_pledge_only...
+/Users/anishgupta/.pyenv/versions/3.10.12/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [16:47:04] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+2026-04-18 16:47:04,869 INFO M1_pledge_only: best_iteration=102, scale_pos_weight=3.4, features=10
+2026-04-18 16:47:04,871 INFO Saved M1_pledge_only to /Users/anishgupta/Desktop/PledgeWatch/data/processed/models/M1_pledge_only.pkl
+2026-04-18 16:47:04,871 INFO Training M2_pledge_price_fin...
+/Users/anishgupta/.pyenv/versions/3.10.12/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [16:47:04] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+2026-04-18 16:47:05,116 INFO M2_pledge_price_fin: best_iteration=32, scale_pos_weight=3.4, features=21
+2026-04-18 16:47:05,118 INFO Saved M2_pledge_price_fin to /Users/anishgupta/Desktop/PledgeWatch/data/processed/models/M2_pledge_price_fin.pkl
+2026-04-18 16:47:05,118 INFO Training M3_tone_only...
+2026-04-18 16:47:05,118 WARNING M3_tone_only: insufficient training data, skipping.
+2026-04-18 16:47:05,118 INFO Training M4_full...
+2026-04-18 16:47:05,118 WARNING M4_full: insufficient training data, skipping.
+2026-04-18 16:47:05,118 INFO Training M5_baseline_no_tone...
+2026-04-18 16:47:05,118 WARNING M5_baseline_no_tone: insufficient training data, skipping.
+2026-04-18 16:47:05,118 INFO PROGRESS DONE: Phase 3A: Train Models | Trained 2/5 models: ['M1_pledge_only', 'M2_pledge_price_fin']
+2026-04-18 16:47:05,119 INFO Phase 3A complete. Trained 2/5 models: ['M1_pledge_only', 'M2_pledge_price_fin']
+2026-04-18 16:47:05,119 INFO 
+============================================================
+2026-04-18 16:47:05,119 INFO RUNNING: Phase 3B: Evaluate Models
+2026-04-18 16:47:05,119 INFO ============================================================
+2026-04-18 16:47:05,119 INFO === PHASE 3B: Model Evaluation ===
+2026-04-18 16:47:07,568 INFO M1_pledge_only: AUC-ROC=0.5184, AUC-PR=0.0862
+2026-04-18 16:47:10,094 INFO M2_pledge_price_fin: AUC-ROC=0.6664, AUC-PR=0.0843
+2026-04-18 16:47:10,107 INFO PROGRESS DONE: Phase 3B: Evaluate Models | Evaluated 2 models; best AUC-ROC=0.6664
+2026-04-18 16:47:10,107 INFO Phase 3B complete. Evaluated 2 models; best AUC-ROC=0.6664
+2026-04-18 16:47:10,108 INFO 
+============================================================
+2026-04-18 16:47:10,108 INFO RUNNING: Phase 3C: SHAP Analysis
+2026-04-18 16:47:10,108 INFO ============================================================
+2026-04-18 16:47:10,108 INFO === PHASE 3C: SHAP Analysis ===
+2026-04-18 16:47:10,115 WARNING M4_full not found, trying M2...
+2026-04-18 16:47:10,120 INFO Computing SHAP values for 3028 test instances...
+2026-04-18 16:47:10,200 INFO Saved shap_importance.csv
+2026-04-18 16:47:10,768 INFO Saved: /Users/anishgupta/Desktop/PledgeWatch/paper/figures/shap_global.png
+2026-04-18 16:47:11,912 INFO Saved: /Users/anishgupta/Desktop/PledgeWatch/paper/figures/shap_beeswarm.png
+2026-04-18 16:47:11,914 WARNING DHFL 2019Q3 not in test set; using top positive instance
+2026-04-18 16:47:12,328 INFO Saved: /Users/anishgupta/Desktop/PledgeWatch/paper/figures/shap_dhfl.png
+2026-04-18 16:47:12,331 WARNING ZEEL 2019Q3 not in test set; using top positive instance
+2026-04-18 16:47:12,736 INFO Saved: /Users/anishgupta/Desktop/PledgeWatch/paper/figures/shap_zeel.png
+2026-04-18 16:47:13,150 INFO Saved: /Users/anishgupta/Desktop/PledgeWatch/paper/figures/dhfl_timeseries.png
+2026-04-18 16:47:13,171 ERROR FAILED: Phase 3C: SHAP Analysis
+Traceback (most recent call last):
+  File "/Users/anishgupta/Desktop/PledgeWatch/run_all.py", line 42, in run_step
+    result = func(*args, **kwargs)
+  File "/Users/anishgupta/Desktop/PledgeWatch/src/modeling/shap_analysis.py", line 256, in run_phase_3c
+    plot_model_comparison(results_df, FIGURES_DIR / "model_comparison.png")
+  File "/Users/anishgupta/Desktop/PledgeWatch/src/modeling/shap_analysis.py", line 173, in plot_model_comparison
+    lo = results_df[ci_lo].fillna(vals).values if ci_lo in results_df else vals
+  File "/Users/anishgupta/.pyenv/versions/3.10.12/lib/python3.10/site-packages/pandas/core/generic.py", line 7366, in fillna
+    raise TypeError(
+TypeError: "value" parameter must be a scalar, dict or Series, but you passed a "ndarray"
+
+2026-04-18 16:47:13,171 INFO PROGRESS FAILED: Phase 3C: SHAP Analysis | "value" parameter must be a scalar, dict or Series, but you passed a "ndarray"
+2026-04-18 16:47:13,172 INFO Filling paper placeholders with actual results...
+2026-04-18 16:47:13,184 INFO Filled 21 placeholders in main.tex
+2026-04-18 16:47:13,184 INFO PROGRESS DONE: Phase 4A: LaTeX Paper | Placeholders filled from actual results
+2026-04-18 16:47:13,184 INFO PROGRESS DONE: Phase 5: Full Pipeline Orchestration | 11/12 phases done
+
+================================================================================
+MODEL EVALUATION RESULTS
+================================================================================
+              model  test_samples  test_positives  auc_roc  auc_roc_ci_lo  auc_roc_ci_hi  auc_pr  auc_pr_ci_lo  auc_pr_ci_hi  precision_top10pct  recall_at_50pct_precision  f1_default_threshold  precision_default  recall_default
+     M1_pledge_only          3028             109   0.5184         0.4582         0.5784  0.0862        0.0492        0.1423              0.0795                     0.0367                0.0819             0.0476          0.2936
+M2_pledge_price_fin          3028             109   0.6664         0.6127         0.7136  0.0843        0.0594        0.1328              0.0993                     0.0000                0.0960             0.0537          0.4495
+================================================================================
+
+============================================================
+PIPELINE COMPLETE — SUMMARY
+============================================================
+  ✓ Phase 1A: DONE
+  ✓ Phase 1B: DONE
+  ✓ Phase 1C: DONE
+  ✓ Phase 1D: DONE
+  ✓ Phase 2A: DONE
+  ✓ Phase 2B: DONE
+  ✓ Phase 2C: DONE
+  ✓ Phase 2D: DONE
+  ✓ Phase 3A: DONE
+  ✓ Phase 3B: DONE
+  ✗ Phase 3C: FAILED
+  ✓ Phase 4A: DONE
+
+11/12 phases completed successfully.
+
+Key outputs:
+  Dataset:  data/processed/master_dataset.parquet
+  Results:  data/processed/results_table.csv
+  SHAP:     data/processed/shap_importance.csv
+  Paper:    paper/main.tex
+  Figures:  paper/figures/
+============================================================
+2026-04-18 16:55:26,005 INFO ============================================================
+2026-04-18 16:55:26,006 INFO PROMOTER PLEDGING DISTRESS WARNING SYSTEM — PIPELINE START
+2026-04-18 16:55:26,006 INFO Timestamp: 2026-04-18T16:55:26.006146
+2026-04-18 16:55:26,006 INFO ============================================================
+2026-04-18 16:55:26,006 INFO Already completed steps: {'Phase 2A: Pledge Features', 'Phase 1D: Crash Event Labels', 'Phase 2B: Financial Features', 'Phase 1B: NSE Price Fetcher', 'Phase 1A: BSE Pledging Scraper', 'Phase 0: Project Scaffold'}
+2026-04-18 16:55:27,093 INFO SKIP (already done): Phase 1A: BSE Pledging Scraper
+2026-04-18 16:55:27,093 INFO SKIP (already done): Phase 1B: NSE Price Fetcher
+2026-04-18 16:55:27,093 INFO 
+============================================================
+2026-04-18 16:55:27,093 INFO RUNNING: Phase 1C: Transcript Collector
+2026-04-18 16:55:27,093 INFO ============================================================
+2026-04-18 16:55:27,093 INFO === PHASE 1C: Transcript Collector ===
+2026-04-18 16:59:07,455 INFO Built BSE code map: 0 entries
+2026-04-18 17:01:19,943 INFO PROGRESS DONE: Phase 1C: Transcript Collector | Collected 0 transcripts for 262 companies (0.0% coverage); 0 links found
+2026-04-18 17:01:19,944 INFO Phase 1C complete. Collected 0 transcripts for 262 companies (0.0% coverage); 0 links found
+2026-04-18 17:01:19,948 INFO SKIP (already done): Phase 1D: Crash Event Labels
+2026-04-18 17:01:20,744 INFO SKIP (already done): Phase 2A: Pledge Features
+2026-04-18 17:01:20,744 INFO SKIP (already done): Phase 2B: Financial Features
+2026-04-18 17:01:20,744 INFO 
+============================================================
+2026-04-18 17:01:20,744 INFO RUNNING: Phase 2C: Claude Tone Features
+2026-04-18 17:01:20,744 INFO ============================================================
+2026-04-18 17:01:20,744 INFO === PHASE 2C: Claude Tone Features ===
+2026-04-18 17:01:20,744 ERROR ANTHROPIC_API_KEY not set in environment. Cannot run tone extraction.
+2026-04-18 17:01:20,745 INFO PROGRESS FAILED: Phase 2C: Claude Tone Features | ANTHROPIC_API_KEY missing
+2026-04-18 17:01:20,748 INFO 
+============================================================
+2026-04-18 17:01:20,748 INFO RUNNING: Phase 2D: Assemble Dataset
+2026-04-18 17:01:20,748 INFO ============================================================
+2026-04-18 17:01:20,748 INFO === PHASE 2D: Assemble Master Dataset ===
+2026-04-18 17:01:20,896 WARNING Missing: tone_features.parquet
+2026-04-18 17:01:21,066 INFO 
+==================================================
+DATASET STATISTICS
+Total rows: 9,885
+Companies: 247
+Positive (crash=1): 1648 (16.7%)
+Negative (crash=0): 8237 (83.3%)
+Train positives: 1139
+Val positives: 400
+Test positives: 109
+Tone coverage: 0/9885 (0.0%)
+==================================================
+2026-04-18 17:01:21,066 INFO PROGRESS DONE: Phase 2D: Assemble Dataset | Master dataset: 9885 rows, 1648 positives, 0 with tone features
+2026-04-18 17:01:21,066 INFO Phase 2D complete. Master dataset: 9885 rows, 1648 positives, 0 with tone features
+2026-04-18 17:01:23,545 INFO 
+============================================================
+2026-04-18 17:01:23,546 INFO RUNNING: Phase 3A: Train Models
+2026-04-18 17:01:23,546 INFO ============================================================
+2026-04-18 17:01:23,546 INFO === PHASE 3A: Model Training ===
+2026-04-18 17:01:23,553 INFO Dataset: 9885 rows, crash rate=16.672%
+2026-04-18 17:01:23,556 INFO Training M1_pledge_only...
+/Users/anishgupta/.pyenv/versions/3.10.12/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [17:01:23] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+2026-04-18 17:01:23,886 INFO M1_pledge_only: best_iteration=102, scale_pos_weight=3.4, features=10
+2026-04-18 17:01:23,890 INFO Saved M1_pledge_only to /Users/anishgupta/Desktop/PledgeWatch/data/processed/models/M1_pledge_only.pkl
+2026-04-18 17:01:23,891 INFO Training M2_pledge_price_fin...
+/Users/anishgupta/.pyenv/versions/3.10.12/lib/python3.10/site-packages/xgboost/core.py:158: UserWarning: [17:01:23] WARNING: /Users/runner/work/xgboost/xgboost/src/learner.cc:740: 
+Parameters: { "use_label_encoder" } are not used.
+
+  warnings.warn(smsg, UserWarning)
+2026-04-18 17:01:24,091 INFO M2_pledge_price_fin: best_iteration=32, scale_pos_weight=3.4, features=21
+2026-04-18 17:01:24,093 INFO Saved M2_pledge_price_fin to /Users/anishgupta/Desktop/PledgeWatch/data/processed/models/M2_pledge_price_fin.pkl
+2026-04-18 17:01:24,093 INFO Training M3_tone_only...
+2026-04-18 17:01:24,093 WARNING M3_tone_only: insufficient training data, skipping.
+2026-04-18 17:01:24,093 INFO Training M4_full...
+2026-04-18 17:01:24,093 WARNING M4_full: insufficient training data, skipping.
+2026-04-18 17:01:24,093 INFO Training M5_baseline_no_tone...
+2026-04-18 17:01:24,093 WARNING M5_baseline_no_tone: insufficient training data, skipping.
+2026-04-18 17:01:24,094 INFO PROGRESS DONE: Phase 3A: Train Models | Trained 2/5 models: ['M1_pledge_only', 'M2_pledge_price_fin']
+2026-04-18 17:01:24,094 INFO Phase 3A complete. Trained 2/5 models: ['M1_pledge_only', 'M2_pledge_price_fin']
+2026-04-18 17:01:24,094 INFO 
+============================================================
+2026-04-18 17:01:24,094 INFO RUNNING: Phase 3B: Evaluate Models
+2026-04-18 17:01:24,094 INFO ============================================================
+2026-04-18 17:01:24,094 INFO === PHASE 3B: Model Evaluation ===
+2026-04-18 17:01:26,555 INFO M1_pledge_only: AUC-ROC=0.5184, AUC-PR=0.0862
+2026-04-18 17:01:28,995 INFO M2_pledge_price_fin: AUC-ROC=0.6664, AUC-PR=0.0843
+2026-04-18 17:01:29,002 INFO PROGRESS DONE: Phase 3B: Evaluate Models | Evaluated 2 models; best AUC-ROC=0.6664
+2026-04-18 17:01:29,002 INFO Phase 3B complete. Evaluated 2 models; best AUC-ROC=0.6664
+2026-04-18 17:01:29,003 INFO 
+============================================================
+2026-04-18 17:01:29,003 INFO RUNNING: Phase 3C: SHAP Analysis
+2026-04-18 17:01:29,003 INFO ============================================================
+2026-04-18 17:01:29,003 INFO === PHASE 3C: SHAP Analysis ===
+2026-04-18 17:01:29,007 WARNING M4_full not found, trying M2...
+2026-04-18 17:01:29,010 INFO Computing SHAP values for 3028 test instances...
+2026-04-18 17:01:29,064 INFO Saved shap_importance.csv
+2026-04-18 17:01:29,390 INFO Saved: /Users/anishgupta/Desktop/PledgeWatch/paper/figures/shap_global.png
+2026-04-18 17:01:30,572 INFO Saved: /Users/anishgupta/Desktop/PledgeWatch/paper/figures/shap_beeswarm.png
+2026-04-18 17:01:30,574 WARNING DHFL 2019Q3 not in test set; using top positive instance
+2026-04-18 17:01:30,966 INFO Saved: /Users/anishgupta/Desktop/PledgeWatch/paper/figures/shap_dhfl.png
+2026-04-18 17:01:30,968 WARNING ZEEL 2019Q3 not in test set; using top positive instance
+2026-04-18 17:01:31,420 INFO Saved: /Users/anishgupta/Desktop/PledgeWatch/paper/figures/shap_zeel.png
+2026-04-18 17:01:31,838 INFO Saved: /Users/anishgupta/Desktop/PledgeWatch/paper/figures/dhfl_timeseries.png
+2026-04-18 17:01:32,310 INFO Saved: /Users/anishgupta/Desktop/PledgeWatch/paper/figures/model_comparison.png
+2026-04-18 17:01:32,311 INFO PROGRESS DONE: Phase 3C: SHAP Analysis | SHAP analysis complete; 6 figures saved to paper/figures/
+2026-04-18 17:01:32,311 INFO Phase 3C complete. SHAP analysis complete; 6 figures saved to paper/figures/
+2026-04-18 17:01:32,312 INFO Filling paper placeholders with actual results...
+2026-04-18 17:01:32,320 INFO Filled 21 placeholders in main.tex
+2026-04-18 17:01:32,322 INFO PROGRESS DONE: Phase 4A: LaTeX Paper | Placeholders filled from actual results
+2026-04-18 17:01:32,323 INFO PROGRESS DONE: Phase 5: Full Pipeline Orchestration | 12/12 phases done
+
+==================================================
+DATASET STATISTICS
+Total rows: 9,885
+Companies: 247
+Positive (crash=1): 1648 (16.7%)
+Negative (crash=0): 8237 (83.3%)
+Train positives: 1139
+Val positives: 400
+Test positives: 109
+Tone coverage: 0/9885 (0.0%)
+==================================================
+
+================================================================================
+MODEL EVALUATION RESULTS
+================================================================================
+              model  test_samples  test_positives  auc_roc  auc_roc_ci_lo  auc_roc_ci_hi  auc_pr  auc_pr_ci_lo  auc_pr_ci_hi  precision_top10pct  recall_at_50pct_precision  f1_default_threshold  precision_default  recall_default
+     M1_pledge_only          3028             109   0.5184         0.4582         0.5784  0.0862        0.0492        0.1423              0.0795                     0.0367                0.0819             0.0476          0.2936
+M2_pledge_price_fin          3028             109   0.6664         0.6127         0.7136  0.0843        0.0594        0.1328              0.0993                     0.0000                0.0960             0.0537          0.4495
+================================================================================
+
+============================================================
+PIPELINE COMPLETE — SUMMARY
+============================================================
+  ✓ Phase 1A: DONE
+  ✓ Phase 1B: DONE
+  ✓ Phase 1C: DONE
+  ✓ Phase 1D: DONE
+  ✓ Phase 2A: DONE
+  ✓ Phase 2B: DONE
+  ✓ Phase 2C: DONE
+  ✓ Phase 2D: DONE
+  ✓ Phase 3A: DONE
+  ✓ Phase 3B: DONE
+  ✓ Phase 3C: DONE
+  ✓ Phase 4A: DONE
+
+12/12 phases completed successfully.
+
+Key outputs:
+  Dataset:  data/processed/master_dataset.parquet
+  Results:  data/processed/results_table.csv
+  SHAP:     data/processed/shap_importance.csv
+  Paper:    paper/main.tex
+  Figures:  paper/figures/
+============================================================
