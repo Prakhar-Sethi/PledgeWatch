@@ -96,6 +96,7 @@ signals, and (3) machine-learning extraction of managerial tone from
 earnings calls to produce a predictive, operationally deployable
 warning system.
 
+Figure~\ref{fig:pipeline} shows the end-to-end system architecture.
 This paper makes three explicit contributions:
 \begin{enumerate}
   \item \textbf{Dataset}: We construct the first public-data pledging
@@ -112,6 +113,13 @@ This paper makes three explicit contributions:
     at both global and instance levels, enabling interpretable
     risk reports for portfolio managers and regulators.
 \end{enumerate}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/pipeline_diagram.png}
+  \caption{PPDWS system architecture. Three data sources feed feature engineering pipelines; an XGBoost classifier with five ablation variants produces interpretable crash-risk scores via SHAP attribution.}
+  \label{fig:pipeline}
+\end{figure}
 
 %% ============================================================
 \section{Related Work}
