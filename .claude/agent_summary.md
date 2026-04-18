@@ -7,6 +7,9 @@ Pushed to GitHub: https://github.com/Prakhar-Sethi/PledgeWatch (branch: master)
 ## Agent 2 (Complete — This Session)
 Fixed broken scrapers, ran full pipeline, collected data. Ready for tone extraction.
 
+## Agent 1 (Resuming)
+Picks up from here. See "What needs to happen" section below.
+
 ---
 
 ## Current State (as of 2026-04-18 ~18:00)
@@ -87,7 +90,7 @@ Fixed broken scrapers, ran full pipeline, collected data. Ready for tone extract
 
 ## Repository
 - Remote: https://github.com/Prakhar-Sethi/PledgeWatch
-- Branch: **master** (NOT main)
+- Branch: **main** (renamed from master this session)
 - Git user: Anish (anishgupta198@gmail.com)
 
 ## File Structure
