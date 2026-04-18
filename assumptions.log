@@ -1,0 +1,13 @@
+ASSUMPTIONS LOG - Promoter Pledging Distress Warning System
+===========================================================
+
+[2026-04-18] A1: Using NSE Midcap150 + Smallcap250 universe (~400 companies). If nsepython fails to fetch list, fall back to hardcoded CSV snapshot from NSE website.
+[2026-04-18] A2: BSE shareholding scraper uses the BSE corporate shareholding page. If blocked after retries, falls back to NSE bulk shareholding download.
+[2026-04-18] A3: Crash label threshold = 30% max drawdown in 6 months post quarter-end. If positive class < 20 events, lower to 25%.
+[2026-04-18] A4: Transcript Q&A/prepared split uses keyword detection. If no Q&A keywords found, entire transcript treated as prepared_text and qa_ceo_text is empty.
+[2026-04-18] A5: Claude model used = claude-sonnet-4-20250514 as specified. Tone cache avoids re-calling API.
+[2026-04-18] A6: yfinance .NS suffix used for NSE prices. If ticker not found, try .BO (BSE) suffix as fallback.
+[2026-04-18] A7: Screener.in financial ratios may not be available for all companies. Missing values filled with -1 sentinel and flagged with ratio_available=0 column.
+[2026-04-18] A8: LaTeX paper uses IEEEtran document class targeting IEEE 8-9 pages. All numbers filled from actual results files.
+[2026-04-18] A9: Train/val/test split is temporal: train <= 2020Q4, val = 2021Q1-2022Q4, test >= 2023Q1.
+[2026-04-18] A10: Bootstrap CI uses 1000 iterations with random_state=42 for reproducibility.
