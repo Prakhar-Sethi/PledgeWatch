@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 7,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "litigation filed very recently",
+    "not be in a position to respond",
+    "discussions with several parties",
+    "gradually building up",
+    "matter is sub judice"
+  ],
+  "symbol": "KRBL",
+  "quarter": "2023Q4"
+}

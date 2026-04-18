@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "our main endeavour will be growing the volume, at least for the next two years",
+    "we'll generate a lot of cash in next two-three years",
+    "we don't need major capex for growing the capacity",
+    "we have kept a medium threshold in gross margin level, once any threshold breaks, we immediately increase the prices",
+    "EBITDA margin is intact and largely this lot of efficiency which has been below gross margin level"
+  ],
+  "symbol": "BIKAJI",
+  "quarter": "2024Q4"
+}

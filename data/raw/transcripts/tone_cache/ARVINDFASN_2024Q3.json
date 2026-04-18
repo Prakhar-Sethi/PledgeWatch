@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "net debt was around 225 crores",
+    "market conditions have been muted, subdued and difficult",
+    "hoping for markets to improve",
+    "Arrow remains in a low single digit brand",
+    "minority interest has taken entire profit this quarter"
+  ],
+  "symbol": "ARVINDFASN",
+  "quarter": "2024Q3"
+}

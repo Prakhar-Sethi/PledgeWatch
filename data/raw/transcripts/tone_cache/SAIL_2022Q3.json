@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 6,
+  "debt_mention_count": 5,
+  "reassurance_score": 4,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "working capital debt",
+    "substantial increase in debt level",
+    "cash balance is marginal",
+    "coal payments impacting cash flow",
+    "expect reduction in working capital"
+  ],
+  "symbol": "SAIL",
+  "quarter": "2022Q3"
+}

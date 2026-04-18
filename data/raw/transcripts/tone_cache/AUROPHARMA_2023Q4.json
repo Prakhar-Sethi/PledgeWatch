@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 3,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "highest ever sales... highest EBITDA in the past 12 quarters",
+    "net cash back to $200 million over a period of maybe in a year's time, or maybe 6 to 9 months' time",
+    "Gross Debt and cash put together, probably by end of the year, will be anywhere between $0 to $50 million",
+    "It is not guidance, that is our internal target set ourselves",
+    "free cash flow of USD 48 million during this quarter before the PLI investments"
+  ],
+  "symbol": "AUROPHARMA",
+  "quarter": "2023Q4"
+}

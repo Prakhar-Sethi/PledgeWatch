@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 1,
+  "reassurance_score": 4,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "expansion of product portfolio",
+    "increase in systematic transactions",
+    "growth in AUM and market share",
+    "healthy mark-to-market growth",
+    "alignment with HDFC Bank"
+  ],
+  "symbol": "HDFCAMC",
+  "quarter": "2023Q4"
+}

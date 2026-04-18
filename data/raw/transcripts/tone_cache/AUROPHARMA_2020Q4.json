@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 3,
+  "reassurance_score": 5,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "by 31.3.22 the existing business will generate and wipe out the entire debt",
+    "we will be doing better than what we have said earlier",
+    "we are not looking at any large ticket acquisition for at least foreseeable future",
+    "injectable business expected to reach around $650 to $700 million over the next three years",
+    "we are very very confident of maintaining 5% to 10% of growth"
+  ],
+  "symbol": "AUROPHARMA",
+  "quarter": "2020Q4"
+}

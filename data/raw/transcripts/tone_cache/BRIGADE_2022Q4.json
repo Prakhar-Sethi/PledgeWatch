@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 4,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we do not need to take any debt because adequate cash is there in the balance sheet",
+    "30% slowdown reported by them",
+    "postponement of decision primarily",
+    "QIP cash is there that will all be used for the payment of the land",
+    "we did not want to dilute at that stage since we were not in a market to look for any kind of distressed valuation"
+  ],
+  "symbol": "BRIGADE",
+  "quarter": "2022Q4"
+}

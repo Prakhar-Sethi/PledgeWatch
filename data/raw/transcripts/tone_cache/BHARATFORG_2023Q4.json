@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "balance sheet continues to remain strong with cash in excess of INR 2,200 crores",
+    "long-term debt reducing by INR 300 crores in the last 6 months",
+    "I have already shared information than I had to",
+    "geopolitical situation... the only back-up",
+    "US operations have posted an EBITDA loss of INR 26 crores"
+  ],
+  "symbol": "BHARATFORG",
+  "quarter": "2023Q4"
+}

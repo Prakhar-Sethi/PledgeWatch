@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "we are still trying to accelerate that but it is taking more time than we anticipated",
+    "we are also looking for some denotification as there is more demand on the DTA side compared to SEZ",
+    "the volatility is a challenge in our business because our price gets locked upfront and costs we have to endure",
+    "I do not want to sign up a deal and then have the winners curse",
+    "hopefully we will find the right partner right customer over the next few years so that is we are open to get an anchor customer largest or exit completely for the right but do not want to do a fire sale"
+  ],
+  "symbol": "MAHLIFE",
+  "quarter": "2023Q4"
+}

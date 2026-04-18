@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 4,
+  "reassurance_score": 6,
+  "analyst_tension_score": 6,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "Q2 is a bad quarter",
+    "guidance might get delayed by a year unless something substantial happens",
+    "gross debt of ~$490 million we would like to use the cash and reduce it",
+    "we are a little bit conservative",
+    "disappointing governance standards and lack of clarity on use of cash"
+  ],
+  "symbol": "AUROPHARMA",
+  "quarter": "2022Q4"
+}

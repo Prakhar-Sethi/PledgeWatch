@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "We continued to remain debt-free and had a total of INR691 crores of cash",
+    "Our gross margin for the quarter expanded by 432 basis points year-on-year",
+    "committed to growing our business in a sustained manner",
+    "We are on track with scaling operations",
+    "Our Board compromises of five eminent Independent Directors"
+  ],
+  "symbol": "MARKSANS",
+  "quarter": "2024Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "we will continue to drive double-digit growth",
+    "we believe it should be a positive, but it is still a wait and watch",
+    "we are not seeing that so far",
+    "we have grown much faster than the industry",
+    "we are being extremely prudent in terms of our buying"
+  ],
+  "symbol": "REDINGTON",
+  "quarter": "2021Q3"
+}

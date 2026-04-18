@@ -1,0 +1,19 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 3,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "transcript of the earnings call Q1 FY2023-24",
+    "financial performance of the Company for the quarter ended June 30, 2023",
+    "pursuant to Regulation 30(6) of SEBI",
+    "available on the Company's website"
+  ],
+  "symbol": "CAPLIPOINT",
+  "quarter": "2023Q3"
+}

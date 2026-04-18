@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "core franchise gaining good momentum",
+    "expect margin expansion going forward",
+    "corrective steps taken to reduce slippages",
+    "focus on profitability and cost control",
+    "RIDF balances expected to reduce"
+  ],
+  "symbol": "YESBANK",
+  "quarter": "2023Q4"
+}

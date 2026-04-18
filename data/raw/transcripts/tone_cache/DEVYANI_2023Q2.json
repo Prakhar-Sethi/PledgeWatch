@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "medium-toarsenic long term outlook unchanged",
+    "towards the bottom end of the cycle",
+    "hoping that cheese prices should stabilize",
+    "balancing portfolio from various manifestations",
+    "inflation seems to be bottoming out"
+  ],
+  "symbol": "DEVYANI",
+  "quarter": "2023Q2"
+}

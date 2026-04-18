@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "Providing we can launch, yes",
+    "So certainly, if there is any impact on that, then our H2 numbers will also be impacted",
+    "Q3 declined and then... it's not like we are not in the early stage",
+    "We are sort of forced to look at this business on a quarterly basis",
+    "These are just at the very final stages, it's just a matter of getting the things out in hand"
+  ],
+  "symbol": "BRIGADE",
+  "quarter": "2024Q4"
+}

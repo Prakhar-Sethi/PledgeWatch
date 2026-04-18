@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 8,
+  "debt_mention_count": 3,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "LRD benefit is yet to come through",
+    "we don't give forward-looking data",
+    "CAPEX costs significantly lower, ROCE is improving",
+    "WDV of project is around Rs. 43 crore, and that's assets we are putting at risk",
+    "conversion of loans into LRD will be a continuous process"
+  ],
+  "symbol": "CHALET",
+  "quarter": "2023Q4"
+}

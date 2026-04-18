@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 4,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "give us some time, you will see that with lower sales we will have margins equivalent to previous times",
+    "the figures are changing day by day, give us a little more time",
+    "we can give that to you offline, I do not have it at the moment",
+    "100 might become 85, 80, but yes directionally",
+    "everything is very nebulous because lots of customers, markets are down"
+  ],
+  "symbol": "BHARATFORG",
+  "quarter": "2020Q3"
+}

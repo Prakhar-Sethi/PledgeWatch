@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we will be able to get rid of the debt within a period of 12 to 18 months",
+    "we failed in the first 2 quarters and we need to course correct",
+    "margins will be subdued till the new plant comes in",
+    "timber issue is likely to continue for 12 to 18 months",
+    "cash flow generation from next year onwards will be quite good"
+  ],
+  "symbol": "CENTURYPLY",
+  "quarter": "2024Q4"
+}

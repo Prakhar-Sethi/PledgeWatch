@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "conference call on Q1FY24 results",
+    "business updates",
+    "uploaded on the website",
+    "Financial Statements",
+    "investors"
+  ],
+  "symbol": "OBEROIRLTY",
+  "quarter": "2023Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "highest ever second quarter and first half collections",
+    "operating cash flow growth of 125%",
+    "record year from the point of view of cash flow and earnings",
+    "we're all set for an exceptionally strong year sales growth",
+    "we expect our record year from the point of view of cash flow and earnings"
+  ],
+  "symbol": "GODREJPROP",
+  "quarter": "2024Q4"
+}

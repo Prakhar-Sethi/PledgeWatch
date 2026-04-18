@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we are a conservative company and we believe that we should give bad news at the earliest",
+    "short term, there have been challenges",
+    "particle board is suffering both on revenue and profitability",
+    "we don't share any data on this program for competitive reasons",
+    "raw material price increases remain a concern"
+  ],
+  "symbol": "CENTURYPLY",
+  "quarter": "2023Q4"
+}

@@ -1,0 +1,14 @@
+{
+  "evasiveness_score": 0,
+  "confidence_score": 0,
+  "debt_mention_count": 0,
+  "reassurance_score": 0,
+  "analyst_tension_score": 0,
+  "guidance_vagueness_score": 0,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 0,
+  "key_phrases": [],
+  "symbol": "KOTAKBANK",
+  "quarter": "2024Q4"
+}

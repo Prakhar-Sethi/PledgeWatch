@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "long-term guidance remains same",
+    "not worried about market share",
+    "in line with previous years",
+    "no pending litigation",
+    "good collection this year"
+  ],
+  "symbol": "KSCL",
+  "quarter": "2020Q4"
+}

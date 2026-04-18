@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 4,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "borrowings have increased to Rs. 29,270 crores",
+    "profitability could not match the levels achieved",
+    "softening of the coal prices we will surely get a benefit",
+    "working capital increase is almost 14,000 odd crores",
+    "reduction in manpower"
+  ],
+  "symbol": "SAIL",
+  "quarter": "2023Q2"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 8,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "demand and outlook is good",
+    "export prices are remunerative",
+    "no major volatility",
+    "debt repayment plan",
+    "operating at 30% margin"
+  ],
+  "symbol": "JKPAPER",
+  "quarter": "2022Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 5,
+  "debt_mention_count": 18,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 9,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "consolidated loss for Q1 FY'21 was Rs.87 crores compared to profit of Rs.73 crores for Q1 FY'20",
+    "interest and finance charges for the Q1 FY'21 stood at Rs.89 crores",
+    "we may require around Rs.80 to Rs.90 crores support which we are already prepared to do",
+    "repayment cannot be told today because I do not know how after moratorium banks are going to adjust their payment plans",
+    "we have just taken enabling resolution but there is no plan right now for equity financing"
+  ],
+  "symbol": "BRIGADE",
+  "quarter": "2020Q3"
+}

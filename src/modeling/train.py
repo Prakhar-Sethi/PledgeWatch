@@ -113,16 +113,25 @@ def run_phase_3a():
     train_df = df[df["split"] == "train"].copy()
     val_df = df[df["split"] == "val"].copy()
 
-    # Tone-available subsets for fair comparison
+    # Tone-available subsets for M3 (tone-only ablation)
     train_tone = train_df[train_df["tone_available"] == 1].copy()
     val_tone = val_df[val_df["tone_available"] == 1].copy()
+
+    # M4/M5: train on FULL dataset; tone features imputed -1 where missing.
+    # This lets the model use tone where available while keeping full training size.
+    train_full_imputed = train_df.copy()
+    val_full_imputed = val_df.copy()
+    for feat in TONE_FEATURES:
+        if feat in train_full_imputed.columns:
+            train_full_imputed[feat] = train_full_imputed[feat].fillna(-1)
+            val_full_imputed[feat] = val_full_imputed[feat].fillna(-1)
 
     model_configs = {
         "M1_pledge_only": (train_df, val_df, PLEDGE_FEATURES),
         "M2_pledge_price_fin": (train_df, val_df, PLEDGE_FEATURES + PRICE_FIN_FEATURES),
         "M3_tone_only": (train_tone, val_tone, TONE_FEATURES),
-        "M4_full": (train_tone, val_tone, PLEDGE_FEATURES + PRICE_FIN_FEATURES + TONE_FEATURES),
-        "M5_baseline_no_tone": (train_tone, val_tone, PLEDGE_FEATURES + PRICE_FIN_FEATURES),
+        "M4_full": (train_full_imputed, val_full_imputed, PLEDGE_FEATURES + PRICE_FIN_FEATURES + TONE_FEATURES),
+        "M5_baseline_no_tone": (train_df, val_df, PLEDGE_FEATURES + PRICE_FIN_FEATURES),
     }
 
     trained_models = {}

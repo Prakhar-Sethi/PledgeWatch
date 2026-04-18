@@ -13,10 +13,21 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s %(message)s",
     handlers=[
-        logging.FileHandler(PIPELINE_LOG),
+        logging.FileHandler(PIPELINE_LOG, encoding="utf-8"),
         logging.StreamHandler(),
     ]
 )
+# Fix Windows console cp1252 encoding crash on Unicode log messages
+import sys
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+for handler in logging.root.handlers:
+    if isinstance(handler, logging.StreamHandler) and not isinstance(handler, logging.FileHandler):
+        handler.stream = open(sys.stdout.fileno(), mode="w", encoding="utf-8", errors="replace", closefd=False)
 logger = logging.getLogger("pledge_warning")
 
 

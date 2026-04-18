@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 8,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "pruning our portfolio",
+    "combined ratio decreased",
+    "selective in supporting the company",
+    "sacrificed our top line at the altar of the bottom line",
+    "working towards making it go down below 100%"
+  ],
+  "symbol": "GICRE",
+  "quarter": "2022Q3"
+}

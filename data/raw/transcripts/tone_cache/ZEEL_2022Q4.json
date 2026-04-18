@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "cautiously optimistic",
+    "challenging macroeconomic environment",
+    "sequential improvement",
+    "regulatory approval required",
+    "EBITDA margins came in at 14.7%"
+  ],
+  "symbol": "ZEEL",
+  "quarter": "2022Q4"
+}

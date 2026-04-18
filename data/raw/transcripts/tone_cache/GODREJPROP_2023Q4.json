@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "retaining these assets as we think",
+    "continued hikes, but difficult to predict",
+    "approval issues only",
+    "reasonably confident",
+    "expect to recover the full expenditure"
+  ],
+  "symbol": "GODREJPROP",
+  "quarter": "2023Q4"
+}

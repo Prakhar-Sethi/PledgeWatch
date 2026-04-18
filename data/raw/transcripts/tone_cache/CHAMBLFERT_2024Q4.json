@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 4,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "we will be able to sell it, not a problem",
+    "this will normalize",
+    "contracted some amount of fertilisers at six months credit terms showing in payables",
+    "healthy double figure, about Rs. 35 crore to Rs. 40 crore",
+    "we have a roadmap stretching out to 2028"
+  ],
+  "symbol": "CHAMBLFERT",
+  "quarter": "2024Q4"
+}

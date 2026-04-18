@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 7,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "Demand-wise, I see it is a very good opportunities",
+    "we have the highest level of export",
+    "order book is almost INR1,700 crores to INR1,740 crores",
+    "margin is going to have the better margin",
+    "we'll be going to make it on the lower side only"
+  ],
+  "symbol": "MIDHANI",
+  "quarter": "2024Q3"
+}

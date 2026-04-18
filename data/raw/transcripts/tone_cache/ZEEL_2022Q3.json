@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "macro-economic headwinds",
+    "temporary and transitionary phase",
+    "prudent cost discipline",
+    "challenging Q1 along expected lines",
+    "gradual recovery as we progress through the year"
+  ],
+  "symbol": "ZEEL",
+  "quarter": "2022Q3"
+}

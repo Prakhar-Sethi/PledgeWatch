@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 7,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "sustainable level of demand",
+    "cost saving program",
+    "commodity pressure",
+    "ongoing journey",
+    "price hike"
+  ],
+  "symbol": "CROMPTON",
+  "quarter": "2021Q4"
+}

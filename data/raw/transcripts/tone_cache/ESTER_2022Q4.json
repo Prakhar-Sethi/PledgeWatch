@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 5,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "strong balance sheet",
+    "good first half",
+    "challenging macroeconomic environment",
+    "normalize in medium to long term",
+    "improve profitability profile"
+  ],
+  "symbol": "ESTER",
+  "quarter": "2022Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "the company has a very strong balance sheet with no debt",
+    "all the capex will again be done through internal accruals",
+    "I do not want to talk on guidance",
+    "margins have steadily increased over the past few years",
+    "capex over the next three years will be quite high"
+  ],
+  "symbol": "CLEAN",
+  "quarter": "2021Q3"
+}

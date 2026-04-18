@@ -36,5 +36,5 @@ CRASH_THRESHOLD = cfg["model"]["crash_drawdown_threshold"]
 MIN_POSITIVE = cfg["model"]["min_positive_class_size"]
 RANDOM_SEED = cfg["model"]["random_seed"]
 
-CLAUDE_MODEL = cfg["claude"]["model"]
+CLAUDE_MODEL = cfg["claude"]["model"]  # variable name kept for import compat
 MAX_TRANSCRIPT_WORDS = cfg["claude"]["max_transcript_words"]

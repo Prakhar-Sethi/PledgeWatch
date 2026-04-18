@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 4,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "capacity utilization is about 70%",
+    "future lies in e-com",
+    "investment budget",
+    "zero pledge levels",
+    "EBITDA margin should be in the range of 30%"
+  ],
+  "symbol": "EMAMILTD",
+  "quarter": "2020Q4"
+}

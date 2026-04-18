@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "Q1 results do not impact our guidance, since we have already taken into consideration the expected slow performance in Q1 and Q2",
+    "cash and cash equivalents stood at INR 864 crore, marking an increase of INR 109 crore",
+    "guidance of maintaining a 16% CAGR over a period of three years is intact",
+    "the industry by itself has not been doing too great since quarter three of the last year",
+    "growth is projected to be in single digits for the whole year basis"
+  ],
+  "symbol": "CERA",
+  "quarter": "2024Q3"
+}

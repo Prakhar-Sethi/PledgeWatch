@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "net debt to EBITDA is 0.59 times",
+    "We are quite confident that we will be able to conclude this transaction by the end of this fiscal year",
+    "We have already made corrections and I think we are going to start seeing results of that from Q4 onwards",
+    "We expect that we will continue to grow faster than the industry in the coming year despite the short-term blip",
+    "Our gross debt has increased by Rs. 907 crores during the quarter"
+  ],
+  "symbol": "DALBHARAT",
+  "quarter": "2023Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 3,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "gross debt end of June was around Rs. 450 crores",
+    "Q1 tends to influence the full year's margin profile and has a cascading impact",
+    "it may not make sense to take a pricing revision in Q2, we will watch closely",
+    "we have sufficient inventory till Q3, we don't need to buy immediately",
+    "FY23 will be a better year to look at, the macro-outlook is quite positive"
+  ],
+  "symbol": "BLUESTARCO",
+  "quarter": "2021Q3"
+}

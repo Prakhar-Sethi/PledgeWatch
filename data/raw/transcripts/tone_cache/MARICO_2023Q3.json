@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 7,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "resilient performance",
+    "healthy operating margin",
+    "strong business fundamentals",
+    "gradual recovery in overall consumption sentiment",
+    "consistent investments in brand building"
+  ],
+  "symbol": "MARICO",
+  "quarter": "2023Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "growth during the quarter was not as per expectations",
+    "material cost reduced by 3%",
+    "AC business has led the P&L a lot",
+    "profitability targets have been set for the business",
+    "ongoing developments for products are a routine thing"
+  ],
+  "symbol": "IFBIND",
+  "quarter": "2023Q2"
+}

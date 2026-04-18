@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 5,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "We are looking at acquisitions, but nothing that is imminent",
+    "We have tremendous amount of flexibility now",
+    "Our balance sheet position really gives us tremendous flexibility",
+    "We will take a look at it again at the end of the year",
+    "Our overall business continues to generate\u7981\u6bd2>free cash flow in a comfortable manner"
+  ],
+  "symbol": "LUPIN",
+  "quarter": "2019Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 4,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "difficult at this stage",
+    "volatile in this year",
+    "manageable and find no issue",
+    "build the war chest",
+    "20% to 25% is sustainable decent margin"
+  ],
+  "symbol": "JKPAPER",
+  "quarter": "2023Q2"
+}

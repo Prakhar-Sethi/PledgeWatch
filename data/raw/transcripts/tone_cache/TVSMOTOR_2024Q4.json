@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "industry will definitely do well",
+    "we are very confident about that business",
+    "we don't foresee or need for any impairment-related provisions",
+    "we are positive on contribution",
+    "EV will grow"
+  ],
+  "symbol": "TVSMOTOR",
+  "quarter": "2024Q4"
+}

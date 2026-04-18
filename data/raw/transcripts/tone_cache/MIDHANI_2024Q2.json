@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "correction in inventory",
+    "20% to 25% revenue growth expected",
+    "finance cost reduction",
+    "order book healthy condition",
+    "capacity concerns in certain areas"
+  ],
+  "symbol": "MIDHANI",
+  "quarter": "2024Q2"
+}

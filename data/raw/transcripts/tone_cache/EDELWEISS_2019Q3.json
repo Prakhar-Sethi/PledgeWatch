@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 8,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 5,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "proactively stepping up our credit cost",
+    "cash flows are getting very challenged for everybody",
+    "liquidity management, asset quality management, take the pain in P&L",
+    "we are not seeing any increase in stress",
+    "we have done all the stress testing"
+  ],
+  "symbol": "EDELWEISS",
+  "quarter": "2019Q3"
+}

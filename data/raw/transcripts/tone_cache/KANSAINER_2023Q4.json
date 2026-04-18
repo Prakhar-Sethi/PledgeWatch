@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "demand has been subdued for decorative mainly because of erratic monsoons",
+    "raw material prices remained stable despite volatility in crude and Forex",
+    "margin trajectory would be similar to what we saw in the first half",
+    "discount intensity has gone up and as of now I cannot say it is stabilized",
+    "growth in value and volume is similar"
+  ],
+  "symbol": "KANSAINER",
+  "quarter": "2023Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "net cash and investments at the end of June 22 was US$ 337 million",
+    "we reduced the gross debt significantly to $277 million from $313 million",
+    "free cash flow before capex and other items of US$ 121 million",
+    "gross contribution has come down by about 2.8% which is a combination of multiple factors",
+    "we are on track for our guidance for FY24"
+  ],
+  "symbol": "AUROPHARMA",
+  "quarter": "2022Q3"
+}

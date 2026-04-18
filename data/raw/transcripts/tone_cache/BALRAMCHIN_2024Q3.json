@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we will refrain from making a guess this time because last time when we did try to give a guidance, it did not work out",
+    "please just respect our credibility in our eyes",
+    "having deployed our capital into this PLA project, we are not looking at any more capex",
+    "we are tying up debt, it's all being done judiciously",
+    "maize feedstock price is high, it is not very viable at current prices"
+  ],
+  "symbol": "BALRAMCHIN",
+  "quarter": "2024Q3"
+}

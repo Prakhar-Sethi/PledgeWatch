@@ -1,0 +1,20 @@
+{
+  "evasivenessPEPE_score": 7,
+  "confidence_score": 6,
+  "debt_mention_count": 1,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 8,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "uncertainty driven decision making",
+    "seasonally weak quarter",
+    "impact of mortgage business",
+    "margin in stable range",
+    "longer-term perspective"
+  ],
+  "symbol": "MPHASIS",
+  "quarter": "2022Q4"
+}

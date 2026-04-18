@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 3,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "we came back stronger and faster and better",
+    "I don't feel comfortable sharing that level of detail",
+    "revenues did come down quite substantially this quarter",
+    "liquidity dries up and then things slow down",
+    "we have working capital debt, that's it"
+  ],
+  "symbol": "BHARATFORG",
+  "quarter": "2019Q3"
+}

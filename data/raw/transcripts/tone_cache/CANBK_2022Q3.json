@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 1,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 6,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "if this current scenario continues with high interest rate and the same liquidity issue is there in the next two quarters, we may land up at 2.9",
+    "in anticipation of any such sudden shocks, it should not impact our balance sheet",
+    "it started from COVID, it's a mall, so when it is a mall COVID there is an issue",
+    "future ready balance sheet",
+    "we are secured by more than 150% hardcore, city properties"
+  ],
+  "symbol": "CANBK",
+  "quarter": "2022Q3"
+}

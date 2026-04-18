@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 5,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "we don't want to give you an outlook for the future like this",
+    "all I can reassure you is we are seriously working on multiple elements",
+    "midterm planning \u2014 four years to five years",
+    "disproportionate increases in cost driven by logistics, wages, energy, semiconductor-related costs",
+    "we have a quite good liquidity position \u2014 be assured we would like to place the right thing"
+  ],
+  "symbol": "BOSCHLTD",
+  "quarter": "2023Q4"
+}

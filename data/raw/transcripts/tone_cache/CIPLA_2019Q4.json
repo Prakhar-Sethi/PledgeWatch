@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 2,
+  "reassurance_score": 4,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we would avoid giving specific numbers",
+    "we do not have numbers handy with me now",
+    "we will take it offline",
+    "credit squeeze in the market",
+    "cash velocity does not increase it impacts"
+  ],
+  "symbol": "CIPLA",
+  "quarter": "2019Q4"
+}

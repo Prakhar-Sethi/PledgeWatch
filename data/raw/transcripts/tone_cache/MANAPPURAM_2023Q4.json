@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 4,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "maintain the relationship with the banks",
+    "normal standard book which is also a line of liquidity",
+    "completely resolved, we got the final order",
+    "expecting the same momentum as far as growth is concerned",
+    "we don't see any stress in stage two, stage three in gold loan"
+  ],
+  "symbol": "MANAPPURAM",
+  "quarter": "2023Q4"
+}

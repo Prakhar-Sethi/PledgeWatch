@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "high cost inventory liquidation",
+    "maintain gross margins around 35-36%",
+    "supply chain disruptions",
+    "export market exploration",
+    "Dahej plant commissioning"
+  ],
+  "symbol": "DHANUKA",
+  "quarter": "2022Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 7,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "one off quarter",
+    "market is too volatile right now",
+    "slowdown is happening",
+    "operating cash flows have reduced",
+    "unbilled revenue is fake revenue"
+  ],
+  "symbol": "INTELLECT",
+  "quarter": "2022Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "flow of liquidity and credit continues to be a challenge for real-estate and infrastructure customers",
+    "substantial reduction in our borrowing quarter-on-quarter",
+    "moderating the pace of our execution",
+    "payments are tending to be delayed",
+    "balance our overall billing growth with operating cash flow and working capital"
+  ],
+  "symbol": "BLUESTARCO",
+  "quarter": "2019Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 4,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "ED matter is sub-judice",
+    "financial disaster in their organization",
+    "payment problem is still persisting",
+    "difficult to comment at this moment",
+    "doubtful resumption of exports"
+  ],
+  "symbol": "KRBL",
+  "quarter": "2021Q4"
+}

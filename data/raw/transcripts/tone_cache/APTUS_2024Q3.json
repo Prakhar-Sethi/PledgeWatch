@@ -1,0 +1,18 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 3,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "no unpublished price sensitive information was shared/discussed",
+    "earnings conference call for the first quarter ended June 30, 2024",
+    "transcript of the earnings conference call"
+  ],
+  "symbol": "APTUS",
+  "quarter": "2024Q3"
+}

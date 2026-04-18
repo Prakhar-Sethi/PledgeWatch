@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 5,
+  "debt_mention_count": 0,
+  "reassurance_score": 7,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "slowdown in IT hiring",
+    "market remains competitive",
+    "things will get clearer in a few weeks",
+    "normal during any slowdown",
+    "hope is that the Non-IT sector will continue to do better"
+  ],
+  "symbol": "NAUKRI",
+  "quarter": "2023Q3"
+}

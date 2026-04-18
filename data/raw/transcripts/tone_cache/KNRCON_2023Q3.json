@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 5,
+  "debt_mention_count": 5,
+  "reassurance_score": 4,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "payment they are expressing that yes we will do it but we don't have any solid assurance",
+    "this state is heading towards elections, so we hope irrigation payments will not be that even they are now irregular",
+    "the situation is a little bit not favorable",
+    "we are little bit of shaky",
+    "we are trying to recoup as much as possible and keep ourselves in a safe zone"
+  ],
+  "symbol": "KNRCON",
+  "quarter": "2023Q3"
+}

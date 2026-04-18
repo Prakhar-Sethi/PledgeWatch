@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 3,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "expect the gross margins to remain in the range of between say 50% to 52% on a sustainable basis",
+    "we are quite confident of achieving these objectives",
+    "we are expecting to double our revenue, in the U.S. market soon",
+    "we are looking at doubling our revenue",
+    "I believe in the next 2 years, we'll definitely touch INR3,000 crores"
+  ],
+  "symbol": "MARKSANS",
+  "quarter": "2024Q2"
+}

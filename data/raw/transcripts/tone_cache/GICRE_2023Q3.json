@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 8,
+  "debt_mention_count": 2,
+  "reassurance_score": 7,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "combined ratio is temporary",
+    "strategically managing risk",
+    "optimistic about the future",
+    "subject to no major CAT event",
+    "lot of work has been done"
+  ],
+  "symbol": "GICRE",
+  "quarter": "2023Q3"
+}

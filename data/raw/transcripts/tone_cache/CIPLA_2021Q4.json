@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we would stay with what we have communicated and obviously long term there is headroom to improve",
+    "settlement terms are confidential for each party so I cannot confirm a September date",
+    "I have just signed a new contract so very much here",
+    "most of these launches will happen in the second half of next year",
+    "biggest headwind is the commodities inflation and escalation in Chinese source materials"
+  ],
+  "symbol": "CIPLA",
+  "quarter": "2021Q4"
+}

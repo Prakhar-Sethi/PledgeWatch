@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 9,
+  "debt_mention_count": 0,
+  "reassurance_score": 8,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 2,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "fastest growing Company",
+    "market beating performance",
+    "employee wellbeing",
+    "R&D spend is close to 1.5%",
+    "new logo J B Good People for Good Health"
+  ],
+  "symbol": "JBCHEPHARM",
+  "quarter": "2022Q3"
+}

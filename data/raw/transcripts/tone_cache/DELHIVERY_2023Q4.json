@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "strong robust start to the first half of the year",
+    "cash and cash equivalents stand at Rs. 5,534 crores",
+    "significant improvement in revenue quality and working capital",
+    "we look ahead with optimism at the rest of the financial year",
+    "improvement in adjusted EBITDA"
+  ],
+  "symbol": "DELHIVERY",
+  "quarter": "2023Q4"
+}

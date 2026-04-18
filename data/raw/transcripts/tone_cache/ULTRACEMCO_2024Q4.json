@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 7,
+  "confidence_score": 6,
+  "debt_mention_count": 2,
+  "reassurance_score": 8,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "everything falls in line",
+    "our game plan, long-term game plan is always profitable growth",
+    "we are already seeing positive traction from rural markets",
+    "these 1 quarter, 2 quarter slowdowns will not impact our underlying hypothesis of growth",
+    "we will bounce back. Very confident"
+  ],
+  "symbol": "ULTRACEMCO",
+  "quarter": "2024Q4"
+}

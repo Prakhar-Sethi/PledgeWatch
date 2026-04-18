@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 8,
+  "debt_mention_count": 4,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "highest ever second quarter and half year mined and refined metal production",
+    "net profit of INR2,327 crores with a massive growth of 35%",
+    "cost reduction of 6% over last year",
+    "recorded a higher EBITDA margin among its global peers",
+    "consistent cost reduction"
+  ],
+  "symbol": "HINDZINC",
+  "quarter": "2024Q4"
+}

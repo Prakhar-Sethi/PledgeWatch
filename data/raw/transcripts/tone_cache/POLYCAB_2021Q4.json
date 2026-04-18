@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 4,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "Net Cash position increased to Rs 8.7bn",
+    "Profitability improved on a sequential basis",
+    "Severe input cost inflation",
+    "Logistical challenges related to unavailability of containers",
+    "Improving investments in infra and construction projects"
+  ],
+  "symbol": "POLYCAB",
+  "quarter": "2021Q4"
+}

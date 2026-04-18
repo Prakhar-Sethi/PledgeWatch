@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 7,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 8,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "inventory levels have come down significantly",
+    "margins will improve",
+    "touched a bottom in many products",
+    "not able to share any update now",
+    "expecting revenue of about INR30 crores"
+  ],
+  "symbol": "DHANUKA",
+  "quarter": "2023Q3"
+}

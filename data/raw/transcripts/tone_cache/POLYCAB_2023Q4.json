@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 7,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "structural story",
+    "volume growth in the industry has been better than what it has ever been",
+    "recalibrating those targets",
+    "we believe that this should continue in the future as well",
+    "11% to 13% range is something that we'll be able to achieve"
+  ],
+  "symbol": "POLYCAB",
+  "quarter": "2023Q4"
+}

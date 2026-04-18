@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "unaudited financial results for the quarter and half year ended 30th September 2024",
+    "earnings call transcript",
+    "Adani Enterprises Limited",
+    "intimation dated 22nd October 2024",
+    "kindly take the above on your records"
+  ],
+  "symbol": "ADANIENT",
+  "quarter": "2024Q4"
+}

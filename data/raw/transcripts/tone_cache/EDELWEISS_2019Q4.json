@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 12,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 8,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "slow down the car, make sure we get enough gas into the car",
+    "refinancing has completely come to a standstill",
+    "the bond markets have got dislocated",
+    "we want to shrink the wholesale book",
+    "the road has got really bumpy and very uncertain"
+  ],
+  "symbol": "EDELWEISS",
+  "quarter": "2019Q4"
+}

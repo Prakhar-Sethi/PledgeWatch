@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 8,
+  "debt_mention_count": 1,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "I do not want to talk about that in too much detail because lot of other people get ideas from that",
+    "I am not going to share that",
+    "funded by equity and some amount of debt",
+    "fix the cash flow issues people issues and then take and execute new business",
+    "triple digit million-dollar kind of figure"
+  ],
+  "symbol": "BHARATFORG",
+  "quarter": "2021Q4"
+}

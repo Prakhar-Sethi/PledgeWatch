@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 5,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "due to rains and all and as you know this is rainy season and lockdown is there",
+    "I can assure about 80% efficiency in Q3",
+    "sometimes even below 16%-15% also",
+    "they are unable to assess on the equipment assessment",
+    "we will try to boost the execution"
+  ],
+  "symbol": "KNRCON",
+  "quarter": "2020Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "strong volume growth",
+    "lingering effect of the elections and certain liquidity challenges",
+    "higher AdBlue volume",
+    "good control on the working capital",
+    "calibrate our A&P based on share of voice"
+  ],
+  "symbol": "GULFOILLUB",
+  "quarter": "2024Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "stay consistent",
+    "over a period of time",
+    "slow burn",
+    "commitment is takes real commitment",
+    "depending on how those businesses progress"
+  ],
+  "symbol": "COLPAL",
+  "quarter": "2022Q4"
+}

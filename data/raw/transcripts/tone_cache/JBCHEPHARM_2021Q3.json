@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "logistics issues in the BGx market",
+    "freight container cost gone up",
+    "inventory levels absolutely under control",
+    "muted trends in the cough and coal segment",
+    "EBITDA margin close to 27%"
+  ],
+  "symbol": "JBCHEPHARM",
+  "quarter": "2021Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "robust growth across revenue, EBITDA and PAT",
+    "cash and cash equivalents crossed the Rs. 500 crores plus mark",
+    "margins are also expanding, the margins are improving",
+    "the growth continues to be broad based",
+    "we are confident we are working towards it"
+  ],
+  "symbol": "MAPMYINDIA",
+  "quarter": "2023Q4"
+}

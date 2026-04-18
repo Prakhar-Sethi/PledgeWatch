@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "it could be lower than the 220 mark",
+    "the quarter four is usually sometimes up 20% kind of a margin",
+    "we believe that we have responded to the FDA and the FDA has to make its determination",
+    "there are other reasons as well which may have perhaps constrained the product",
+    "the bounce back will not be higher than where Q2 was"
+  ],
+  "symbol": "CIPLA",
+  "quarter": "2024Q4"
+}

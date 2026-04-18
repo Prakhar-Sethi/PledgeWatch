@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "our aspiration continues to be reaching a 13% to 14% EBITDA margin",
+    "things are still completely getting lined up, within the next one to two months we line it up",
+    "individual EBITDA margins unfortunately division wise, I will not be able to share",
+    "we are focusing as a company more on the input rather than the outputs",
+    "we will just get back on this, we just quickly get this number available"
+  ],
+  "symbol": "BECTORFOOD",
+  "quarter": "2022Q3"
+}

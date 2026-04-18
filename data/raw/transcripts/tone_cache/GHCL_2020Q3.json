@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 7,
+  "confidence_score": 5,
+  "debt_mention_count": 5,
+  "reassurance_score": 4,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 8,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "demand is down by 34%",
+    "debt reduction plan",
+    "very volatile market",
+    "inventory reduction happened",
+    "cost reduction which you are seeing"
+  ],
+  "symbol": "GHCL",
+  "quarter": "2020Q3"
+}

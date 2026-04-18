@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we have zero long-term debt, we have lines of about Rs. 40 crore of working capital",
+    "Rs. 268 crore of cash and cash equivalents",
+    "CRISIL has reiterated our A1+ rating for our CP program",
+    "our planned CAPEX is Rs. 21.82 crore, the lowest in many years indicating stability of our business model",
+    "flight to quality, consolidation all that is happening"
+  ],
+  "symbol": "CERA",
+  "quarter": "2020Q3"
+}

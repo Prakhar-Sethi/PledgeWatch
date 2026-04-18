@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 8,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we will be able to maintain 3.5% and 2.5% for next few quarters",
+    "we have not written-off anything at all, last one year is 0",
+    "not even a single case is in DPD",
+    "we are in the process of hiring CRO... same holds true for the CFO also",
+    "we don't chase market share, we focus on we need to double in the next four years"
+  ],
+  "symbol": "CANFINHOME",
+  "quarter": "2022Q4"
+}

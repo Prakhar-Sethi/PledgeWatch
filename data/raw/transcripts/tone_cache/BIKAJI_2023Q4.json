@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "highest ever EBITDA 14.4%",
+    "first year we crossed INR 1,000 crores top line in the first 6 months",
+    "we will not be able to give you any guidance on that stuff",
+    "we want to build close to 0.5% EBITDA improvement year-on-year",
+    "inventory are little bit on high side"
+  ],
+  "symbol": "BIKAJI",
+  "quarter": "2023Q4"
+}

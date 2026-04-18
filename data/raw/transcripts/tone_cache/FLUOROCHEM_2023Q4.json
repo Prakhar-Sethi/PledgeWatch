@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "severe impact by a number of parameters",
+    "expect to see recovery",
+    "optimizing our product mix",
+    "continued destocking",
+    "expect normalization of demand"
+  ],
+  "symbol": "FLUOROCHEM",
+  "quarter": "2023Q4"
+}

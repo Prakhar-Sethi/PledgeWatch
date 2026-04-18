@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "Unaudited Financial Results for the quarter and half year ended 30th September, 2023",
+    "Adani Ports and Special Economic Zone Limited",
+    "Earnings Call transcript",
+    "continuation to our intimation dated 9th November, 2023",
+    "Kindly take the above on your records"
+  ],
+  "symbol": "ADANIPORTS",
+  "quarter": "2023Q4"
+}

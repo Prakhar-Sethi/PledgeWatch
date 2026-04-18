@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 7,
+  "confidence_score": 6,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 6,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "material cost reductions are actually all on track",
+    "we wouldn't want to give a specific guidance on this",
+    "we must streamline payments",
+    "we have lost out in March",
+    "the washer sales have not moved"
+  ],
+  "symbol": "IFBIND",
+  "quarter": "2024Q2"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "operating at 90% plus capacity",
+    "improve the profitability",
+    "stable 80-85% production",
+    "good demand in the export market",
+    "price increases were close to 7-8%"
+  ],
+  "symbol": "JKPAPER",
+  "quarter": "2022Q2"
+}

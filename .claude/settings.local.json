@@ -10,7 +10,9 @@
       "Bash(pkill -f \"run_all.py\")",
       "Bash(git branch *)",
       "Bash(git push *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git remote *)",
+      "Bash(git commit *)"
     ]
   },
   "enableAllProjectMcpServers": true,

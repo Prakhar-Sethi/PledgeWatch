@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "volumes are expected to be down in this quarter",
+    "long-term debt free",
+    "treasury size of approximately Rs. 1,150 crores",
+    "electricity costs have gone up three times or four times",
+    "expansion project will be completed by December 2022"
+  ],
+  "symbol": "HEG",
+  "quarter": "2022Q3"
+}

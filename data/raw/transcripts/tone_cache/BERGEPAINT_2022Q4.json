@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 3,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "Q2 FY 2022-23 Financial Results Conference Call",
+    "Berger Paints India Limited",
+    "SEBI Listing Obligations and Disclosure Requirements",
+    "transcript of earnings call",
+    "for your information and record"
+  ],
+  "symbol": "BERGEPAINT",
+  "quarter": "2022Q4"
+}

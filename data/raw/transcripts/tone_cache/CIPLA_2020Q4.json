@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we still have certain debt servicing obligations on the balance sheet",
+    "efforts on generating and preserving cash would continue",
+    "we are conscious of the feedback that we are being over-transparent in terms of granularity",
+    "we want to avoid too many growth numbers being spoken about",
+    "let us see a couple of more quarters we will be able to give you some precise estimate"
+  ],
+  "symbol": "CIPLA",
+  "quarter": "2020Q4"
+}

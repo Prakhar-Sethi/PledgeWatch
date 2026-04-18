@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 6,
+  "reassurance_score": 6,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "in 2 to 3 years, surely in 3 years, we will sort of see a point where we'll be either 0 debt or a nearly 0 debt company",
+    "our first priority will always be to pay down our debt",
+    "healthy reduction in borrowing and movement of ROCE towards 20% mark",
+    "highest ever quarterly sales, highest ever quarterly EBITDA and highest ever operating PAT",
+    "overall gross working capital continuing to stay stable and inventory turns improving to more than 4x"
+  ],
+  "symbol": "ARVINDFASN",
+  "quarter": "2024Q4"
+}

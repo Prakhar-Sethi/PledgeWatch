@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 1,
+  "reassurance_score": 6,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "weather impact has had 30,000 tons on soda ash and about 40,000 tons on salt",
+    "operations stabilized",
+    "long-term trends, which we have been highlighting, continue to bear, continue to move forward",
+    "It's a quasi-judicial process. So, I would not want to make a comment on it",
+    "Our view is that the pricing, at least going forward, has bottomed out"
+  ],
+  "symbol": "TATACHEM",
+  "quarter": "2024Q4"
+}

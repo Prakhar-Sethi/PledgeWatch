@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 8,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "retire our debt and focus our management bandwidth and capital in scaling up our 5 high conviction brands",
+    "net debt was INR 476 crores and as of now we might be around INR 260 crores to INR 270 crores of net debt",
+    "markets are very uncertain and we are still looking at growth",
+    "business has been sluggish and maybe it's because of cricket or otherwise",
+    "our aspiration is on certain cash flow that we want to generate to reduce our debt levels further"
+  ],
+  "symbol": "ARVINDFASN",
+  "quarter": "2023Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 5,
+  "debt_mention_count": 4,
+  "reassurance_score": 3,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "I do not know what to tell you",
+    "none of our customers are giving us any kind of long-term feedback or business projections",
+    "acute lack of cash in the system to provide a budgetary support for procurement",
+    "it is a stress situation as far as that aspect is concerned",
+    "I may not have been able to answer all your questions to your satisfaction or be overly optimistic but it is purely to be prudent and to be realistic"
+  ],
+  "symbol": "BHARATFORG",
+  "quarter": "2020Q4"
+}

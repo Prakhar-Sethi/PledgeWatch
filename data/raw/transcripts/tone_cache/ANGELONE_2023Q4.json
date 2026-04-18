@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 5,
+  "debt_mention_count": 0,
+  "reassurance_score": 2,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "pleased to invite you to the earnings call",
+    "consider and approve the unaudited standalone and consolidated financial results",
+    "consider, approve and declare 3rd interim dividend",
+    "Trading Window in respect of equity shares of the Company should remain closed",
+    "transcript of the earnings call will be posted on the Company's website"
+  ],
+  "symbol": "ANGELONE",
+  "quarter": "2023Q4"
+}

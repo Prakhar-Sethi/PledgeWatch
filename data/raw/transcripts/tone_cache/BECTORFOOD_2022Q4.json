@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "cashflow continues to be fairly robust",
+    "we haven't officially shared any long-term guidance",
+    "there has been a slight change in plan",
+    "carrying cost which is interest cost reflecting here",
+    "we will have to keep continuing investing on distribution"
+  ],
+  "symbol": "BECTORFOOD",
+  "quarter": "2022Q4"
+}

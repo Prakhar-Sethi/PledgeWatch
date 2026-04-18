@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 5,
+  "debt_mention_count": 5,
+  "reassurance_score": 4,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "Too early to comment on this at this point of time",
+    "We should keep our fingers crossed",
+    "It is very difficult to give any projections for the time being",
+    "We normally do not share this figure",
+    "We are not much in the know of these things"
+  ],
+  "symbol": "SAIL",
+  "quarter": "2022Q2"
+}

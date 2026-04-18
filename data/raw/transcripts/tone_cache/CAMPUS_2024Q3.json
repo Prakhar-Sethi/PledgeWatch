@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we don't give any guidance, sticking by it",
+    "we were not expecting this kind of demand for the open category",
+    "calibrated our production accordingly in quarter one",
+    "competition would not have working capital to have new products",
+    "aspiring to get to those numbers for sure, there is no doubt"
+  ],
+  "symbol": "CAMPUS",
+  "quarter": "2024Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 12,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "continued commitment to meet the diverse needs of our customers",
+    "healthy interest and further enriched our range",
+    "optimistic view of this opportunity",
+    "very good returns if you can stomach some volatility",
+    "team is working very hard"
+  ],
+  "symbol": "HDFCAMC",
+  "quarter": "2023Q3"
+}

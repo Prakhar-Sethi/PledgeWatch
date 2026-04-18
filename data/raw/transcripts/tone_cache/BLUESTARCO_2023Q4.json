@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 3,
+  "reassurance_score": 4,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "on an immediate basis, the money will go for debt repayments",
+    "incremental working capital is always going to be there as we scale up",
+    "we are not chasing market share, we are chasing profitability and cash flows",
+    "keeping money idle would definitely not be a good financial proposition",
+    "free cash flows, that is the secret to improving the margin scale"
+  ],
+  "symbol": "BLUESTARCO",
+  "quarter": "2023Q4"
+}

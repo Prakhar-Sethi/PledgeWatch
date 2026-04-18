@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 3,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we will not be able to give you the number of bids",
+    "it will be too premature to name those clients",
+    "the Board will deliberate on the same",
+    "few of the arbitrations have already been awarded in the favour of the company",
+    "we don't provide segment-wise margin as it is bidding price-sensitive information"
+  ],
+  "symbol": "AWHCL",
+  "quarter": "2021Q4"
+}

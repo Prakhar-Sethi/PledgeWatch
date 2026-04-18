@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "compromising volumes to retain realizations",
+    "anticipated growth of 10% in top line",
+    "bullish on cotton in the long term",
+    "production constraints due to pest and rainfall",
+    "export growth expected to outpace domestic growth"
+  ],
+  "symbol": "KSCL",
+  "quarter": "2024Q3"
+}

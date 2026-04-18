@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "EBITDA margins increased",
+    "raw material prices are going up",
+    "demand picking up from rural India",
+    "capacity cushion of 30%-40%",
+    "Q2 EBITDA margin should not be expected to be the norm"
+  ],
+  "symbol": "RELAXO",
+  "quarter": "2020Q4"
+}

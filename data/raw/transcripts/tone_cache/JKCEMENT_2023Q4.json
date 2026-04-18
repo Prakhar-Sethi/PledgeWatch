@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "net debt is at the peak level",
+    "some small borrowing may come up",
+    "cost saving of maybe about INR50",
+    "freight increase on account of the railway freight",
+    "maintenance cost has been a bit high"
+  ],
+  "symbol": "JKCEMENT",
+  "quarter": "2023Q4"
+}

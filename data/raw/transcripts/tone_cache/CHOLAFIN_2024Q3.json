@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 3,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "investors earnings call for the quarter ended June 30, 2024",
+    "Transcript of the Earnings Call has also been uploaded",
+    "Cholamandalam Investment and Finance Company Limited",
+    "further to our letter dated July 29, 2024",
+    "We request you to take the above on record"
+  ],
+  "symbol": "CHOLAFIN",
+  "quarter": "2024Q3"
+}

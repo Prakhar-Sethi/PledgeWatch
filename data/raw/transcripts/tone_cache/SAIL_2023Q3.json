@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 5,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "hopeful that the good times await us",
+    "borrowings will come down",
+    "coal prices seem to have stabilized",
+    "expecting benefit of price revision of rails",
+    "optimistic that we should bring it down"
+  ],
+  "symbol": "SAIL",
+  "quarter": "2023Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 4,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "targeting commissioning in Q3 or early Q4",
+    "EBITDA margins should be in the vicinity of 42% to 50%",
+    "demerger scheme already approved by the board",
+    "no cash balance transfer to the steel company",
+    "very confident that it will remain well within the estimate"
+  ],
+  "symbol": "NMDC",
+  "quarter": "2021Q3"
+}

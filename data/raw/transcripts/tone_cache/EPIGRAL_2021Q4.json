@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 8,
+  "debt_mention_count": 2,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "project CAPEX will be fully funded through internal accruals",
+    "debt-to-EBITDA will improve with this new product",
+    "We are extremely excited about the new project",
+    "focus at MFL is to create superior shareholder value",
+    "definitely we do not have tie up right now"
+  ],
+  "symbol": "EPIGRAL",
+  "quarter": "2021Q4"
+}

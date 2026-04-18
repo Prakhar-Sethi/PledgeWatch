@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "drag is already coming down",
+    "interest cost is overall our borrowing level will remain around Rs. 1,000 crore or so",
+    "things are improving",
+    "productivity is also resulting in much better now",
+    "cost reductions and on continuous basis working on to reduce the cost"
+  ],
+  "symbol": "IPCALAB",
+  "quarter": "2023Q3"
+}

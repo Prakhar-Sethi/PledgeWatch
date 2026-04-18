@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "remarkable growth is a testament to our focus",
+    "we cannot and we will not predict what the share price will be",
+    "strong portfolio of product solutions and services",
+    "operating margins for couple of years were 42%",
+    "balance sheet of your Company is actually very strong"
+  ],
+  "symbol": "OFSS",
+  "quarter": "2024Q3"
+}

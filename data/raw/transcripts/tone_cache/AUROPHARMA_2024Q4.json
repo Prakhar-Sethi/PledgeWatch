@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 3,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "net debt position after the investments stood at US$133 million",
+    "net cash outflow of US$235 million during the quarter mainly due to buyback and increased working capital",
+    "increased working capital is expected to get released before the end of the year",
+    "we are confident of achieving our internally targeted EBITDA margins of 21% to 22% for FY25",
+    "we anticipate a normalization of our net debt position over the course of the year"
+  ],
+  "symbol": "AUROPHARMA",
+  "quarter": "2024Q4"
+}

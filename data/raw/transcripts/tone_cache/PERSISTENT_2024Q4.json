@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "18 sequential quarters of growth",
+    "healthy revenue growth of 18.4% year-on-year",
+    "EBIT margin for the quarter came in at 14%",
+    "comprehensive AI strategy continues to be built",
+    "carbon neutrality for Scope 1 and Scope 2 emissions"
+  ],
+  "symbol": "PERSISTENT",
+  "quarter": "2024Q4"
+}

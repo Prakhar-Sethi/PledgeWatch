@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 7,
+  "confidence_score": 6,
+  "debt_mention_count": 5,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 5,
+  "key_phrases": [
+    "We cannot share the details now",
+    "This is the maximum debt",
+    "We will not go beyond this",
+    "Definitely, we will focus on deleveraging",
+    "It depends upon the cash flows"
+  ],
+  "symbol": "RAMCOCEM",
+  "quarter": "2023Q4"
+}

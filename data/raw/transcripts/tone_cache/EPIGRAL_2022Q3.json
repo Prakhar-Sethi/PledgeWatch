@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 2,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "EBITDA has doubled at Rs.187 Crores",
+    "debt to EBITDA has improved to 1.6x",
+    "margins for the year as a whole should be around 28% plus or minus 2%",
+    "plant is moving as per schedule",
+    "export percentage will increase in coming times"
+  ],
+  "symbol": "EPIGRAL",
+  "quarter": "2022Q3"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "service support and supply chain issues",
+    "challenges we are facing mainly due to supply chain disruptions",
+    "we have made the 100% provisions",
+    "We do not expect anything in the near future",
+    "we are trying to target around Rs.3,000 level for the full year approximately"
+  ],
+  "symbol": "COCHINSHIP",
+  "quarter": "2020Q4"
+}

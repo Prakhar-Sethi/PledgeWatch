@@ -117,6 +117,17 @@ def run_phase_3b():
     test_df = df[df["split"] == "test"].copy()
     test_tone = test_df[test_df["tone_available"] == 1].copy()
 
+    # M4 trained on full data with tone imputed -1; evaluate same way
+    TONE_FEATURES = [
+        "evasiveness_score", "confidence_score", "debt_mention_count",
+        "reassurance_score", "analyst_tension_score", "guidance_vagueness_score",
+        "liquidity_stress_mentions", "tone_shift_flag", "overall_distress_score",
+    ]
+    test_full_imputed = test_df.copy()
+    for feat in TONE_FEATURES:
+        if feat in test_full_imputed.columns:
+            test_full_imputed[feat] = test_full_imputed[feat].fillna(-1)
+
     model_files = list(MODELS_DIR.glob("*.pkl"))
     model_files = [f for f in model_files if "feature_lists" not in f.name]
 
@@ -124,8 +135,8 @@ def run_phase_3b():
         "M1_pledge_only": test_df,
         "M2_pledge_price_fin": test_df,
         "M3_tone_only": test_tone,
-        "M4_full": test_tone,
-        "M5_baseline_no_tone": test_tone,
+        "M4_full": test_full_imputed,
+        "M5_baseline_no_tone": test_df,
     }
 
     results = []

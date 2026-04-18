@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 8,
+  "debt_mention_count": 5,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "Our borrowings increased to Rs 30 billion at the end of the quarter. A large part of this incremental borrowing is temporary in nature, which has already been repaid as we speak.",
+    "we want to run the business at a healthy operating margin between 45% and 50%",
+    "we have performed exceptionally well on this front, and we have had pretty much zero to no business loss at all",
+    "our annualized average return on equity stood at 45.5%",
+    "we achieved our lifetime best quarterly profit of over Rs 2.1 billion"
+  ],
+  "symbol": "ANGELONE",
+  "quarter": "2022Q4"
+}

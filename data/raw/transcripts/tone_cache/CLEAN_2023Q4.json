@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "expect it to normalize by over 100 bps in due course",
+    "economies of scale do not permit us for the time being",
+    "it will take at least another quarter or so",
+    "we are sitting on cash of Rs. 250 odd crores",
+    "the prices should not lower beyond this point"
+  ],
+  "symbol": "CLEAN",
+  "quarter": "2023Q4"
+}

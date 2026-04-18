@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 7,
+  "debt_mention_count": 4,
+  "reassurance_score": 6,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 6,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "depends on how you look",
+    "very difficult to give guidance",
+    "wait for the best opportunity",
+    "no risk from a capital perspective",
+    "pretty confident"
+  ],
+  "symbol": "GODREJPROP",
+  "quarter": "2019Q4"
+}

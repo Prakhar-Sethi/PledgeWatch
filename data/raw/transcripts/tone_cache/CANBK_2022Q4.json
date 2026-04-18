@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 3,
+  "reassurance_score": 7,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 4,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "for Canara Bank, resources or liquidity is not going to be a problem",
+    "decent double-digit growth",
+    "Gross NPA has come down from 8.42 to 6.37",
+    "Net Profit YoY growth is about 89%",
+    "we are confident that there will be a decent double-digit growth"
+  ],
+  "symbol": "CANBK",
+  "quarter": "2022Q4"
+}

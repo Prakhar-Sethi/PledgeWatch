@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 4,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 3,
+  "key_phrases": [
+    "company continue to be debt-free with enough liquidity",
+    "actively working to improve post-merger margin",
+    "expect an increase in demand due to government initiative",
+    "discussions have been very positive",
+    "growth momentum will start from October"
+  ],
+  "symbol": "ESCORTS",
+  "quarter": "2024Q4"
+}

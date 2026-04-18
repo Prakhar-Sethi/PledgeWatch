@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 0,
+  "reassurance_score": 6,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "oisRevPAR growth remains very strong",
+    "we are very pleased to see that",
+    "we expect this trend to continue",
+    "business momentum is very strong",
+    "we have no debt and we also have cash"
+  ],
+  "symbol": "INDHOTEL",
+  "quarter": "2023Q4"
+}

@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 5,
+  "analyst_tension_score": 2,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we don't give forward-looking numbers",
+    "expect us to peak at no more than INR1,850 crores, INR1,900 crores",
+    "net debt has gone up from about INR1,530 crores to about INR1,665 crores",
+    "we had raised INR1,000 crores from a QIP to enable our balance sheet to handle growth opportunities",
+    "I will let the team sort of work that out before we come back with any commentary"
+  ],
+  "symbol": "CHALET",
+  "quarter": "2024Q4"
+}

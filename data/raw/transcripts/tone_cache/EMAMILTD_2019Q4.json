@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 5,
+  "debt_mention_count": 1,
+  "reassurance_score": 7,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "pledge has also come down from 69% to 63%",
+    "macro environment were not favorable",
+    "still we have to struggle to get the growth numbers",
+    "we are committed to bring it down to zero levels",
+    "there is no clear trend that okay this growth has come back"
+  ],
+  "symbol": "EMAMILTD",
+  "quarter": "2019Q4"
+}

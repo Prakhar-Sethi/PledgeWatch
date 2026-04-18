@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 5,
+  "confidence_score": 6,
+  "debt_mention_count": 0,
+  "reassurance_score": 4,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "interactive Question & Answer session",
+    "represented by management team",
+    "details of the conference call",
+    "for further information please contact",
+    "executive director \u2013 consumer"
+  ],
+  "symbol": "PIDILITIND",
+  "quarter": "2020Q3"
+}

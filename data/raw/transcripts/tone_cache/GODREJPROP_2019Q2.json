@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 7,
+  "confidence_score": 6,
+  "debt_mention_count": 2,
+  "reassurance_score": 8,
+  "analyst_tension_score": 5,
+  "guidance_vagueness_score": 7,
+  "liquidity_stress_mentions": 3,
+  "tone_shift_flag": 1,
+  "overall_distress_score": 6,
+  "key_phrases": [
+    "adjustment where the reversal of revenue",
+    "certain adjustments which auditor suggested",
+    "focus is on using this period of opportunity",
+    "visibility is pretty good",
+    "accounting related issues of lndAS 115"
+  ],
+  "symbol": "GODREJPROP",
+  "quarter": "2019Q2"
+}

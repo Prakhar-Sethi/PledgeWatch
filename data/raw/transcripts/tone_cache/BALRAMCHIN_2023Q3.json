@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 3,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 1,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 2,
+  "key_phrases": [
+    "we find ourselves adequately equipped to take care of that opportunity, both in terms of cash flow and storage",
+    "it will not add to profitability, it will lower the loss",
+    "we hardly give profitability guidance",
+    "for reasons beyond our control",
+    "there is a penalty condition attached if you do not tender"
+  ],
+  "symbol": "BALRAMCHIN",
+  "quarter": "2023Q3"
+}

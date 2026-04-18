@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 2,
+  "confidence_score": 8,
+  "debt_mention_count": 1,
+  "reassurance_score": 6,
+  "analyst_tension_score": 1,
+  "guidance_vagueness_score": 3,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 1,
+  "key_phrases": [
+    "first time it has crossed a quarterly net profit of 4000 crores",
+    "Gross NPA has come down below 4% i.e. 3.73%",
+    "Net NPA also has come down below 1% from the June level of 1.24%",
+    "SMA-2 contributed 60% from two accounts including a Central Government steel exposure and a State Government account",
+    "by pledging that, we can draw some money from the RBI at 6.5"
+  ],
+  "symbol": "CANBK",
+  "quarter": "2023Q3"
+}

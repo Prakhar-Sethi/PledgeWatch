@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 4,
+  "confidence_score": 7,
+  "debt_mention_count": 3,
+  "reassurance_score": 5,
+  "analyst_tension_score": 3,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 2,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "caution on couple of things if the economic activity slows down",
+    "growth trajectory will continue",
+    "historically the loss given default in this asset class has been minimal or negligible",
+    "provisions are higher",
+    "plan to slow down"
+  ],
+  "symbol": "IIFL",
+  "quarter": "2023Q4"
+}

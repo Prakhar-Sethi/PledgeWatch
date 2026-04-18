@@ -1,0 +1,20 @@
+{
+  "evasiveness_score": 6,
+  "confidence_score": 7,
+  "debt_mention_count": 0,
+  "reassurance_score": 5,
+  "analyst_tension_score": 4,
+  "guidance_vagueness_score": 5,
+  "liquidity_stress_mentions": 0,
+  "tone_shift_flag": 0,
+  "overall_distress_score": 4,
+  "key_phrases": [
+    "we will handle it within the whatever law permits us to",
+    "we have kept enough cash for the acquisitions",
+    "we will continue to evaluate the use of cash",
+    "we will try to resolve this matter to everyone\u2019s satisfaction",
+    "we cannot go and buy companies and make acquisitions without finding the core of the strategy fit"
+  ],
+  "symbol": "MPHASIS",
+  "quarter": "2021Q4"
+}
