@@ -1,0 +1,16 @@
+data:
+  start_date: '2015-01-01'
+  end_date: '2024-12-31'
+  train_end: '2020-12-31'
+  val_end: '2022-12-31'
+
+model:
+  crash_drawdown_threshold: 0.30
+  prediction_horizon_quarters: 2
+  min_positive_class_size: 20
+  random_seed: 42
+
+claude:
+  model: 'claude-sonnet-4-20250514'
+  max_transcript_words: 6000
+  tone_cache_dir: 'data/raw/transcripts/tone_cache'

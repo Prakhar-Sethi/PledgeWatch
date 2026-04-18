@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Data (large files, scraped data)
+data/raw/
+data/processed/*.parquet
+data/processed/models/
+data/labels/
+
+# Keep processed CSVs and results
+!data/processed/results_table.csv
+!data/processed/shap_importance.csv
+!data/labels/.gitkeep
+
+# Logs
+pipeline.log
+
+# API keys / secrets
+.env
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Paper build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+paper/_minted*
