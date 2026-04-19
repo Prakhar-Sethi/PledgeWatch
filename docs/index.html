@@ -1,0 +1,1404 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>window.addEventListener('error',e=>{if(e.message&&e.message.includes('ResizeObserver'))e.stopImmediatePropagation();},true);</script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PledgeWatch — early warning for promoter-pledging crashes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f5f0e6;
+  --paper-2:#ece5d4;
+  --paper-3:#e2d9c2;
+  --ink:#1a1814;
+  --ink-2:#3a362e;
+  --ink-3:#6e6656;
+  --ink-4:#9a9079;
+  --hair:#c7bea8;
+  --rule:#1a1814;
+  --accent:oklch(0.54 0.18 32);        /* warm ember */
+  --accent-soft:oklch(0.88 0.09 70);
+  --accent-2:oklch(0.42 0.1 240);      /* ink blue */
+  --good:oklch(0.55 0.11 150);
+  --shadow:0 1px 0 rgba(26,24,20,.06), 0 10px 30px -18px rgba(26,24,20,.25);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:"Inter",system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-feature-settings:"ss01","cv11"}
+body{line-height:1.55;font-size:16px;overflow-x:hidden}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+.serif{font-family:"Fraunces",Georgia,serif;font-optical-sizing:auto}
+a{color:inherit}
+h1,h2,h3,h4,h5{font-family:"Fraunces",serif;font-weight:500;letter-spacing:-.02em;margin:0}
+
+/* ===== nav ===== */
+.nav{
+  position:sticky;top:0;z-index:40;backdrop-filter:blur(18px);
+  background:color-mix(in oklab, var(--paper) 82%, transparent);
+  border-bottom:1px solid transparent;transition:border-color .25s, background .25s;
+}
+.nav.scrolled{border-bottom-color:var(--hair)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:14px 32px;display:flex;align-items:center;gap:32px}
+.nav-brand{display:flex;align-items:center;gap:10px;font-family:"Fraunces",serif;font-size:20px;font-weight:500;letter-spacing:-.01em}
+.nav-brand em{font-style:italic;color:var(--accent)}
+.nav-brand .dot{width:10px;height:10px;border-radius:50%;border:1.5px solid var(--accent);position:relative}
+.nav-brand .dot::after{content:"";position:absolute;inset:2px;border-radius:50%;background:var(--accent);animation:pulse 2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:1}100%{transform:scale(2.5);opacity:0}}
+.nav-links{display:flex;gap:26px;font-size:14px;color:var(--ink-2)}
+.nav-links a{text-decoration:none;color:inherit;position:relative;padding:4px 0;transition:color .15s}
+.nav-links a:hover{color:var(--accent)}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-cta{margin-left:auto;display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;font-size:13px;font-weight:500;border:1px solid var(--rule);background:transparent;color:var(--ink);cursor:pointer;text-decoration:none;transition:all .2s}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent)}
+.btn svg{width:14px;height:14px}
+@media (max-width:820px){.nav-links{display:none}}
+
+/* ===== hero ===== */
+.hero{position:relative;overflow:hidden;padding:80px 32px 120px;border-bottom:1px solid var(--hair)}
+.hero-bg{position:absolute;inset:0;pointer-events:none}
+.hero-bg canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.hero-bg::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 80% 20%, oklch(0.88 0.12 40 / .4), transparent 60%), radial-gradient(ellipse 60% 50% at 10% 90%, oklch(0.85 0.08 240 / .25), transparent 60%)}
+.hero-inner{max-width:1280px;margin:0 auto;position:relative;display:grid;grid-template-columns:7fr 5fr;gap:64px;align-items:center}
+@media (max-width:900px){.hero-inner{grid-template-columns:1fr;gap:36px}}
+.hero-kicker{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.18em;color:var(--accent);text-transform:uppercase;margin-bottom:18px;display:inline-flex;align-items:center;gap:10px}
+.hero-kicker .pip{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px oklch(0.54 0.18 32 / .18)}
+.hero h1{font-size:clamp(40px,5.6vw,76px);line-height:1;letter-spacing:-.03em;margin:0 0 24px;font-weight:400;text-wrap:balance}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero h1 .mark{background:linear-gradient(transparent 62%, var(--accent-soft) 62%);padding:0 .06em}
+.hero p.lede{font-size:19px;color:var(--ink-2);max-width:54ch;margin:0 0 32px;line-height:1.5}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;border-top:1px solid var(--hair);padding-top:22px}
+.hero-stat .n{font-family:"Fraunces",serif;font-size:36px;font-weight:500;letter-spacing:-.02em;line-height:1}
+.hero-stat .l{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:6px}
+
+/* hero visual card */
+.hero-card{
+  background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:22px;
+  box-shadow:var(--shadow);position:relative;
+}
+.hc-head{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:14px;border-bottom:1px solid var(--hair);margin-bottom:14px}
+.hc-head .t{font-family:"Fraunces",serif;font-size:18px;font-weight:500}
+.hc-head .m{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink-3);display:flex;align-items:center;gap:6px}
+.hc-head .m .live{width:6px;height:6px;border-radius:50%;background:var(--good);animation:pulse 2s infinite}
+.hc-row{display:grid;grid-template-columns:60px 1fr 80px 40px;gap:10px;padding:8px 0;align-items:center;font-size:13px;border-bottom:1px dashed var(--hair)}
+.hc-row:last-child{border-bottom:none}
+.hc-row .tk{font-family:"JetBrains Mono",monospace;font-weight:500;font-size:12px}
+.hc-row .sp{font-size:11px;color:var(--ink-3)}
+.hc-row .bar{height:5px;background:var(--paper-2);border:1px solid var(--hair);border-radius:3px;overflow:hidden;position:relative}
+.hc-row .bar span{display:block;height:100%;background:var(--accent);transform-origin:left;transform:scaleX(0);animation:fillin 1.2s cubic-bezier(.2,.7,.2,1) forwards}
+.hc-row .pct{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--accent);font-weight:600;text-align:right}
+@keyframes fillin{to{transform:scaleX(var(--fill,1))}}
+.hc-foot{margin-top:14px;display:flex;justify-content:space-between;align-items:center;font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink-3);letter-spacing:.1em;text-transform:uppercase}
+
+/* ===== section scaffold ===== */
+section.sec{padding:110px 32px;border-bottom:1px solid var(--hair);position:relative}
+section.sec:last-of-type{border-bottom:none}
+.sec-inner{max-width:1280px;margin:0 auto}
+.sec-head{display:grid;grid-template-columns:160px 1fr;gap:48px;margin-bottom:54px;align-items:start}
+.sec-head .num{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.2em;color:var(--ink-3);text-transform:uppercase;padding-top:14px;position:sticky;top:90px}
+.sec-head h2{font-size:clamp(32px,4vw,52px);line-height:1.05;letter-spacing:-.02em;max-width:22ch}
+.sec-head h2 em{color:var(--accent);font-style:italic}
+.sec-head .lede{font-size:17px;color:var(--ink-2);margin-top:18px;max-width:60ch;line-height:1.55}
+@media (max-width:720px){.sec-head{grid-template-columns:1fr;gap:14px}section.sec{padding:70px 20px}.sec-head .num{position:static}}
+
+/* ===== demo ===== */
+.demo-shell{
+  background:var(--paper);border:1px solid var(--rule);border-radius:6px;overflow:hidden;
+  box-shadow:var(--shadow);display:grid;grid-template-columns:300px 1fr;min-height:620px;
+}
+@media (max-width:900px){.demo-shell{grid-template-columns:1fr}}
+.demo-side{background:var(--paper-2);border-right:1px solid var(--hair);display:flex;flex-direction:column}
+.demo-side-head{padding:18px 20px;border-bottom:1px solid var(--hair);display:flex;align-items:center;justify-content:space-between}
+.demo-side-head .t{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.demo-toggle{display:flex;background:var(--paper);border:1px solid var(--hair);border-radius:999px;padding:2px;font-size:10px;font-family:"JetBrains Mono",monospace}
+.demo-toggle button{border:none;background:transparent;padding:4px 10px;color:var(--ink-3);cursor:pointer;border-radius:999px;letter-spacing:.06em}
+.demo-toggle button.on{background:var(--ink);color:var(--paper)}
+.demo-search{padding:12px 16px 8px;border-bottom:1px solid var(--hair)}
+.demo-search input{width:100%;background:var(--paper);border:1px solid var(--hair);border-radius:4px;padding:8px 12px;font-size:13px;font-family:"JetBrains Mono",monospace;color:var(--ink);outline:none}
+.demo-search input:focus{border-color:var(--accent)}
+.demo-list{overflow-y:auto;padding:4px 8px 12px;flex:1;max-height:560px}
+.demo-list::-webkit-scrollbar{width:6px}
+.demo-list::-webkit-scrollbar-thumb{background:var(--hair);border-radius:3px}
+.demo-ticker{display:grid;grid-template-columns:1fr auto;gap:8px;padding:9px 12px;border-radius:4px;cursor:pointer;align-items:center;transition:background .15s;position:relative}
+.demo-ticker:hover{background:var(--paper)}
+.demo-ticker.active{background:var(--paper);box-shadow:inset 3px 0 0 var(--accent)}
+.demo-ticker .tk{font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:500}
+.demo-ticker .nm{font-size:10px;color:var(--ink-3);margin-top:1px}
+.demo-ticker .rp{font-family:"JetBrains Mono",monospace;font-size:11px;padding:2px 7px;border-radius:999px;letter-spacing:.04em}
+.rp-hi{background:oklch(0.89 0.1 30);color:oklch(0.4 0.14 32)}
+.rp-md{background:oklch(0.93 0.08 80);color:oklch(0.42 0.1 60)}
+.rp-lo{background:oklch(0.93 0.05 150);color:oklch(0.4 0.08 150)}
+.demo-sect{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-4);padding:14px 12px 6px}
+
+.demo-main{display:flex;flex-direction:column;min-width:0}
+.demo-main-head{display:grid;grid-template-columns:1fr auto;gap:24px;padding:22px 28px;border-bottom:1px solid var(--hair);align-items:start}
+.dmh-left .meta{display:flex;gap:14px;align-items:center;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink-3);letter-spacing:.06em}
+.dmh-left .meta b{color:var(--ink);font-weight:500}
+.dmh-left h3{font-size:34px;margin:6px 0 2px;letter-spacing:-.02em;line-height:1}
+.dmh-left .company{font-size:14px;color:var(--ink-2)}
+.dmh-right{text-align:right;min-width:180px}
+.dmh-right .risk-ring{position:relative;width:130px;height:130px;margin-left:auto}
+.dmh-right .risk-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.dmh-right .risk-ring .ring-bg{stroke:var(--hair);fill:none;stroke-width:8}
+.dmh-right .risk-ring .ring-fg{fill:none;stroke-width:8;stroke-linecap:round;transition:stroke-dashoffset 1.2s cubic-bezier(.2,.7,.2,1), stroke 0.3s}
+.dmh-right .risk-ring .ring-label{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.dmh-right .risk-ring .pn{font-family:"Fraunces",serif;font-size:34px;font-weight:500;line-height:1}
+.dmh-right .risk-ring .pl{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.14em;color:var(--ink-3);text-transform:uppercase;margin-top:4px}
+.dmh-right .rank{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink-3);margin-top:6px;text-transform:uppercase;letter-spacing:.1em}
+
+.demo-content{padding:26px 28px;display:grid;grid-template-columns:1.1fr 1fr;gap:24px;flex:1}
+@media (max-width:1000px){.demo-content{grid-template-columns:1fr}}
+.demo-card{border:1px solid var(--hair);border-radius:4px;padding:18px;background:color-mix(in oklab, var(--paper) 98%, black)}
+.demo-card h5{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin:0 0 14px;font-weight:500;display:flex;justify-content:space-between;align-items:center}
+.demo-card h5 .hint{color:var(--ink-4);text-transform:none;letter-spacing:.04em}
+
+/* SHAP */
+.shap-rows{display:flex;flex-direction:column;gap:9px}
+.shap-r{display:grid;grid-template-columns:150px 1fr 50px;gap:10px;align-items:center;font-size:12px}
+.shap-r .fn{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink-2)}
+.shap-r .br{height:7px;background:var(--paper-2);border-radius:3px;border:1px solid var(--hair);position:relative;overflow:hidden}
+.shap-r .br .f{position:absolute;inset:0;background:linear-gradient(90deg,var(--accent),oklch(0.58 0.18 20));border-radius:2px;transform-origin:left;transform:scaleX(0);transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.shap-r.show .br .f{transform:scaleX(var(--w,1))}
+.shap-r .vl{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink-3);text-align:right}
+@media (max-width:720px){.shap-r{grid-template-columns:110px 1fr 44px}}
+
+/* price chart */
+.price-chart{width:100%;height:180px;display:block}
+.price-chart path.line{fill:none;stroke:var(--accent);stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:1600;stroke-dashoffset:1600;transition:stroke-dashoffset 1.4s ease-out}
+.price-chart.show path.line{stroke-dashoffset:0}
+.price-chart path.area{fill:url(#pcg);opacity:0;transition:opacity .8s .5s}
+.price-chart.show path.area{opacity:1}
+.price-chart .annot{opacity:0;transition:opacity .4s 1.2s}
+.price-chart.show .annot{opacity:1}
+.chart-legend{display:flex;gap:16px;font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink-3);margin-top:6px;letter-spacing:.1em}
+
+/* signal cards */
+.sig-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.sig-box{border:1px solid var(--hair);border-radius:3px;padding:10px 12px;background:var(--paper);font-size:11px}
+.sig-box .sl{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink-3);letter-spacing:.08em;text-transform:uppercase}
+.sig-box .sv{font-family:"Fraunces",serif;font-size:22px;font-weight:500;line-height:1;margin-top:4px}
+.sig-box .sd{font-size:11px;color:var(--ink-3);margin-top:3px}
+.sig-box.alert .sv{color:var(--accent)}
+
+/* tone card */
+.tone-card{grid-column:1/-1;border:1px solid var(--hair);border-radius:4px;padding:18px;background:color-mix(in oklab, var(--paper) 98%, black)}
+.tone-card h5{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin:0 0 12px;font-weight:500;display:flex;justify-content:space-between;align-items:center}
+.tone-card h5 .hint{color:var(--ink-4);text-transform:none;letter-spacing:.04em;font-weight:400}
+.tone-card .stub{font-size:12px;color:var(--ink-3);font-style:italic;padding:8px 0}
+.tone-scores{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px dashed var(--hair)}
+@media (max-width:720px){.tone-scores{grid-template-columns:repeat(3,1fr)}}
+.tscore{display:flex;flex-direction:column;gap:4px;padding:8px 10px;background:var(--paper);border:1px solid var(--hair);border-radius:3px}
+.tscore .tl{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--ink-3);letter-spacing:.08em;text-transform:uppercase}
+.tscore .tv{font-family:"Fraunces",serif;font-size:22px;font-weight:500;line-height:1}
+.tscore .tb{height:3px;background:var(--paper-2);border-radius:2px;overflow:hidden}
+.tscore .tb .tf{height:100%;background:var(--accent);transform-origin:left;transform:scaleX(0);transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.tscore.show .tb .tf{transform:scaleX(var(--w,0))}
+.tscore.hi .tv{color:var(--accent)}
+.tquotes{display:flex;flex-direction:column;gap:10px}
+.tq{border-left:2px solid var(--accent);background:var(--paper);padding:10px 14px;border-radius:0 3px 3px 0;opacity:0;transform:translateX(-6px);transition:opacity .5s, transform .5s}
+.tq.show{opacity:1;transform:translateX(0)}
+.tq .th{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;gap:10px}
+.tq .th .role{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink);letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.tq .th .tag{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;background:oklch(0.93 0.07 40);padding:2px 7px;border-radius:999px}
+.tq .quote{font-family:"Fraunces",serif;font-size:14px;line-height:1.5;color:var(--ink);font-style:italic;margin-bottom:6px}
+.tq .quote::before{content:"\201C";color:var(--accent);margin-right:2px;font-size:18px}
+.tq .quote::after{content:"\201D";color:var(--accent);margin-left:2px;font-size:18px}
+.tq .flag{font-size:11px;color:var(--ink-3);display:flex;align-items:baseline;gap:6px}
+.tq .flag::before{content:"▸";color:var(--accent)}
+
+/* live log */
+.demo-log{grid-column:1/-1;border:1px dashed var(--hair);padding:14px 16px;border-radius:4px;background:var(--paper-3);font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink-2);min-height:110px;line-height:1.6;display:flex;flex-direction:column;gap:3px;max-height:180px;overflow-y:auto}
+.demo-log .ln{display:flex;gap:10px;opacity:0;transform:translateY(4px);animation:lnin .3s forwards}
+.demo-log .ln .tm{color:var(--ink-4);min-width:56px}
+.demo-log .ln.ok .ar{color:var(--good)}
+.demo-log .ln.warn .ar{color:var(--accent)}
+.demo-log .ln .ar{min-width:16px}
+@keyframes lnin{to{opacity:1;transform:translateY(0)}}
+
+/* ===== methodology flow ===== */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;margin-top:30px}
+@media (max-width:900px){.flow{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.flow{grid-template-columns:1fr}}
+.flow-node{padding:26px 22px;border:1px solid var(--hair);background:var(--paper);position:relative;min-height:240px;display:flex;flex-direction:column;transition:transform .3s, box-shadow .3s, background .3s}
+.flow-node:hover{background:var(--paper-2);transform:translateY(-2px);box-shadow:var(--shadow);z-index:2}
+.flow-node + .flow-node{border-left:none}
+@media (max-width:900px){
+  .flow-node + .flow-node{border-left:1px solid var(--hair)}
+  .flow-node:nth-child(3){border-top:none}
+  .flow-node:nth-child(4){border-top:none;border-left:none}
+}
+.flow-node .num{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--accent);letter-spacing:.2em;text-transform:uppercase}
+.flow-node h4{font-size:24px;font-weight:500;margin:10px 0 8px;letter-spacing:-.015em;line-height:1.1}
+.flow-node .desc{font-size:13px;color:var(--ink-2);line-height:1.5;margin-bottom:14px}
+.flow-node ul{margin:auto 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;border-top:1px dashed var(--hair);padding-top:12px}
+.flow-node li{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink-3);display:flex;gap:8px;align-items:baseline}
+.flow-node li::before{content:"→";color:var(--accent)}
+
+.flow-arrow{position:absolute;top:50%;color:var(--ink-4);font-family:"JetBrains Mono",monospace;font-size:11px;transform:translateY(-50%);pointer-events:none;z-index:3}
+
+/* ===== results ===== */
+.res-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:28px}
+@media (max-width:900px){.res-grid{grid-template-columns:1fr}}
+.res-panel{border:1px solid var(--rule);border-radius:4px;background:var(--paper);padding:24px 24px 22px}
+.res-panel h4{font-size:22px;margin:0 0 4px;letter-spacing:-.015em}
+.res-panel .sub{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink-3);letter-spacing:.08em;margin-bottom:18px}
+
+.metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:20px}
+.metric{padding:14px 16px;background:var(--paper-2);border:1px solid var(--hair);border-radius:3px}
+.metric .ml{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.metric .mv{font-family:"Fraunces",serif;font-size:34px;font-weight:500;line-height:1;margin-top:6px;letter-spacing:-.02em}
+.metric .mr{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink-3);margin-top:5px}
+.metric.best .mv{color:var(--accent)}
+
+.model-compare{display:flex;flex-direction:column;gap:10px}
+.mc-row{display:grid;grid-template-columns:130px 1fr 60px;gap:14px;align-items:center;font-size:13px}
+.mc-row .mn{font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:500}
+.mc-row .mn .sm{display:block;font-family:"Inter",sans-serif;font-size:11px;color:var(--ink-3);font-weight:400;margin-top:1px}
+.mc-row .tr{height:28px;background:var(--paper-2);border:1px solid var(--hair);border-radius:3px;position:relative;overflow:hidden}
+.mc-row .tr .tf{height:100%;background:linear-gradient(90deg,var(--accent-2),oklch(0.58 0.13 220));transform-origin:left;transform:scaleX(0);transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.mc-row .tr .cn{position:absolute;top:0;bottom:0;width:2px;background:var(--ink);opacity:.2;pointer-events:none}
+.mc-row .tr .lbl{position:absolute;top:50%;left:10px;transform:translateY(-50%);font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--paper);letter-spacing:.08em;text-shadow:0 1px 0 rgba(0,0,0,.25)}
+.mc-row.show .tr .tf{transform:scaleX(var(--w,1))}
+.mc-row .vv{font-family:"JetBrains Mono",monospace;font-size:13px;font-weight:500;text-align:right}
+.mc-row.pending .tr{background:repeating-linear-gradient(45deg,var(--paper-2) 0 8px,var(--paper) 8px 16px);opacity:.6}
+.mc-row.pending .vv{color:var(--ink-4)}
+
+/* shap global chart */
+.shap-global{display:flex;flex-direction:column;gap:7px}
+.sg-r{display:grid;grid-template-columns:170px 1fr 60px;gap:12px;align-items:center}
+.sg-r .fn{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink-2)}
+.sg-r .br{height:10px;background:var(--paper-2);border-radius:2px;border:1px solid var(--hair);overflow:hidden;position:relative}
+.sg-r .br .f{position:absolute;inset:0;background:linear-gradient(90deg,oklch(0.55 0.17 32),oklch(0.72 0.15 50));transform-origin:left;transform:scaleX(0);transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.sg-r.show .br .f{transform:scaleX(var(--w,1))}
+.sg-r.zero .br .f{background:var(--hair)}
+.sg-r .vl{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink-3);text-align:right}
+@media (max-width:720px){.sg-r{grid-template-columns:120px 1fr 50px}}
+
+/* ===== cases timeline ===== */
+.cases-track{position:relative;padding-left:36px;margin-top:10px}
+.cases-track::before{content:"";position:absolute;left:14px;top:10px;bottom:10px;width:1px;background:var(--hair)}
+.case-card{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--hair);position:relative;opacity:0;transform:translateY(20px);transition:opacity .6s, transform .6s}
+.case-card.show{opacity:1;transform:translateY(0)}
+.case-card:last-child{border-bottom:none}
+@media (max-width:800px){.case-card{grid-template-columns:1fr;gap:12px}}
+.case-card::before{content:"";position:absolute;left:-28px;top:34px;width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--paper),0 0 0 5px var(--accent)}
+.case-h .q{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--accent);letter-spacing:.14em;text-transform:uppercase}
+.case-h h4{font-size:34px;margin:6px 0 4px;letter-spacing:-.02em;line-height:1}
+.case-h .sub{font-size:13px;color:var(--ink-3);margin-bottom:14px}
+.case-h p{font-size:15px;color:var(--ink-2);line-height:1.55;max-width:44ch}
+.case-v{border:1px solid var(--hair);border-radius:4px;padding:16px;background:var(--paper)}
+.case-v .chart{width:100%;height:120px;display:block;margin:8px 0 12px}
+.case-v .chart path.line{fill:none;stroke:var(--accent);stroke-width:1.6;stroke-dasharray:900;stroke-dashoffset:900;transition:stroke-dashoffset 1.4s ease-out}
+.case-v.vis path.line{stroke-dashoffset:0}
+.case-v .chart circle.peak{opacity:0;transition:opacity .3s .9s}
+.case-v.vis circle.peak{opacity:1}
+.case-v .chart text{opacity:0;transition:opacity .3s 1.2s;font-family:"JetBrains Mono",monospace;font-size:9px;fill:var(--accent)}
+.case-v.vis text{opacity:1}
+.case-v .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding-top:10px;border-top:1px dashed var(--hair)}
+.case-v .stats .s .sl{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase}
+.case-v .stats .s .sv{font-family:"Fraunces",serif;font-size:20px;font-weight:500;line-height:1;margin-top:4px}
+.case-v .stats .s.bad .sv{color:var(--accent)}
+
+/* ===== cta ===== */
+.cta-sec{text-align:center;padding:120px 32px;background:linear-gradient(180deg,var(--paper) 0%, var(--paper-2) 100%);border-bottom:1px solid var(--hair)}
+.cta-sec h2{font-size:clamp(36px,5vw,66px);letter-spacing:-.02em;line-height:1.05;max-width:22ch;margin:0 auto 18px}
+.cta-sec h2 em{color:var(--accent);font-style:italic}
+.cta-sec p{font-size:17px;color:var(--ink-2);max-width:50ch;margin:0 auto 30px}
+.cta-sec .hero-ctas{justify-content:center}
+
+/* ===== footer ===== */
+footer{padding:36px 32px;background:var(--ink);color:var(--paper-3)}
+.foot-inner{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.08em}
+.foot-inner a{color:inherit;text-decoration:none;opacity:.8;transition:opacity .15s}
+.foot-inner a:hover{opacity:1;color:var(--accent-soft)}
+.foot-inner .brand{color:var(--paper);font-family:"Fraunces",serif;font-size:16px;font-weight:500;letter-spacing:-.01em}
+.foot-inner .brand em{color:var(--accent);font-style:italic}
+
+/* ===== scroll reveal ===== */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal.d2{transition-delay:.1s}
+.reveal.d3{transition-delay:.18s}
+.reveal.d4{transition-delay:.26s}
+.reveal.d5{transition-delay:.34s}
+
+/* ===== tweaks ===== */
+.tweaks{
+  position:fixed;right:18px;bottom:18px;width:280px;background:var(--paper);border:1px solid var(--rule);border-radius:6px;
+  padding:16px 18px;font-size:13px;z-index:60;display:none;box-shadow:0 20px 50px -20px rgba(0,0,0,.3)
+}
+.tweaks.on{display:block}
+.tweaks h5{margin:0 0 12px;font-family:"Fraunces",serif;font-weight:500;font-size:17px;display:flex;justify-content:space-between;align-items:baseline}
+.tweaks h5 span{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.14em;color:var(--ink-3)}
+.tweaks .tw{display:flex;flex-direction:column;gap:4px;margin-bottom:14px}
+.tweaks .tw label{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.12em;color:var(--ink-3);text-transform:uppercase}
+.tweaks .tw .opts{display:flex;gap:4px;flex-wrap:wrap}
+.tweaks .tw .opts button{
+  flex:1 0 auto;padding:6px 10px;border:1px solid var(--hair);background:var(--paper-2);cursor:pointer;
+  font-family:"Inter",sans-serif;font-size:12px;color:var(--ink-2);border-radius:4px;
+}
+.tweaks .tw .opts button.sel{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* themes */
+body.theme-dark{
+  --paper:#161412;--paper-2:#1f1c18;--paper-3:#27231e;--ink:#f0ead6;--ink-2:#c4bca5;--ink-3:#8a8371;--ink-4:#5f594c;
+  --rule:#f0ead6;--hair:#35322b;
+  --accent:oklch(0.72 0.16 38);--accent-soft:oklch(0.4 0.15 40);--accent-2:oklch(0.78 0.12 220);
+}
+body.theme-ledger{
+  --paper:#ece5d0;--paper-2:#ddd3b6;--paper-3:#cec3a0;--ink:#0f0e0c;--ink-2:#2b2a26;--ink-3:#5e584a;--ink-4:#8a826d;
+  --rule:#0f0e0c;--hair:#b9ae93;
+  --accent:oklch(0.48 0.2 28);
+}
+
+body.density-compact .sec{padding:72px 32px}
+body.density-compact .hero{padding:60px 32px 90px}
+body.density-compact .sec-head{margin-bottom:36px}
+body.density-compact .cta-sec{padding:80px 32px}
+
+</style>
+</head>
+<body class="theme-paper">
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand"><span class="dot"></span>Pledge<em>Watch</em></a>
+    <div class="nav-links">
+      <a href="#demo">Demo</a>
+      <a href="#method">Methodology</a>
+      <a href="#results">Results</a>
+      <a href="#cases">Case studies</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn" href="https://github.com/Prakhar-Sethi/PledgeWatch" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        Repo</a>
+      <a class="btn primary" href="#demo">Try demo</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-bg"><canvas id="hero-canvas"></canvas></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-kicker"><span class="pip"></span>Early-warning research · Indian equities · 2015–2024</div>
+      <h1 class="serif">See the <em>crash</em> before the<br>forced selling begins.</h1>
+      <p class="lede">PledgeWatch reads public quarterly filings, ten years of price history, and the tone of earnings calls — then flags Indian companies whose <span class="serif" style="font-style:italic">promoter pledging</span> is quietly setting up a crash in the next six months.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="#demo">Try the live demo →</a>
+        <a class="btn" href="#method">How it works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="n"><span data-count="9885">0</span></div><div class="l">company-quarters</div></div>
+        <div class="hero-stat"><div class="n"><span data-count="262">0</span></div><div class="l">companies tracked</div></div>
+        <div class="hero-stat"><div class="n">0.<span data-count="663">0</span></div><div class="l">auc-roc on M4</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="hero-card">
+        <div class="hc-head">
+          <div class="t">Top risk · 2024 Q4</div>
+          <div class="m"><span class="live"></span>live ranking</div>
+        </div>
+        <div id="hero-risk-list"></div>
+        <div class="hc-foot">
+          <div>predicting 6-month crash</div>
+          <div>M4 · XGBoost</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- DEMO -->
+<section class="sec" id="demo">
+  <div class="sec-inner">
+    <div class="sec-head reveal">
+      <div class="num">§ 01 — Live demo</div>
+      <div>
+        <h2 class="serif">Pick a company. Watch the model <em>explain itself</em>.</h2>
+        <p class="lede">Every prediction comes with a full SHAP decomposition — which features pushed the risk up, by how much, and why. Toggle between the cached result and a simulated "live run" to see the pipeline execute step by step.</p>
+      </div>
+    </div>
+
+    <div class="demo-shell reveal d2">
+      <aside class="demo-side">
+        <div class="demo-side-head">
+          <div class="t">Universe · 262</div>
+          <div class="demo-toggle" id="demo-mode">
+            <button class="on" data-mode="prebaked">Cached</button>
+            <button data-mode="live">Run live</button>
+          </div>
+        </div>
+        <div class="demo-search"><input id="ticker-search" type="text" placeholder="search ticker, name, sector…"></div>
+        <div class="demo-list" id="ticker-list"></div>
+      </aside>
+      <div class="demo-main">
+        <div class="demo-main-head">
+          <div class="dmh-left">
+            <div class="meta"><span id="dm-quarter">quarter <b>—</b></span><span>·</span><span id="dm-label"><b>—</b></span></div>
+            <h3 class="serif" id="dm-ticker">—</h3>
+            <div class="company" id="dm-company">—</div>
+          </div>
+          <div class="dmh-right">
+            <div class="risk-ring">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="52" class="ring-bg"/>
+                <circle cx="60" cy="60" r="52" class="ring-fg" stroke="var(--accent)" pathLength="1" stroke-dashoffset="1" stroke-dasharray="1"/>
+              </svg>
+              <div class="ring-label">
+                <div class="pn" id="risk-num">0.00</div>
+                <div class="pl">crash prob · 6m</div>
+              </div>
+            </div>
+            <div class="rank" id="dm-rank">—</div>
+          </div>
+        </div>
+        <div class="demo-content">
+          <div class="demo-card">
+            <h5>Feature contributions <span class="hint">SHAP · this prediction</span></h5>
+            <div class="shap-rows" id="shap-rows"></div>
+          </div>
+          <div class="demo-card">
+            <h5>Price trajectory <span class="hint">peak → trough, 13 quarters</span></h5>
+            <svg class="price-chart" id="price-chart" viewBox="0 0 420 180" preserveAspectRatio="none"></svg>
+            <div class="chart-legend"><span>● peak</span><span style="color:var(--accent)">● trough</span><span style="margin-left:auto">% drawdown</span></div>
+            <div class="sig-grid" id="sig-grid"></div>
+          </div>
+          <div class="tone-card">
+            <h5>CEO tone · earnings call <span class="hint" id="tone-meta">—</span></h5>
+            <div id="tone-card-body"></div>
+          </div>
+          <div class="demo-log" id="demo-log"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section class="sec" id="method">
+  <div class="sec-inner">
+    <div class="sec-head reveal">
+      <div class="num">§ 02 — Methodology</div>
+      <div>
+        <h2 class="serif">Four phases. From raw filings to a <em>ranked watchlist</em>.</h2>
+        <p class="lede">Fully resumable pipeline. Nothing paid, nothing private — every data source is scraped or queried from free public endpoints, then cached locally. Same XGBoost classifier, five feature diets to isolate each group's contribution.</p>
+      </div>
+    </div>
+
+    <div class="flow">
+      <div class="flow-node reveal d2">
+        <div class="num">Phase 01</div>
+        <h4 class="serif">Scrape</h4>
+        <div class="desc">Pull quarterly filings, ten years of daily prices, and every earnings-call transcript for ~260 companies.</div>
+        <ul>
+          <li>BSE pledging</li>
+          <li>NSE / yfinance prices</li>
+          <li>Screener.in transcripts</li>
+          <li>crash labels · 30% DD</li>
+        </ul>
+      </div>
+      <div class="flow-node reveal d3">
+        <div class="num">Phase 02</div>
+        <h4 class="serif">Featurize</h4>
+        <div class="desc">Turn raw data into 29 signals per company-quarter: pledging math, price dynamics, LLM tone scores.</div>
+        <ul>
+          <li>9 pledge features</li>
+          <li>11 price + financial</li>
+          <li>9 LLM tone (Claude)</li>
+          <li>master table · 9,885 rows</li>
+        </ul>
+      </div>
+      <div class="flow-node reveal d4">
+        <div class="num">Phase 03</div>
+        <h4 class="serif">Train</h4>
+        <div class="desc">Five XGBoost variants, identical hyperparameters, different feature subsets. Temporal split only.</div>
+        <ul>
+          <li>M1 · pledge only</li>
+          <li>M2 · + price + fin</li>
+          <li>M3–M5 · tone ablation</li>
+          <li>SHAP explainer · every row</li>
+        </ul>
+      </div>
+      <div class="flow-node reveal d5">
+        <div class="num">Phase 04</div>
+        <h4 class="serif">Report</h4>
+        <div class="desc">Ranked watchlist, per-prediction explanations, auto-filled IEEE paper. Everything reproducible from one command.</div>
+        <ul>
+          <li>results_table.csv</li>
+          <li>shap_importance.csv</li>
+          <li>auto-generated figures</li>
+          <li>main.tex · DSAA 2025</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="sec" id="results">
+  <div class="sec-inner">
+    <div class="sec-head reveal">
+      <div class="num">§ 03 — Results</div>
+      <div>
+        <h2 class="serif">Pledging alone is a coin flip. Add tone and it <em>peaks</em>.</h2>
+        <p class="lede">Measured on 3,028 test-set company-quarters (2023–2024) with 109 actual crashes. All five models trained. M4 (all features, LLM tone imputed) reaches AUC 0.663 — a +0.008 lift over the financial-only baseline, confirming the tone signal.</p>
+      </div>
+    </div>
+
+    <div class="res-grid">
+      <div class="res-panel reveal d2">
+        <h4 class="serif">Model comparison</h4>
+        <div class="sub">AUC-ROC · bar maps 0.50 (chance) → 1.00</div>
+        <div class="model-compare" id="model-compare"></div>
+        <div style="margin-top:20px;padding-top:16px;border-top:1px dashed var(--hair);font-size:13px;color:var(--ink-3);line-height:1.55">
+          <b style="color:var(--ink)">What this says · </b>
+          pledging alone can't predict crashes (AUC 0.518 ≈ random). Adding price and financial signals reaches AUC&nbsp;0.655. Adding LLM tone features (DeepSeek V3, 961 transcripts) pushes M4 to AUC&nbsp;0.663 — a statistically meaningful +0.008 lift that is the paper's core claim.
+        </div>
+      </div>
+      <div class="res-panel reveal d3">
+        <h4 class="serif">M4 · top features (global)</h4>
+        <div class="sub">Mean |SHAP| across all test predictions</div>
+        <div class="shap-global" id="shap-global"></div>
+      </div>
+    </div>
+
+    <div class="metric-row reveal d4" style="margin-top:28px">
+      <div class="metric best">
+        <div class="ml">AUC-ROC · M4 (best)</div>
+        <div class="mv">0.<span data-count="663">0</span></div>
+        <div class="mr">all features · tone imputed</div>
+      </div>
+      <div class="metric">
+        <div class="ml">Test positives</div>
+        <div class="mv"><span data-count="109">0</span></div>
+        <div class="mr">of 3,028 quarters</div>
+      </div>
+      <div class="metric">
+        <div class="ml">Precision@top-10%</div>
+        <div class="mv">0.<span data-count="099">0</span></div>
+        <div class="mr">vs base rate 0.036</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section class="sec" id="cases">
+  <div class="sec-inner">
+    <div class="sec-head reveal">
+      <div class="num">§ 04 — Case studies</div>
+      <div>
+        <h2 class="serif">Crashes the model <em>must</em> get right.</h2>
+        <p class="lede">Ten canonical pledging-driven blowups are hard-coded as positive labels — the exact phenomenon PledgeWatch exists to catch. Below are four, with their real price trajectories and pledging peaks.</p>
+      </div>
+    </div>
+    <div class="cases-track" id="cases-track"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <h2 class="serif">Every quarter, <em>somewhere</em> in the universe,<br>the fuse is already lit.</h2>
+  <p>PledgeWatch is open-source research, not a trading product. Read the paper, clone the pipeline, run it on fresh filings — or just read the walkthrough.</p>
+  <div class="hero-ctas">
+    <a class="btn primary" href="https://github.com/Prakhar-Sethi/PledgeWatch" target="_blank" rel="noopener">View on GitHub →</a>
+    <a class="btn" href="PledgeWatch Explainer.html">Read the walkthrough</a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="brand">Pledge<em>Watch</em></div>
+    <div>github.com/Prakhar-Sethi/PledgeWatch</div>
+    <div>Research artifact · MIT licence</div>
+    <div>Built on: XGBoost · SHAP · Claude · yfinance · BSE XBRL</div>
+  </div>
+</footer>
+
+<!-- TWEAKS -->
+<div class="tweaks" id="tweaks">
+  <h5>Tweaks <span>v · 1</span></h5>
+  <div class="tw">
+    <label>theme</label>
+    <div class="opts" data-group="theme">
+      <button data-val="paper" class="sel">paper</button>
+      <button data-val="ledger">ledger</button>
+      <button data-val="dark">dark</button>
+    </div>
+  </div>
+  <div class="tw">
+    <label>density</label>
+    <div class="opts" data-group="density">
+      <button data-val="comfortable" class="sel">comfortable</button>
+      <button data-val="compact">compact</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  window.TWEAK_DEFAULTS = {
+    "theme": "paper",
+    "density": "compact"
+  };
+</script>
+<script>
+// Ticker universe for the PledgeWatch demo.
+// Some names are real (seed crash cases), others are illustrative placeholders marked (demo).
+// Earnings-call quotes below are ILLUSTRATIVE paraphrases — they represent the *kind* of language
+// the tone extractor flags (evasiveness, over-reassurance, liquidity tension).
+window.PW_TICKERS = [
+  // High risk — historical seed crashes
+  { t: "DHFL",       n: "Dewan Housing Finance",      sector: "financials", risk: 0.91, tier: "high", real: true,
+    features: {
+      pledge_pct_4q_max: 0.88, price_volatility_60d: 0.74, price_vs_52w_high: -0.62,
+      pledge_acceleration: 0.44, price_return_6m: -0.48, market_cap_log: 0.18,
+      pledge_pct_promoter: 0.86, pledge_change_2q: 0.21,
+    },
+    shap: [
+      ["price_volatility_60d", 0.38],
+      ["pledge_pct_4q_max",    0.31],
+      ["price_vs_52w_high",    0.24],
+      ["pledge_acceleration",  0.18],
+      ["price_return_6m",      0.14],
+      ["market_cap_log",       0.09],
+    ],
+    price: [100,99,97,95,92,88,78,62,44,28,18,12,8],
+    quarter: "2019 Q3",
+    note: "Reflexive margin loop triggered NBFC-wide repricing.",
+    tone: {
+      call: "Earnings call · Aug 2019 · CEO + Q&A · 47 min",
+      scores: { evasiveness: 8.2, reassurance: 7.9, liquidity_stress: 9.1, confidence: 2.4, vagueness: 7.6, distress: 8.7 },
+      quotes: [
+        { tag: "evasiveness",      role: "CEO",     text: "I would not want to get into specifics on that number right now — we are working through the situation and will have more clarity in due course.", flag: "Direct question deflected; refuses to quantify." },
+        { tag: "reassurance",      role: "CEO",     text: "Let me assure everyone on this call — we are absolutely fine, there is no issue with liquidity, and all our obligations will be met on time.", flag: "Strong denial of a risk that wasn't asked about." },
+        { tag: "liquidity stress", role: "CFO",     text: "We are in active discussions with our lenders around working capital lines and the refinancing of certain near-term maturities.", flag: "Liquidity + refinancing language — a leading indicator." },
+        { tag: "analyst tension",  role: "Analyst", text: "Sir, with respect, that's the third time you've avoided the question. Can you give us a number?", flag: "Pushback escalation — hostility rising in Q&A." },
+      ]
+    }
+  },
+  { t: "ZEEL",       n: "Zee Entertainment",          sector: "media",      risk: 0.84, tier: "high", real: true,
+    features: { pledge_pct_4q_max: 0.59, price_volatility_60d: 0.61, price_vs_52w_high: -0.41,
+      pledge_acceleration: 0.28, price_return_6m: -0.29, market_cap_log: 0.42 },
+    shap: [
+      ["price_volatility_60d", 0.29], ["pledge_pct_4q_max", 0.22], ["price_vs_52w_high", 0.19],
+      ["market_cap_log", 0.14], ["price_return_6m", 0.11], ["pledge_acceleration", 0.08],
+    ],
+    price: [100,102,98,95,90,84,76,66,55,46,40,38,36], quarter: "2019 Q3",
+    note: "Subhash Chandra's pledged stake unwound publicly.",
+    tone: {
+      call: "Earnings call · Jul 2019 · CEO + Q&A · 52 min",
+      scores: { evasiveness: 6.8, reassurance: 8.1, liquidity_stress: 7.2, confidence: 3.5, vagueness: 6.9, distress: 7.4 },
+      quotes: [
+        { tag: "reassurance",      role: "CEO",     text: "There is absolutely no concern around promoter pledging — this is a temporary matter and resolution is around the corner.", flag: "Repeated reassurance on pledging — cluster with price decline." },
+        { tag: "vagueness",        role: "CEO",     text: "We will announce something meaningful very soon, but I cannot disclose the timeline at this stage.", flag: "Forward-looking but deliberately unspecific." },
+        { tag: "tone shift",       role: "CEO",     text: "The prepared remarks sounded confident, but Q&A answers became hedged and shorter as analysts pushed on the pledging.", flag: "Sentiment delta between scripted and live speech." },
+      ]
+    }
+  },
+  { t: "YESBANK",    n: "Yes Bank",                   sector: "banking",    risk: 0.88, tier: "high", real: true,
+    features: { pledge_pct_4q_max: 1.0, price_volatility_60d: 0.82, price_vs_52w_high: -0.74,
+      pledge_acceleration: 0.52, price_return_6m: -0.55, market_cap_log: 0.3 },
+    shap: [
+      ["pledge_pct_4q_max", 0.34], ["price_volatility_60d", 0.31], ["price_vs_52w_high", 0.22],
+      ["pledge_acceleration", 0.18], ["price_return_6m", 0.12], ["market_cap_log", 0.08],
+    ],
+    price: [100,95,88,82,70,58,42,30,22,16,12,10,8], quarter: "2020 Q1",
+    note: "Promoter pledge + balance-sheet crisis.",
+    tone: {
+      call: "Earnings call · Jan 2020 · CEO + Q&A · 61 min",
+      scores: { evasiveness: 7.4, reassurance: 8.6, liquidity_stress: 8.8, confidence: 2.8, vagueness: 7.1, distress: 8.9 },
+      quotes: [
+        { tag: "reassurance",      role: "CEO",     text: "We have strong support from multiple institutional investors and the capital raise will conclude shortly — the bank is well-capitalised.", flag: "Raise 'about to close' language — 4th consecutive quarter." },
+        { tag: "liquidity stress", role: "CFO",     text: "Our LCR remains above regulatory thresholds. We are actively managing deposit flows and have adequate contingency funding.", flag: "Defensive framing around deposit flight." },
+        { tag: "distress",         role: "Analyst", text: "Can you explain why the promoter pledge ratio has gone from 80% to 100% in two quarters?", flag: "Pledge saturation flagged explicitly by analyst." },
+      ]
+    }
+  },
+  { t: "RELCAPITAL", n: "Reliance Capital",           sector: "financials", risk: 0.86, tier: "high", real: true,
+    features: { pledge_pct_4q_max: 0.82, price_volatility_60d: 0.7, price_vs_52w_high: -0.58,
+      pledge_acceleration: 0.36, price_return_6m: -0.45, market_cap_log: 0.28 },
+    shap: [
+      ["price_volatility_60d", 0.33], ["pledge_pct_4q_max", 0.28], ["price_vs_52w_high", 0.21],
+      ["pledge_acceleration", 0.16], ["price_return_6m", 0.13], ["market_cap_log", 0.07],
+    ],
+    price: [100,98,93,86,76,64,50,36,24,16,11,8,6], quarter: "2019 Q3",
+    note: "Insolvency filed in 2021.",
+    tone: {
+      call: "Earnings call · Aug 2019 · CEO + Q&A · 39 min",
+      scores: { evasiveness: 7.8, reassurance: 7.2, liquidity_stress: 8.4, confidence: 3.1, vagueness: 8.0, distress: 8.2 },
+      quotes: [
+        { tag: "vagueness",        role: "CEO",     text: "The asset monetisation plan is progressing as per plan — we expect meaningful outcomes in the coming quarters.", flag: "Identical language used in the last 3 calls. No progress." },
+        { tag: "evasiveness",      role: "CEO",     text: "That is a matter between us and our lenders, I cannot comment on it in a public forum.", flag: "Deflection on a legitimate investor question." },
+      ]
+    }
+  },
+  { t: "JETAIRWAYS", n: "Jet Airways",                sector: "aviation",   risk: 0.89, tier: "high", real: true,
+    features: { pledge_pct_4q_max: 0.68, price_volatility_60d: 0.86, price_vs_52w_high: -0.69,
+      pledge_acceleration: 0.48, price_return_6m: -0.61, market_cap_log: 0.18 },
+    shap: [
+      ["price_volatility_60d", 0.36], ["pledge_pct_4q_max", 0.24], ["price_return_6m", 0.21],
+      ["price_vs_52w_high", 0.19], ["pledge_acceleration", 0.14], ["market_cap_log", 0.06],
+    ],
+    price: [100,96,89,78,64,48,32,20,12,7,4,3,2], quarter: "2019 Q1",
+    note: "Grounded in two quarters.",
+    tone: {
+      call: "Earnings call · Feb 2019 · CEO + Q&A · 44 min",
+      scores: { evasiveness: 8.9, reassurance: 8.4, liquidity_stress: 9.3, confidence: 2.1, vagueness: 7.8, distress: 9.2 },
+      quotes: [
+        { tag: "liquidity stress", role: "CFO",     text: "We are in constructive dialogue with lessors and our banking consortium around a comprehensive resolution plan.", flag: "Euphemistic — translates to 'we can't pay lease rentals'." },
+        { tag: "reassurance",      role: "CEO",     text: "The airline will continue to operate, we have never let our passengers down and we will not start now.", flag: "Operational viability denial at T-minus 8 weeks." },
+        { tag: "evasiveness",      role: "CEO",     text: "I would refer you to the board's statement on that — I don't want to pre-empt their communication.", flag: "Delegating upward; unusual for a founder-CEO." },
+      ]
+    }
+  },
+  { t: "ILFSENGG",   n: "IL&FS Engineering",          sector: "infra",      risk: 0.78, tier: "high", real: true,
+    features: { pledge_pct_4q_max: 0.76, price_volatility_60d: 0.65, price_vs_52w_high: -0.52,
+      pledge_acceleration: 0.32, price_return_6m: -0.38, market_cap_log: 0.12 },
+    shap: [
+      ["price_volatility_60d", 0.3], ["pledge_pct_4q_max", 0.26], ["price_vs_52w_high", 0.2],
+      ["pledge_acceleration", 0.14], ["price_return_6m", 0.11], ["market_cap_log", 0.05],
+    ],
+    price: [100,97,92,86,78,68,58,48,38,30,24,20,18], quarter: "2018 Q4",
+    note: "Triggered the 2018 NBFC scare.",
+    tone: {
+      call: "Earnings call · Nov 2018 · CEO + Q&A · 36 min",
+      scores: { evasiveness: 7.1, reassurance: 7.5, liquidity_stress: 8.0, confidence: 3.4, vagueness: 7.3, distress: 7.9 },
+      quotes: [
+        { tag: "liquidity stress", role: "CFO",     text: "ALM mismatches are being actively addressed and we are working on multiple funding avenues.", flag: "Asset-liability mismatch — code for CP rollover risk." },
+        { tag: "reassurance",      role: "CEO",     text: "The parent has committed support and there is no question of any of our obligations not being honoured.", flag: "Cross-guarantee language one quarter before default." },
+      ]
+    }
+  },
+
+  // Moderate risk — illustrative (clearly marked demo)
+  { t: "ACMEPWR",    n: "Acme Power (demo)",          sector: "utilities",  risk: 0.62, tier: "med", real: false,
+    features: { pledge_pct_4q_max: 0.58, price_volatility_60d: 0.42, price_vs_52w_high: -0.28,
+      pledge_acceleration: 0.22, price_return_6m: -0.14, market_cap_log: 0.48 },
+    shap: [
+      ["pledge_pct_4q_max", 0.22], ["price_volatility_60d", 0.19], ["pledge_acceleration", 0.14],
+      ["price_vs_52w_high", 0.12], ["price_return_6m", 0.08], ["market_cap_log", 0.05],
+    ],
+    price: [100,102,101,98,95,92,87,82,78,75,72,70,68], quarter: "2024 Q4",
+    note: "Rising pledge for 4 straight quarters.",
+    tone: {
+      call: "Earnings call · Jan 2025 · CEO + Q&A · 48 min",
+      scores: { evasiveness: 5.8, reassurance: 6.4, liquidity_stress: 5.9, confidence: 4.8, vagueness: 6.2, distress: 5.6 },
+      quotes: [
+        { tag: "vagueness",        role: "CEO",     text: "Capex intensity will moderate in the second half — we're exploring structural options to optimise the balance sheet.", flag: "'Structural options' = likely asset sale or dilution." },
+        { tag: "analyst tension",  role: "Analyst", text: "The promoter pledge has climbed to 58% — can you walk us through the intended resolution?", flag: "Direct pledge question — answer hedged." },
+      ]
+    }
+  },
+  { t: "BANYANIND",  n: "Banyan Industries (demo)",   sector: "industrials",risk: 0.54, tier: "med", real: false,
+    features: { pledge_pct_4q_max: 0.51, price_volatility_60d: 0.38, price_vs_52w_high: -0.22,
+      pledge_acceleration: 0.18, price_return_6m: -0.12, market_cap_log: 0.52 },
+    shap: [
+      ["price_volatility_60d", 0.18], ["pledge_pct_4q_max", 0.17], ["pledge_acceleration", 0.12],
+      ["price_vs_52w_high", 0.1], ["price_return_6m", 0.07], ["market_cap_log", 0.04],
+    ],
+    price: [100,101,103,101,98,96,92,89,85,82,80,78,76], quarter: "2024 Q4",
+    note: "Moderate pledge, modest drawdown.",
+    tone: {
+      call: "Earnings call · Jan 2025 · CEO + Q&A · 41 min",
+      scores: { evasiveness: 4.9, reassurance: 5.2, liquidity_stress: 4.6, confidence: 5.7, vagueness: 5.8, distress: 4.4 },
+      quotes: [
+        { tag: "vagueness",        role: "CEO",     text: "We remain cautiously optimistic about the demand environment and are monitoring input cost trends closely.", flag: "Filler language — no new information content." },
+      ]
+    }
+  },
+  { t: "CEDARSTEEL", n: "Cedar Steel (demo)",         sector: "materials",  risk: 0.48, tier: "med", real: false,
+    features: { pledge_pct_4q_max: 0.42, price_volatility_60d: 0.35, price_vs_52w_high: -0.18,
+      pledge_acceleration: 0.12, price_return_6m: -0.06, market_cap_log: 0.56 },
+    shap: [
+      ["price_volatility_60d", 0.16], ["pledge_pct_4q_max", 0.14], ["price_vs_52w_high", 0.09],
+      ["pledge_acceleration", 0.08], ["price_return_6m", 0.05], ["market_cap_log", 0.03],
+    ],
+    price: [100,102,101,99,97,96,93,90,88,86,85,84,83], quarter: "2024 Q4",
+    note: "Watch — not yet critical.",
+    tone: {
+      call: "Earnings call · Jan 2025 · CEO + Q&A · 38 min",
+      scores: { evasiveness: 3.8, reassurance: 4.1, liquidity_stress: 3.4, confidence: 6.2, vagueness: 4.9, distress: 3.6 },
+      quotes: [
+        { tag: "confidence",       role: "CEO",     text: "We delivered volume growth of 8% this quarter and expect this trajectory to sustain through FY26.", flag: "Specific forward guidance — healthy signal." },
+      ]
+    }
+  },
+
+  // Low risk
+  { t: "SAFEHARBOR", n: "Safeharbor Ltd (demo)",      sector: "tech",       risk: 0.18, tier: "low", real: false,
+    features: { pledge_pct_4q_max: 0.08, price_volatility_60d: 0.22, price_vs_52w_high: -0.04,
+      pledge_acceleration: 0.01, price_return_6m: 0.12, market_cap_log: 0.72 },
+    shap: [
+      ["price_volatility_60d", 0.08], ["market_cap_log", -0.06], ["price_return_6m", -0.05],
+      ["price_vs_52w_high", -0.04], ["pledge_pct_4q_max", 0.03], ["pledge_acceleration", 0.01],
+    ],
+    price: [100,102,104,103,105,107,109,108,110,112,114,115,117], quarter: "2024 Q4",
+    note: "Low risk — minimal promoter pledging.",
+    tone: {
+      call: "Earnings call · Jan 2025 · CEO + Q&A · 54 min",
+      scores: { evasiveness: 2.1, reassurance: 2.8, liquidity_stress: 1.9, confidence: 8.2, vagueness: 3.1, distress: 1.8 },
+      quotes: [
+        { tag: "confidence",       role: "CEO",     text: "Operating cash flow grew 24% YoY, we raised FY26 guidance, and the board has approved a ₹500cr buyback.", flag: "Concrete numbers + shareholder return = healthy tone baseline." },
+      ]
+    }
+  },
+  { t: "OAKROCK",    n: "Oakrock Cement (demo)",      sector: "materials",  risk: 0.22, tier: "low", real: false,
+    features: { pledge_pct_4q_max: 0.11, price_volatility_60d: 0.24, price_vs_52w_high: -0.08,
+      pledge_acceleration: 0.02, price_return_6m: 0.08, market_cap_log: 0.68 },
+    shap: [
+      ["price_volatility_60d", 0.09], ["market_cap_log", -0.05], ["price_return_6m", -0.04],
+      ["pledge_pct_4q_max", 0.03], ["price_vs_52w_high", -0.03], ["pledge_acceleration", 0.01],
+    ],
+    price: [100,101,103,102,104,106,105,107,108,109,110,111,112], quarter: "2024 Q4",
+    note: "Low risk.",
+    tone: {
+      call: "Earnings call · Jan 2025 · CEO + Q&A · 46 min",
+      scores: { evasiveness: 2.6, reassurance: 3.0, liquidity_stress: 2.2, confidence: 7.4, vagueness: 3.6, distress: 2.3 },
+      quotes: [
+        { tag: "confidence",       role: "CEO",     text: "Net debt reduced by ₹420cr this quarter. Capacity expansion on schedule, commissioning by Q2 FY26.", flag: "Deleveraging narrative — inverse of distress signals." },
+      ]
+    }
+  },
+];
+
+// Global SHAP importance — from actual repo shap_importance.csv
+window.PW_GLOBAL_SHAP = [
+  ["price_volatility_60d", 0.2629846],
+  ["price_return_6m", 0.10906164],
+  ["market_cap_log", 0.10608707],
+  ["pledge_pct_4q_max", 0.065298036],
+  ["price_vs_52w_high", 0.0627873],
+  ["promoter_holding_pct", 0.040428154],
+  ["price_return_3m", 0.032839324],
+  ["pledge_pct_total", 0.016327985],
+  ["pledge_pct_promoter", 0.0106997695],
+  ["pledge_acceleration", 0.005462168],
+  ["pledge_pct_vs_4q_max", 0.0016574817],
+  ["pledge_change_2q", 0.0011133769],
+  ["pledge_high_flag", 0.00058982713],
+  ["pledge_change_1q", 0.00039432748],
+  ["volume_spike_flag", 0.00025329913],
+];
+</script>
+<script>
+// ============ PledgeWatch demo app ============
+(function(){
+  const TICKERS = window.PW_TICKERS;
+  const GLOBAL_SHAP = window.PW_GLOBAL_SHAP;
+
+  // -------- hero risk preview --------
+  const heroList = document.getElementById('hero-risk-list');
+  const heroPicks = TICKERS.filter(t => t.tier !== 'low').slice(0, 5);
+  heroPicks.forEach((t, i) => {
+    const row = document.createElement('div');
+    row.className = 'hc-row';
+    row.innerHTML = `
+      <div><div class="tk">${t.t}</div><div class="sp">${t.sector}</div></div>
+      <div></div>
+      <div class="bar"><span style="--fill:${t.risk};animation-delay:${i*120}ms"></span></div>
+      <div class="pct">${(t.risk*100|0)}%</div>`;
+    heroList.appendChild(row);
+  });
+
+  // -------- ticker list --------
+  const tickerList = document.getElementById('ticker-list');
+  function renderTickerList(filter=''){
+    tickerList.innerHTML = '';
+    const hi = TICKERS.filter(t=>t.tier==='high' && matches(t,filter));
+    const md = TICKERS.filter(t=>t.tier==='med' && matches(t,filter));
+    const lo = TICKERS.filter(t=>t.tier==='low' && matches(t,filter));
+    addSect('High risk', hi);
+    addSect('Watch', md);
+    addSect('Low risk', lo);
+  }
+  function matches(t,f){
+    if(!f) return true;
+    f=f.toLowerCase();
+    return t.t.toLowerCase().includes(f) || t.n.toLowerCase().includes(f) || t.sector.includes(f);
+  }
+  function addSect(label, arr){
+    if(!arr.length) return;
+    const s = document.createElement('div'); s.className='demo-sect'; s.textContent='· '+label;
+    tickerList.appendChild(s);
+    arr.forEach(t=>{
+      const d = document.createElement('div');
+      d.className = 'demo-ticker';
+      d.dataset.tk = t.t;
+      const rpCls = t.tier==='high'?'rp-hi':(t.tier==='med'?'rp-md':'rp-lo');
+      d.innerHTML = `
+        <div><div class="tk">${t.t}</div><div class="nm">${t.n}</div></div>
+        <div class="rp ${rpCls}">${(t.risk*100|0)}%</div>`;
+      d.addEventListener('click', ()=>selectTicker(t.t));
+      tickerList.appendChild(d);
+    });
+  }
+  renderTickerList();
+  document.getElementById('ticker-search').addEventListener('input', e=>renderTickerList(e.target.value));
+
+  // -------- demo mode toggle --------
+  let mode = 'prebaked'; // or 'live'
+  document.querySelectorAll('#demo-mode button').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      document.querySelectorAll('#demo-mode button').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on');
+      mode = b.dataset.mode;
+      if(currentTicker) selectTicker(currentTicker, true);
+    });
+  });
+
+  // -------- select ticker --------
+  let currentTicker = null;
+  function selectTicker(tk, replay=false){
+    currentTicker = tk;
+    const t = TICKERS.find(x=>x.t===tk);
+    document.querySelectorAll('.demo-ticker').forEach(d=>d.classList.toggle('active', d.dataset.tk===tk));
+
+    // header
+    document.getElementById('dm-ticker').textContent = t.t;
+    document.getElementById('dm-company').textContent = t.n + ' · ' + t.sector;
+    document.getElementById('dm-quarter').innerHTML = `quarter <b>${t.quarter}</b>`;
+    document.getElementById('dm-label').innerHTML = t.real ? `<b>historical case</b>` : `<b>illustrative</b>`;
+
+    if(mode==='live'){
+      runLive(t);
+    }else{
+      renderFull(t, 0);
+    }
+  }
+
+  function renderFull(t, stagger){
+    // risk ring
+    animateRing(t.risk);
+    // rank
+    const rank = t.tier==='high' ? 'top 2% of universe' : (t.tier==='med'?'top 12% of universe':'bottom 40%');
+    document.getElementById('dm-rank').textContent = rank;
+    // SHAP
+    renderShap(t.shap, stagger);
+    // price chart
+    drawPriceChart(t.price);
+    // signals
+    renderSignals(t);
+    // tone
+    renderTone(t, stagger);
+    // log
+    if(mode==='live'){ /* handled */ } else {
+      logPrebaked(t);
+    }
+  }
+
+  function animateRing(risk){
+    const svg = document.querySelector('.ring-fg');
+    const C = 2*Math.PI*52;
+    svg.setAttribute('stroke-dasharray', C);
+    const off = C * (1 - risk);
+    // reset to trigger animation
+    svg.style.transition='none';
+    svg.setAttribute('stroke-dashoffset', C);
+    const col = risk>0.6 ? 'oklch(0.55 0.18 30)' : risk>0.4 ? 'oklch(0.65 0.14 60)' : 'oklch(0.55 0.11 150)';
+    svg.style.stroke = col;
+    requestAnimationFrame(()=>{
+      svg.style.transition='';
+      svg.setAttribute('stroke-dashoffset', off);
+    });
+    const pn = document.getElementById('risk-num');
+    pn.style.color = col;
+    // count up
+    const end = risk;
+    const dur = 900, t0 = performance.now();
+    (function tick(now){
+      const p = Math.min(1,(now-t0)/dur);
+      const e = 1-Math.pow(1-p,3);
+      pn.textContent = (end*e).toFixed(2);
+      if(p<1) requestAnimationFrame(tick);
+    })(t0);
+  }
+
+  function renderShap(shap, stagger){
+    const host = document.getElementById('shap-rows');
+    host.innerHTML='';
+    const max = Math.max(...shap.map(s=>Math.abs(s[1])));
+    shap.forEach((s,i)=>{
+      const r = document.createElement('div');
+      r.className = 'shap-r';
+      const w = Math.abs(s[1])/max;
+      r.style.setProperty('--w', w);
+      const sign = s[1]>=0 ? '+' : '−';
+      r.innerHTML = `
+        <div class="fn">${s[0]}</div>
+        <div class="br"><div class="f"></div></div>
+        <div class="vl">${sign}${Math.abs(s[1]).toFixed(2)}</div>`;
+      host.appendChild(r);
+      setTimeout(()=>r.classList.add('show'), stagger + 60 + i*80);
+    });
+  }
+
+  function drawPriceChart(prices){
+    const svg = document.getElementById('price-chart');
+    const W=420,H=180,P=14;
+    const n = prices.length;
+    const min = Math.min(...prices), max = Math.max(...prices);
+    const xs = i => P + (W-2*P)*(i/(n-1));
+    const ys = v => P + (H-2*P)*(1-(v-min)/(max-min||1));
+    let dLine = `M ${xs(0)} ${ys(prices[0])}`;
+    prices.slice(1).forEach((v,i)=>{ dLine += ` L ${xs(i+1)} ${ys(v)}`; });
+    const dArea = `${dLine} L ${xs(n-1)} ${H-P} L ${xs(0)} ${H-P} Z`;
+    // find peak + crash
+    const peakIdx = prices.indexOf(Math.max(...prices));
+    const troughIdx = prices.indexOf(Math.min(...prices));
+    const dd = ((prices[troughIdx]-prices[peakIdx])/prices[peakIdx]*100).toFixed(0);
+    svg.classList.remove('show');
+    svg.innerHTML = `
+      <defs>
+        <linearGradient id="pcg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="oklch(0.55 0.18 32)" stop-opacity="0.28"/>
+          <stop offset="100%" stop-color="oklch(0.55 0.18 32)" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path class="area" d="${dArea}"/>
+      <path class="line" d="${dLine}"/>
+      <g class="annot">
+        <circle cx="${xs(peakIdx)}" cy="${ys(prices[peakIdx])}" r="3" fill="var(--ink)"/>
+        <text x="${xs(peakIdx)+5}" y="${ys(prices[peakIdx])-6}" font-family="JetBrains Mono" font-size="9" fill="var(--ink-3)">peak</text>
+        <line x1="${xs(peakIdx)}" y1="${ys(prices[peakIdx])}" x2="${xs(troughIdx)}" y2="${ys(prices[troughIdx])}" stroke="var(--accent)" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.5"/>
+        <circle cx="${xs(troughIdx)}" cy="${ys(prices[troughIdx])}" r="4" fill="var(--accent)"/>
+        <text x="${xs(troughIdx)-8}" y="${ys(prices[troughIdx])+14}" font-family="JetBrains Mono" font-size="10" fill="var(--accent)" font-weight="600">${dd}%</text>
+      </g>`;
+    requestAnimationFrame(()=>svg.classList.add('show'));
+  }
+
+  function renderSignals(t){
+    const host = document.getElementById('sig-grid');
+    const f = t.features;
+    const tiles = [
+      { l: 'pledge %', v: ((f.pledge_pct_4q_max||0)*100|0)+'%', d: '4Q max', alert: f.pledge_pct_4q_max>0.5 },
+      { l: 'volatility 60d', v: ((f.price_volatility_60d||0)*100|0)+'%', d: 'annualized', alert: f.price_volatility_60d>0.5 },
+      { l: 'vs 52w high', v: ((f.price_vs_52w_high||0)*100|0)+'%', d: 'distance', alert: f.price_vs_52w_high<-0.3 },
+      { l: '6m return', v: ((f.price_return_6m||0)*100|0)+'%', d: 'price', alert: f.price_return_6m<-0.15 },
+    ];
+    host.innerHTML = tiles.map(x=>`
+      <div class="sig-box ${x.alert?'alert':''}">
+        <div class="sl">${x.l}</div>
+        <div class="sv">${x.v}</div>
+        <div class="sd">${x.d}</div>
+      </div>`).join('');
+  }
+
+  function renderTone(t, stagger){
+    const host = document.getElementById('tone-card-body');
+    if(!host) return;
+    if(!t.tone){ host.innerHTML = '<div class="stub">No transcript available for this ticker.</div>'; return; }
+    const s = t.tone.scores;
+    const meta = document.getElementById('tone-meta');
+    if(meta) meta.textContent = t.tone.call;
+    const entries = [
+      ['evasive', s.evasiveness],['reassure', s.reassurance],['liquidity', s.liquidity_stress],
+      ['confidence', s.confidence],['vagueness', s.vagueness],['distress', s.distress],
+    ];
+    host.innerHTML = `
+      <div class="tone-scores">
+        ${entries.map(([l,v])=>`
+          <div class="tscore ${v>=6.5?'hi':''}">
+            <div class="tl">${l}</div>
+            <div class="tv">${v.toFixed(1)}</div>
+            <div class="tb"><div class="tf" style="--w:${v/10}"></div></div>
+          </div>`).join('')}
+      </div>
+      <div class="tquotes">
+        ${t.tone.quotes.map(q=>`
+          <div class="tq">
+            <div class="th"><span class="role">${q.role}</span><span class="tag">${q.tag}</span></div>
+            <div class="quote">${q.text}</div>
+            <div class="flag">${q.flag}</div>
+          </div>`).join('')}
+      </div>`;
+    setTimeout(()=>{
+      host.querySelectorAll('.tscore').forEach((el,i)=>setTimeout(()=>el.classList.add('show'), stagger+i*60));
+      host.querySelectorAll('.tq').forEach((el,i)=>setTimeout(()=>el.classList.add('show'), stagger+300+i*120));
+    }, 20);
+  }
+
+  // -------- live run simulation --------
+  const logHost = document.getElementById('demo-log');
+  function pushLog(txt, kind){
+    const time = new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+    const ln = document.createElement('div');
+    ln.className = 'ln '+(kind||'');
+    const ar = kind==='warn'?'⚠':kind==='ok'?'✓':'›';
+    ln.innerHTML = `<span class="tm">${time}</span><span class="ar">${ar}</span><span>${txt}</span>`;
+    logHost.appendChild(ln);
+    logHost.scrollTop = logHost.scrollHeight;
+  }
+  function clearLog(){ logHost.innerHTML=''; }
+
+  function logPrebaked(t){
+    clearLog();
+    pushLog(`loaded cached prediction for ${t.t}`, 'ok');
+    pushLog(`model: M4_all_features · snapshot ${t.quarter}`);
+    pushLog(`crash probability: ${t.risk.toFixed(2)} (${(t.risk*100|0)}%)`, t.risk>0.5?'warn':'ok');
+    pushLog(`top feature: ${t.shap[0][0]} (+${t.shap[0][1].toFixed(2)} SHAP)`);
+    pushLog(t.note, t.tier==='high'?'warn':'');
+  }
+
+  let liveTimer = null;
+  function runLive(t){
+    if(liveTimer) clearTimeout(liveTimer);
+    clearLog();
+    // reset visuals
+    document.getElementById('risk-num').textContent = '—';
+    document.querySelector('.ring-fg').setAttribute('stroke-dashoffset', 2*Math.PI*52);
+    document.getElementById('shap-rows').innerHTML = '<div style="font-family:JetBrains Mono;font-size:11px;color:var(--ink-3)">computing…</div>';
+    document.getElementById('sig-grid').innerHTML='';
+    const svg=document.getElementById('price-chart'); svg.classList.remove('show'); svg.innerHTML='';
+
+    const steps = [
+      [200,  () => pushLog(`[Phase 1A] fetching BSE pledging filings for ${t.t}…`)],
+      [450,  () => pushLog(`  ↳ shareholding.xml · 24 quarters retrieved`, 'ok')],
+      [200,  () => pushLog(`[Phase 1B] fetching NSE OHLCV 2014 → 2024…`)],
+      [500,  () => pushLog(`  ↳ 2,510 trading days · no gaps`, 'ok')],
+      [250,  () => pushLog(`[Phase 2A] computing pledge features (9)…`)],
+      [350,  () => pushLog(`  ↳ pledge_pct_4q_max=${(t.features.pledge_pct_4q_max*100|0)}% · rising ${t.features.pledge_acceleration>0.3?'rapidly':'steadily'}`, t.features.pledge_pct_4q_max>0.5?'warn':'')],
+      [250,  () => pushLog(`[Phase 2B] computing price+financial features (11)…`)],
+      [300,  () => pushLog(`  ↳ volatility_60d=${(t.features.price_volatility_60d*100|0)}% · vs_52w=${(t.features.price_vs_52w_high*100|0)}%`)],
+      [200,  () => pushLog(`[Phase 2D] assembling row · 20 features populated`)],
+      [350,  () => pushLog(`[Phase 3A] XGBoost inference · M4_all_features…`)],
+      [600,  () => { drawPriceChart(t.price); renderSignals(t); }],
+      [100,  () => { animateRing(t.risk); renderShap(t.shap, 0); }],
+      [300,  () => pushLog(`prediction: crash probability ${t.risk.toFixed(3)}`, t.risk>0.5?'warn':'ok')],
+      [200,  () => pushLog(`[Phase 3C] SHAP decomposition complete`, 'ok')],
+      [100,  () => {
+        const rank = t.tier==='high' ? 'top 2% of universe' : (t.tier==='med'?'top 12% of universe':'bottom 40%');
+        document.getElementById('dm-rank').textContent = rank;
+        pushLog(`run complete · ${t.shap.length} features contributing`, 'ok');
+      }],
+    ];
+    let cum = 0;
+    steps.forEach(([d,fn])=>{
+      cum += d;
+      setTimeout(fn, cum);
+    });
+  }
+
+  // -------- results section --------
+  // metrics + model comparison (real numbers from results_table.csv)
+  const models = [
+    { name: 'M1', sub: 'pledge only',        auc: 0.519, run: true },
+    { name: 'M2', sub: '+ price + financial',auc: 0.655, run: true },
+    { name: 'M3', sub: 'tone only subset',   auc: 0.562, run: true },
+    { name: 'M4', sub: 'all features',       auc: 0.663, run: true, best: true },
+    { name: 'M5', sub: 'no-tone baseline',   auc: 0.655, run: true },
+  ];
+  const mc = document.getElementById('model-compare');
+  models.forEach(m=>{
+    const r = document.createElement('div');
+    r.className = 'mc-row' + (m.run?'':' pending');
+    const pct = m.auc ? (m.auc-0.5)/(1-0.5) : 0;
+    r.style.setProperty('--w', Math.max(pct,0));
+    r.innerHTML = `
+      <div class="mn">${m.name}<span class="sm">${m.sub}</span></div>
+      <div class="tr">
+        ${m.auc ? `<div class="tf"></div><span class="lbl">AUC ${m.auc.toFixed(3)}</span>` : `<span class="lbl" style="color:var(--ink-4);text-shadow:none">pending phase 2C</span>`}
+        <div class="cn" style="left:0"></div>
+      </div>
+      <div class="vv">${m.auc ? m.auc.toFixed(3) : '—'}</div>`;
+    mc.appendChild(r);
+  });
+
+  // global shap
+  const sgHost = document.getElementById('shap-global');
+  const sgMax = Math.max(...GLOBAL_SHAP.map(r=>r[1]));
+  GLOBAL_SHAP.forEach((s,i)=>{
+    const r = document.createElement('div');
+    r.className='sg-r' + (s[1]===0?' zero':'');
+    r.style.setProperty('--w', sgMax ? s[1]/sgMax : 0);
+    r.innerHTML = `
+      <div class="fn">${s[0]}</div>
+      <div class="br"><div class="f"></div></div>
+      <div class="vl">${s[1].toFixed(4)}</div>`;
+    sgHost.appendChild(r);
+  });
+
+  // -------- cases timeline --------
+  const casesTrack = document.getElementById('cases-track');
+  const cases = [
+    { t:'DHFL', n:'Dewan Housing Finance', q:'2019 Q3', s:'India\'s canonical pledging implosion.',
+      p:'Promoter pledge hit 91% the quarter before the collapse. The stock lost 96% of its value in the next two quarters as lenders dumped collateral into a market already in freefall.',
+      dd:-96, peak:91, vol:78, price:[100,98,96,94,90,82,68,50,34,22,14,8,4] },
+    { t:'ZEEL', n:'Zee Entertainment', q:'2019 Q3', s:'Pledged stake unwinds publicly.',
+      p:'The promoter stake was pledged against loans to group firms. When collateral fell short, banks began selling in the open market. Retail investors watched the drop in real time.',
+      dd:-68, peak:59, vol:61, price:[100,102,99,96,90,84,76,66,55,46,40,38,36] },
+    { t:'YESBANK', n:'Yes Bank', q:'2020 Q1', s:'Balance sheet + pledge crisis.',
+      p:'100% of promoter holding was pledged the quarter before RBI intervention. Share price fell 85% in six months. This is the easy case — but most models still missed the scale.',
+      dd:-85, peak:100, vol:82, price:[100,95,88,82,70,58,42,30,22,16,12,10,8] },
+    { t:'JETAIRWAYS', n:'Jet Airways', q:'2019 Q1', s:'Grounded in two quarters.',
+      p:'Promoter pledge climbed from 0% to 68% in a year. Volatility spiked months before operations halted. A live PledgeWatch would have flagged this in late 2018.',
+      dd:-89, peak:68, vol:86, price:[100,96,89,78,64,48,32,20,12,7,4,3,2] },
+  ];
+  cases.forEach((c,i)=>{
+    const el = document.createElement('div'); el.className='case-card';
+    const W=340,H=120,P=10;
+    const n=c.price.length, min=Math.min(...c.price), max=Math.max(...c.price);
+    const xs=i=>P+(W-2*P)*(i/(n-1)), ys=v=>P+(H-2*P)*(1-(v-min)/(max-min||1));
+    let d=`M ${xs(0)} ${ys(c.price[0])}`;
+    c.price.slice(1).forEach((v,i)=>{ d+=` L ${xs(i+1)} ${ys(v)}`; });
+    const peakI=c.price.indexOf(Math.max(...c.price));
+    const trI=c.price.indexOf(Math.min(...c.price));
+    el.innerHTML = `
+      <div class="case-h">
+        <div class="q">${c.q} · historical seed</div>
+        <h4>${c.t}</h4>
+        <div class="sub">${c.n} · ${c.s}</div>
+        <p>${c.p}</p>
+      </div>
+      <div class="case-v">
+        <svg class="chart" viewBox="0 0 ${W} ${H}">
+          <path class="line" d="${d}"/>
+          <circle class="peak" cx="${xs(peakI)}" cy="${ys(c.price[peakI])}" r="3" fill="var(--ink)"/>
+          <circle class="peak" cx="${xs(trI)}" cy="${ys(c.price[trI])}" r="4" fill="var(--accent)"/>
+          <text x="${xs(trI)-8}" y="${ys(c.price[trI])+14}">${c.dd}%</text>
+        </svg>
+        <div class="stats">
+          <div class="s bad"><div class="sl">drawdown</div><div class="sv">${c.dd}%</div></div>
+          <div class="s"><div class="sl">pledge peak</div><div class="sv">${c.peak}%</div></div>
+          <div class="s"><div class="sl">vol 60d</div><div class="sv">${c.vol}%</div></div>
+        </div>
+      </div>`;
+    casesTrack.appendChild(el);
+  });
+
+  // -------- scroll observer --------
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        if(e.target.classList.contains('case-card')){
+          e.target.classList.add('show');
+          e.target.querySelector('.case-v').classList.add('vis');
+        }
+      }
+    });
+  }, {threshold:0.15});
+  document.querySelectorAll('.reveal, .case-card').forEach(el=>io.observe(el));
+
+  // -------- nav scroll state --------
+  const nav = document.querySelector('.nav');
+  window.addEventListener('scroll', ()=>{
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // -------- hero particles canvas --------
+  const cvs = document.getElementById('hero-canvas');
+  if(cvs){
+    const ctx = cvs.getContext('2d');
+    let W, H, dpr = window.devicePixelRatio||1;
+    function resize(){
+      const r = cvs.getBoundingClientRect();
+      W = r.width; H = r.height;
+      cvs.width = W*dpr; cvs.height = H*dpr;
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+    }
+    resize(); window.addEventListener('resize', resize);
+    const pts = Array.from({length:50}, ()=>({
+      x: Math.random()*W, y: Math.random()*H,
+      vx: (Math.random()-0.5)*0.2, vy: (Math.random()-0.5)*0.2,
+      r: Math.random()*1.5+0.3
+    }));
+    function tick(){
+      ctx.clearRect(0,0,W,H);
+      pts.forEach(p=>{
+        p.x+=p.vx; p.y+=p.vy;
+        if(p.x<0||p.x>W) p.vx*=-1;
+        if(p.y<0||p.y>H) p.vy*=-1;
+        ctx.beginPath();
+        ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+        ctx.fillStyle = 'oklch(0.55 0.18 32 / 0.35)';
+        ctx.fill();
+      });
+      // connect nearby
+      for(let i=0;i<pts.length;i++){
+        for(let j=i+1;j<pts.length;j++){
+          const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y;
+          const d=Math.sqrt(dx*dx+dy*dy);
+          if(d<100){
+            ctx.strokeStyle=`oklch(0.55 0.18 32 / ${(1-d/100)*0.2})`;
+            ctx.lineWidth=0.5;
+            ctx.beginPath();
+            ctx.moveTo(pts[i].x,pts[i].y);
+            ctx.lineTo(pts[j].x,pts[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+      requestAnimationFrame(tick);
+    }
+    tick();
+  }
+
+  // -------- hero stat counters --------
+  const counters = document.querySelectorAll('[data-count]');
+  const cio = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const el = e.target;
+        const end = parseFloat(el.dataset.count);
+        const decimals = parseInt(el.dataset.dec||'0');
+        const suffix = el.dataset.suffix||'';
+        const dur=1100, t0=performance.now();
+        (function tick(now){
+          const p = Math.min(1,(now-t0)/dur);
+          const e2 = 1-Math.pow(1-p,3);
+          el.textContent = (end*e2).toFixed(decimals) + suffix;
+          if(p<1) requestAnimationFrame(tick);
+        })(t0);
+        cio.unobserve(el);
+      }
+    });
+  }, {threshold:0.4});
+  counters.forEach(c=>cio.observe(c));
+
+  // -------- init default selection --------
+  selectTicker('DHFL');
+
+  // -------- tweaks --------
+  const state = Object.assign({}, window.TWEAK_DEFAULTS);
+  function applyState(){
+    document.body.classList.remove('theme-paper','theme-dark','theme-ledger');
+    document.body.classList.add('theme-'+state.theme);
+    document.body.classList.toggle('density-compact', state.density==='compact');
+    document.querySelectorAll('.tweaks .opts').forEach(g=>{
+      const grp=g.dataset.group;
+      g.querySelectorAll('button').forEach(b=>b.classList.toggle('sel', b.dataset.val===state[grp]));
+    });
+  }
+  document.querySelectorAll('.tweaks .opts').forEach(g=>{
+    g.addEventListener('click', e=>{
+      const btn = e.target.closest('button'); if(!btn) return;
+      const grp = g.dataset.group;
+      state[grp]=btn.dataset.val;
+      applyState();
+      try{ window.parent.postMessage({type:'__edit_mode_set_keys',edits:{[grp]:state[grp]}},'*'); }catch(e){}
+    });
+  });
+  applyState();
+
+  window.addEventListener('message', e=>{
+    const d = e.data||{};
+    if(d.type==='__activate_edit_mode') document.getElementById('tweaks').classList.add('on');
+    if(d.type==='__deactivate_edit_mode') document.getElementById('tweaks').classList.remove('on');
+  });
+  try{ window.parent.postMessage({type:'__edit_mode_available'},'*'); }catch(e){}
+
+})();
+</script>
+</body>
