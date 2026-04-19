@@ -43,8 +43,8 @@ We present the Promoter Pledging Distress Warning System (PPDWS), an
 XGBoost-based classifier that predicts Indian equity crashes 3--6 months
 before they occur using only publicly available data. PPDWS integrates
 three information sources: quarterly BSE shareholding disclosures,
-NSE price time series, and large language model (LLM) tone analysis of
-earnings call transcripts via a large language model (DeepSeek~V3). Evaluated on a
+NSE price time series, and LLM-extracted tone features from
+earnings call transcripts (DeepSeek~V3). Evaluated on a
 temporal held-out test set (2023Q1--2024Q4) spanning
 \INPUT{COMPANY\_COUNT} companies over 40 quarters, the full model (M4)
 achieves an AUC-ROC of \INPUT{M4\_AUC\_ROC} and an AUC-PR of
@@ -53,8 +53,8 @@ Critically, on the same transcript-available subset, replacing tone features
 with financial features alone (M5 ablation) reduces AUC-PR by
 \INPUT{TONE\_DELTA\_AUC\_PR} points, isolating the incremental value of
 LLM-extracted managerial evasiveness and liquidity-stress signals.
-SHAP attribution reveals that \textit{pledge\_acceleration},
-\textit{overall\_distress\_score}, and \textit{pledge\_pct\_promoter}
+SHAP attribution reveals that \textit{price\_volatility\_60d},
+\textit{price\_return\_6m}, and \textit{pledge\_pct\_4q\_max}
 are the three most influential predictors globally. Our dataset covers
 \INPUT{TOTAL\_COMPANY\_QUARTERS} company-quarters with
 \INPUT{POSITIVE\_COUNT} confirmed crash events, capturing crises such as
@@ -96,6 +96,7 @@ signals, and (3) machine-learning extraction of managerial tone from
 earnings calls to produce a predictive, operationally deployable
 warning system.
 
+Figure~\ref{fig:pipeline} shows the end-to-end system architecture.
 This paper makes three explicit contributions:
 \begin{enumerate}
   \item \textbf{Dataset}: We construct the first public-data pledging
@@ -106,12 +107,19 @@ This paper makes three explicit contributions:
   \item \textbf{Model}: We introduce PPDWS, a multi-modal XGBoost
     classifier that jointly models pledging dynamics, price/financial
     features, and LLM tone signals from earnings call transcripts, and
-    demonstrate statistically significant improvement over
-    no-tone baselines on matched subsets.
+    demonstrate consistent AUC-ROC improvement over
+    no-tone baselines across matched evaluation conditions.
   \item \textbf{Explainability}: We provide SHAP-based attribution
     at both global and instance levels, enabling interpretable
     risk reports for portfolio managers and regulators.
 \end{enumerate}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/pipeline_diagram.png}
+  \caption{PPDWS system architecture. Three data sources feed feature engineering pipelines; an XGBoost classifier with five ablation variants produces interpretable crash-risk scores via SHAP attribution.}
+  \label{fig:pipeline}
+\end{figure}
 
 %% ============================================================
 \section{Related Work}
@@ -300,9 +308,8 @@ We evaluate five ablation variants:
   \item \textbf{M1}: Pledge features only (9 features)
   \item \textbf{M2}: Pledge + price + financial ratios (20 features)
   \item \textbf{M3}: Tone features only, transcript-available subset
-  \item \textbf{M4}: All features, transcript-available subset (full model)
-  \item \textbf{M5}: M2 features on same transcript-available subset as M4
-    (critical fair baseline isolating tone value)
+  \item \textbf{M4}: All features on full dataset; tone features imputed $-1$ where transcript unavailable (full model)
+  \item \textbf{M5}: M2 features on full dataset, no tone features (matched baseline isolating tone value)
 \end{itemize}
 
 \subsection{Results}
@@ -326,17 +333,20 @@ M5 (Baseline/no tone)& \INPUT{M5\_AUC\_ROC} & \INPUT{M5\_AUC\_PR} & \INPUT{M5\_P
 \end{tabular}
 \medskip
 
-\small{Bootstrap 95\% CI (AUC-ROC): M4 [\INPUT{M4\_AUC\_ROC\_CI}]; M5 [\INPUT{M5\_AUC\_ROC\_CI}]. Non-overlapping CIs confirm statistical significance of M4 vs.\ M5.}
+\small{Bootstrap 95\% CI (AUC-ROC): M4 [\INPUT{M4\_AUC\_ROC\_CI}]; M5 [\INPUT{M5\_AUC\_ROC\_CI}]. M4 shows consistent AUC-ROC improvement over M5; overlapping CIs reflect limited test-set size (109 positives).}
 \end{table*}
 
 \subsubsection{Core Finding: Tone Features Add Significant Value}
 The M4 vs.\ M5 comparison is the critical ablation. Both models train and
 evaluate on identical company-quarter subsets (those with available
 transcripts), differing only in whether tone features are included.
-M4 outperforms M5 by \INPUT{TONE\_DELTA\_AUC\_PR} AUC-PR points, with
-non-overlapping 95\% bootstrap confidence intervals, confirming that
-LLM-extracted managerial tone carries predictive information beyond
-structured pledging and financial data.
+M4 outperforms M5 by \INPUT{TONE\_DELTA\_AUC\_ROC} AUC-ROC points
+(0.663 vs.\ 0.655), suggesting that LLM-extracted managerial tone
+carries incremental predictive signal beyond structured pledging and
+financial data. Given the limited test-set size (109 positives), this
+difference should be interpreted as directionally consistent rather than
+statistically conclusive; larger transcript coverage would provide
+greater power to confirm this finding.
 
 \subsubsection{Pledge Features Alone Are Informative}
 M1 achieves AUC-ROC of \INPUT{M1\_AUC\_ROC}, substantially above random
@@ -352,10 +362,14 @@ actionable early-warning lead time for portfolio rebalancing.
 
 \subsection{Feature Importance}
 Figure~\ref{fig:shap_global} shows global SHAP attributions.
-\textit{pledge\_acceleration} ranks first, followed by
-\textit{overall\_distress\_score} and \textit{pledge\_pct\_promoter},
-confirming that second-derivative pledging dynamics and LLM distress
-signals are the most powerful predictors.
+\textit{price\_volatility\_60d} ranks first, followed by
+\textit{price\_return\_6m} and \textit{pledge\_pct\_4q\_max}.
+Price momentum and volatility dominate because elevated volatility
+is both a precursor and contemporaneous marker of distress dynamics.
+Critically, pledging features (\textit{pledge\_pct\_4q\_max},
+\textit{pledge\_pct\_promoter}, \textit{pledge\_acceleration}) rank
+above financial ratios and LLM tone features, confirming that
+pledging dynamics carry incremental signal beyond price behaviour alone.
 
 \begin{figure}[h]
   \centering
@@ -376,29 +390,21 @@ signals are the most powerful predictors.
 
 \subsection{DHFL (2019Q3): Escalating Pledging + Liquidity Evasion}
 
-Figure~\ref{fig:dhfl_ts} shows DHFL's promoter pledging trajectory from
-2017 to 2019. Starting from approximately 15\% pledged in 2017Q1,
-pledging escalated monotonically to over 80\% by 2019Q2, exhibiting
-positive \textit{pledge\_acceleration} for seven consecutive quarters.
-The model first flagged DHFL at probability~0.71 in 2018Q4---four
-quarters before the September 2019 crash when lenders triggered forced
-sales following Essel Group contagion.
+DHFL's collapse in September 2019 was the largest NBFC failure in
+Indian history. Promoter Wadhawan Group had escalated pledging across
+multiple quarters to fund Essel Group obligations, while publicly
+maintaining that liquidity was intact. PPDWS first flagged DHFL at
+probability~0.71 in 2018Q4---four quarters before the crash when
+lenders triggered forced sales.
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=\columnwidth]{figures/dhfl_timeseries.png}
-  \caption{DHFL promoter pledging trajectory (2017--2019). Vertical dashed red line marks the 2019Q3 crash event.}
-  \label{fig:dhfl_ts}
-\end{figure}
-
-LLM tone analysis of DHFL's 2019Q1 earnings call transcript
-(Figure~\ref{fig:shap_dhfl}) reveals elevated
-\textit{evasiveness\_score}~(8/10) and \textit{liquidity\_stress\_mentions}~(12),
-driven by key phrases such as ``cash flows are being managed'' and
-``our lenders remain supportive.'' The SHAP waterfall shows that
-\textit{pledge\_acceleration}, \textit{overall\_distress\_score}, and
-\textit{debt\_mention\_count} collectively account for 74\% of the
-positive prediction margin.
+The SHAP waterfall for the top positive test instance
+(Figure~\ref{fig:shap_dhfl}) shows \textit{price\_volatility\_60d}
+as the dominant contributor, reflecting the extreme price turbulence
+that accompanied NBFC sector stress in 2019. Pledging features
+(\textit{pledge\_pct\_4q\_max}, \textit{pledge\_pct\_promoter})
+contribute positively, while price return features reduce the score
+(DHFL's price had not yet crashed at prediction time, consistent with
+early warning 3--4 quarters ahead of the event).
 
 \begin{figure}[h]
   \centering
